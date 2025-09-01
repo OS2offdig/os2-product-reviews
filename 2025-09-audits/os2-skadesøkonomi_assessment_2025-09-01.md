@@ -3,27 +3,29 @@
 > **📄 Dokumentinformation**  
 > **Evalueringsskabelon version:** 0.9  
 > **Dato for udfyldelse:** [01-09-2025]
+> **GitHub organisation:** https://github.com/Skadesokonomi
+> **OS2 website link:** https://www.os2.eu/os2skadesokonomi
 
 ## 🌍 RELEVANS
 
 | #   | Niveau    | Krav                                             | Vurderingskriterie                                                                  | Vurdering     | Vurderingsgrundlag    |
 |-----|-----------|--------------------------------------------------|-------------------------------------------------------------------------------------|---------------|-----------------------|
-| R1  | Sandkasse | Løsningen skaber lokal værdi                     | Standard: Produktet giver konkret og dokumenterbar værdi for den enkelte myndighed. | 🟢 / 🟡 / 🔴 |                       |
-| R2  | 2         | Løsningen er accepteret af lokal linjeledelse    | Standard: Linjeledelsen har bakket op om deltagelsen i udviklingen og anvendelsen.  | 🟢 / 🟡 / 🔴 |                       |
-| R3  | 2         | Løsningen har fælles offentligt potentiale       | Standard: Kan skabe værdi og genbruges på tværs af myndigheder.                     | 🟢 / 🟡 / 🔴 |                       |
-| R4  | 3         | Ophæng til nationale strategier er til stede     | Standard: Understøtter fx digitaliseringsstrategi og fællesoffentlige mål.          | 🟢 / 🟡 / 🔴 |                       |
+| R1  | Sandkasse | Løsningen skaber lokal værdi                     | Standard: Produktet giver konkret og dokumenterbar værdi for den enkelte myndighed. | 🟢 | Dokumenteret brug i flere kommuner (fx Svendborg, Kerteminde). |
+| R2  | 2         | Løsningen er accepteret af lokal linjeledelse    | Standard: Linjeledelsen har bakket op om deltagelsen i udviklingen og anvendelsen.  | 🟡 | Ikke eksplicit dokumenteret, men understøttet af KL samt en bred styregruppe. |
+| R3  | 2         | Løsningen har fælles offentligt potentiale       | Standard: Kan skabe værdi og genbruges på tværs af myndigheder.                     | 🟢 | Kan anvendes på tværs af kommuner og er et fælles produkt i OS2. |
+| R4  | 3         | Ophæng til nationale strategier er til stede     | Standard: Understøtter fx digitaliseringsstrategi og fællesoffentlige mål.          | 🟡 | Ingen tydelig kobling, men understøtter effektiv ressourceudnyttelse og klimatilpasning. |
 
 ## 🛠️ FORMKRAV
 
 | #    | Niveau    | Krav                                                                         | Vurderingskriterie                                                                               | Vurdering     | Vurderingsgrundlag    |
 |------|-----------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|---------------|-----------------------|
-| F1   | Sandkasse | Kildekode til projektet udvikles synligt og aktivt i et OS2-repositorie      | Standard: Kodebasen er tilgængelig og udvikles åbent på GitHub i OS2-kontrolleret organisation.  | 🟢 / 🟡 / 🔴 |                       |
-| F2   | Sandkasse | Open Source-licenskriterier overholdes                                       | Standard: Godkendt Open Source Licens (fx MPL-2.0) er tydeligt angivet og anvendt.               | 🟢 / 🟡 / 🔴 |                       |
-| F3   | Sandkasse | Udbudsregler og almindelig lovformlighed er overholdt                        | Standard: Projektet følger udbudsregler og gældende lovgivning.                                  | 🟢 / 🟡 / 🔴 |                       |
-| F4   | Sandkasse | Der er tænkt på sikkerheden i løsningen                                      | Standard: Der forefindes dokumenteret sikkerhedsarbejde og/eller procedurer.                     | 🟢 / 🟡 / 🔴 |                       |
-| F5   | Sandkasse | Løsningens formål og værdi er beskrevet                                      | Standard: Formål og værdi er klart beskrevet, gerne i en README tilknyttet kodebasen.            | 🟢 / 🟡 / 🔴 |                       |
-| F6   | 1         | Kildekoden er overdraget og placeret under OS2's GitHub                      | Standard: Koden er juridisk overdraget og hostes under OS2's GitHub.                             | 🟢 / 🟡 / 🔴 |                       |
-| F7   | 1         | Dokumentation udarbejdes med og overholder OS2's standardskabelon            | Standard: Dokumentation i åbent format (fx Markdown) og OS2’s skabelon anvendt.                  | 🟢 / 🟡 / 🔴 |                       |
+| F1   | Sandkasse | Kildekode til projektet udvikles synligt og aktivt i et OS2-repositorie      | Standard: Kodebasen er tilgængelig og udvikles åbent på GitHub i OS2-kontrolleret organisation.  | 🟢 | Koden er åben og ligger i OS2 kontrolleret GitHub organisation *Skadesokonomi*. |
+| F2   | Sandkasse | Open Source-licenskriterier overholdes                                       | Standard: Godkendt Open Source Licens (fx MPL-2.0) er tydeligt angivet og anvendt.               | 🟢 | GPL-3.0 licens angivet i repo. |
+| F3   | Sandkasse | Udbudsregler og almindelig lovformlighed er overholdt                        | Standard: Projektet følger udbudsregler og gældende lovgivning.                                  | 🟡 | Udbudsgrundlag ikke offentligt dokumenteret. Økonomien er dog umiddelbart under udbudsgrænser ligesom produktet er doneret fra GeoFyn. |
+| F4   | Sandkasse | Der er tænkt på sikkerheden i løsningen                                      | Standard: Der forefindes dokumenteret sikkerhedsarbejde og/eller procedurer.                     | 🔴 | Ingen SECURITY.md eller trusselsmodel. |
+| F5   | Sandkasse | Løsningens formål og værdi er beskrevet                                      | Standard: Formål og værdi er klart beskrevet, gerne i en README tilknyttet kodebasen.            | 🟡 | God beskrivelse på OS2’s hjemmeside, men README på GitHub er sparsom. |
+| F6   | 1         | Kildekoden er overdraget og placeret under OS2's GitHub                      | Standard: Koden er juridisk overdraget og hostes under OS2's GitHub.                             | 🟢 | Placeret hos OS2 i en OS2 kontrolleret GitHub organisation. |
+| F7   | 1         | Dokumentation udarbejdes med og overholder OS2's standardskabelon            | Standard: Dokumentation i åbent format (fx Markdown) og OS2’s skabelon anvendt.                  | 🟡 | Dokumentation findes, men i lukkede formater og af ældre dato. Dokumentation følger ikke OS2-standard. |
 | F10  | 1         | OS2's kommunikationskanaler anvendes                                         | Standard: Information findes på os2.eu.                                                          | 🟢 / 🟡 / 🔴 |                       |
 | F11  | 1         | Offentlig issue-tracking anvendes                                            | Standard: Opgaver (issues) og kodeændringer spores offentligt og tilknyttes GitHub.              | 🟢 / 🟡 / 🔴 |                       |
 | F12  | 2         | Kun én version af core-koden (master)                                        | Standard: Ingen parallelle versioner af kodebasen.                                               | 🟢 / 🟡 / 🔴 |                       |
