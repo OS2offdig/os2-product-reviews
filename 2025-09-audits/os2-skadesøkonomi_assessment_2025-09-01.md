@@ -71,17 +71,31 @@
 
 ---
 
-### ➡️ Antal krav
+### ➡️ Antal krav fordelt på tema
 * Relevans: 4 krav (R1–R4)
 * Formkrav: 20 krav (F1–F22, minus F8 og F9 som er sammenlagt med F7)
 * Strategisk sammenhæng: 5 krav (S1–S5)
 * Governance: 14 krav (G1–G14)
 * *I alt: 43 krav*
 
+### ➡️ Antal krav fordelt på niveau
+* Sandkasse: 6 krav
+* Niveau 1: 10 krav
+* Niveau 2: 19 krav
+* Niveau 3: 8 krav
+* *I alt: 43 krav*
+
 ---
 
-### 🔍 Overordnet vurdering
-[Her skrives en samlet vurdering: hvilke styrker, hvilke forbedringspunkter, anbefalinger til næste skridt.]
+### 📊 Optælling af vurderinger pr. niveau
+
+| Niveau      | 🟢 Grøn  | 🟡 Gul   | 🔴 Rød   | I alt |
+|-------------|----------|---------|---------|-------|
+| Sandkasse   | 3       | 2      | 1      | 6    |
+| Niveau 1    | 5       | 4      | 1      | 10    |
+| Niveau 2    | 8       | 8      | 3      | 19    |
+| Niveau 3    | 2       | 4      | 2      | 8    |
+| **Samlet**  | 18       | 18      | 7      | 43    |
 
 ---
 
@@ -92,24 +106,17 @@
 
 ---
 
-### 📊 Optælling af vurderinger pr. niveau
-
-| Niveau      | 🟢 Grøn  | 🟡 Gul   | 🔴 Rød   | I alt |
-|-------------|----------|---------|---------|-------|
-| Sandkasse   | xx       | xx      | xx      | xx    |
-| Niveau 1    | xx       | xx      | xx      | xx    |
-| Niveau 2    | xx       | xx      | xx      | xx    |
-| Niveau 3    | xx       | xx      | xx      | xx    |
-| **Samlet**  | xx       | xx      | xx      | xx    |
-
----
-
 ### 📋 Hvordan bruges optællingen?
 
 - **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.  
 - **Niveau 1:** Basis governance og dokumentation – vigtigt for at skabe overblik og ejerskab.  
 - **Niveau 2:** Drift, vedligehold og strategisk understøttelse – mange 🟡 eller 🔴 her peger på modenhedsproblemer.  
 - **Niveau 3:** Avanceret governance og fællesskab – et område, hvor ikke alle produkter nødvendigvis når i mål, men som er ønskværdigt for stabile og bæredygtige produkter.
+
+---
+
+### 🔍 Overordnet vurdering
+[Her skrives en samlet vurdering: hvilke styrker, hvilke forbedringspunkter, anbefalinger til næste skridt.]
 
 ---
 
