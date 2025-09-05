@@ -2,9 +2,9 @@
 
 > **📄 Dokumentinformation**  
 > **Evalueringsskabelon version:** 0.9  
-> **Dato for udfyldelse:** [01-09-2025]
-> **GitHub organisation:** https://github.com/Skadesokonomi
-> **OS2 website link:** https://www.os2.eu/os2skadesokonomi
+> **Dato for udfyldelse:** [01-09-2025] 
+> **GitHub organisation:** https://github.com/Skadesokonomi 
+> **OS2 website link:** https://www.os2.eu/os2skadesokonomi 
 
 ## 🌍 RELEVANS
 
@@ -19,7 +19,7 @@
 
 | #    | Niveau    | Krav                                                                         | Vurderingskriterie                                                                               | Vurdering     | Vurderingsgrundlag    |
 |------|-----------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|---------------|-----------------------|
-| F1   | Sandkasse | Kildekode til projektet udvikles synligt og aktivt i et OS2-repositorie      | Standard: Kodebasen er tilgængelig og udvikles åbent på GitHub i OS2-kontrolleret organisation.  | 🟢 | Koden er åben og ligger i OS2 kontrolleret GitHub organisation *Skadesokonomi*. |
+| F1   | Sandkasse | Kildekode til projektet udvikles synligt og aktivt i et OS2-repositorie      | Standard: Kodebasen er tilgængelig og udvikles åbent på GitHub i OS2-kontrolleret organisation.  | 🟡 | Koden er åben og ligger i OS2 kontrolleret GitHub organisation *Skadesokonomi*. Der udvikles delvist åbent med adgang til commit historik men der er ingen kobling til issues og der anvendes ikke pull-requests. Standarder for åben og transparent udvikling følges ikke. |
 | F2   | Sandkasse | Open Source-licenskriterier overholdes                                       | Standard: Godkendt Open Source Licens (fx MPL-2.0) er tydeligt angivet og anvendt.               | 🟢 | GPL-3.0 licens angivet i repo. |
 | F3   | Sandkasse | Udbudsregler og almindelig lovformlighed er overholdt                        | Standard: Projektet følger udbudsregler og gældende lovgivning.                                  | 🟡 | Udbudsgrundlag ikke offentligt dokumenteret. Økonomien er dog umiddelbart under udbudsgrænser ligesom produktet er doneret fra GeoFyn. |
 | F4   | Sandkasse | Der er tænkt på sikkerheden i løsningen                                      | Standard: Der forefindes dokumenteret sikkerhedsarbejde og/eller procedurer.                     | 🔴 | Ingen SECURITY.md eller trusselsmodel. |
@@ -37,8 +37,8 @@
 | F18  | 2         | Rammearkitektur og standarder er fulgt og afvigelser forklaret               | Standard: Overensstemmelse med rammearkitektur er beskrevet.                                     | 🟡 | Bruger QGIS og åbne datasæt, men uden eksplicit reference til arkitekturprincipper. |
 | F19  | 2         | Løsningen leveret i containerformat                                          | Standard: Fx Docker anvendes.                                                                    | 🟡 | Desktop/QGIS-værktøj, container ikke relevant men uden noteret undtagelse. |
 | F20  | 2         | Uddannelsesmateriale er udarbejdet                                           | Standard: Undervisningsmaterialer findes.                                                        | 🟢 | Videovejledninger og webinarer findes. Dog af ældre karakter. |
-| F21  | 3         | Politisk kommunikation er udarbejdet                                         | Standard: Materialer målrettet politikere og offentlighed er udarbejdet.                         | 🟡 | Brugercases findes, men ingen dedikeret politiker-onepager. |
-| F22  | 3         | Procesplan og procesansvar for drift er udarbejdet                           | Standard: Dokumenteret proces og ansvar ifm. idriftsættelse.                                     | 🟡 | Overordnet beskrevet, men ingen detaljeret offentlig plan. |
+| F21  | 3         | Politisk kommunikation er udarbejdet                                         | Standard: Materialer målrettet politikere og offentlighed er udarbejdet.                         | 🔴 | Brugercases findes, men ingen dedikeret politiker-onepager. |
+| F22  | 3         | Procesplan og procesansvar for drift er udarbejdet                           | Standard: Dokumenteret proces og ansvar ifm. idriftsættelse.                                     | 🔴 | Overordnet beskrevet, men ingen detaljeret offentlig plan. |
 
 ## 🏛️ STRATEGISK SAMMENHÆNG
 
@@ -72,30 +72,24 @@
 ---
 
 ### ➡️ Antal krav fordelt på tema
+
+__Bemærk at under formkrav er F8 og F9 sammenlagt med F7__
+
 * Relevans: 4 krav (R1–R4)
-* Formkrav: 20 krav (F1–F22, minus F8 og F9 som er sammenlagt med F7)
+* Formkrav: 20 krav (F1–F22)
 * Strategisk sammenhæng: 5 krav (S1–S5)
 * Governance: 14 krav (G1–G14)
-* *I alt: 43 krav*
+* **I alt: 43 krav**
 
 ### ➡️ Antal krav fordelt på niveau
+
+__Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.__
+
 * Sandkasse: 6 krav
 * Niveau 1: 10 krav
 * Niveau 2: 19 krav
 * Niveau 3: 8 krav
-* *I alt: 43 krav*
-
----
-
-### 📊 Optælling af vurderinger pr. niveau
-
-| Niveau      | 🟢 Grøn  | 🟡 Gul   | 🔴 Rød   | I alt |
-|-------------|----------|---------|---------|-------|
-| Sandkasse   | 3       | 2      | 1      | 6    |
-| Niveau 1    | 5       | 4      | 1      | 10    |
-| Niveau 2    | 8       | 8      | 3      | 19    |
-| Niveau 3    | 2       | 4      | 2      | 8    |
-| **Samlet**  | 18       | 18      | 7      | 43    |
+* **I alt: 43 krav**
 
 ---
 
@@ -106,10 +100,88 @@
 
 ---
 
+### 📊 Optælling af vurderinger pr. niveau
+
+| Niveau      | 🟢 Grøn  | 🟡 Gul   | 🔴 Rød   | I alt |
+|-------------|----------|----------|---------|-------|
+| Sandkasse   | 2        | 3        | 1       | 6    |
+| Niveau 1    | 5        | 4        | 1       | 10    |
+| Niveau 2    | 8        | 8        | 3       | 19    |
+| Niveau 3    | 2        | 2        | 4       | 8    |
+| **Samlet**  | 17       | 17       | 9       | 43    |
+
+
+| Tema / Niveau        | Sandkasse<br/>(6 krav)     | Niveau 1<br/>(10 krav)   | Niveau 2<br/>(19 krav)   | Niveau 3<br/>(8 krav)    | Total                     |
+|----------------------|----------------------------|--------------------------|--------------------------|--------------------------|---------------------------|
+| Relevans             | 🟢 1                       |                          | 🟢 1 🟡 1                | 🟡 1                     | 🟢 2 🟡 2                 |
+| Formkrav             | 🟢 1 🟡 3 🔴 1            | 🟢 2 🟡 1 🔴 1            | 🟢 5 🟡 4                | 🔴 2                     | 🟢 8 🟡 8 🔴 4            |
+| Strategisk sammenhæng|                            | 🟢 2                     | 🟡 2                     | 🟢 1                     | 🟢 3 🟡 2                 |
+| Governance           |                            | 🟢 1 🟡 3                | 🟢 2 🟡 1 🔴 3          | 🟢 1 🟡 1 🔴 2           | 🟢 4 🟡 5 🔴 5            |
+| **Samlet**           | 🟢 2 (33%) <br/> 🟡 3 (50%) <br/> 🔴 1 (17%) | 🟢 5 (50%) <br/> 🟡 4 (40%) <br/> 🔴 1 (10%) | 🟢 8 (42%) <br/> 🟡 8 (42%) <br/> 🔴 3 (16%) | 🟢 2 (25%) <br/> 🟡 2 (25%) <br/> 🔴 4 (50%) | 🟢 17 (40%) <br/> 🟡 17 (40%) <br/> 🔴 9 (20%) |
+
+```mermaid
+%%{init: {"themeVariables": {
+  "pie1": "#2ca02c",   /* grøn */
+  "pie2": "#ffbf00",   /* gul */
+  "pie3": "#d62728"    /* rød */
+}}}%%
+pie showData
+  title Sandkasse (6 krav)
+  "Grøn 33%" : 2
+  "Gul 50%"  : 3
+  "Rød 17%"  : 1
+```
+
+```mermaid
+%%{init: {"themeVariables": {
+  "pie1": "#2ca02c", "pie2": "#ffbf00", "pie3": "#d62728"
+}}}%%
+pie showData
+  title Niveau 1 (10 krav)
+  "Grøn 50%" : 5
+  "Gul 40%"  : 4
+  "Rød 10%"  : 1
+```
+
+```mermaid
+  %%{init: {"themeVariables": {
+  "pie1": "#2ca02c", "pie2": "#ffbf00", "pie3": "#d62728"
+}}}%%
+pie showData
+  title Niveau 2 (19 krav)
+  "Grøn 42%" : 8
+  "Gul 42%"  : 8
+  "Rød 16%"  : 3
+```
+
+```mermaid
+  %%{init: {"themeVariables": {
+  "pie1": "#2ca02c", "pie2": "#ffbf00", "pie3": "#d62728"
+}}}%%
+pie showData
+  title Niveau 3 (8 krav)
+  "Grøn 25%" : 2
+  "Gul 25%"  : 2
+  "Rød 50%"  : 4
+```
+
+```mermaid
+  %%{init: {"themeVariables": {
+  "pie1": "#2ca02c", "pie2": "#ffbf00", "pie3": "#d62728"
+}}}%%
+pie showData
+  title Samlet (43 krav)
+  "Grøn 40%" : 17
+  "Gul 40%"  : 17
+  "Rød 20%"  : 9
+```
+
+---
+
 ### 📋 Hvordan bruges optællingen?
 
 - **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.  
-- **Niveau 1:** Basis governance og dokumentation – vigtigt for at skabe overblik og ejerskab.  
+- **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.  
 - **Niveau 2:** Drift, vedligehold og strategisk understøttelse – mange 🟡 eller 🔴 her peger på modenhedsproblemer.  
 - **Niveau 3:** Avanceret governance og fællesskab – et område, hvor ikke alle produkter nødvendigvis når i mål, men som er ønskværdigt for stabile og bæredygtige produkter.
 
