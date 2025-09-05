@@ -48,11 +48,11 @@
 
 | #   | Niveau    | Krav                                                       | Vurderingskriterie                                                    | Vurdering     | Vurderingsgrundlag    |
 |-----|-----------|------------------------------------------------------------|-----------------------------------------------------------------------|---------------|-----------------------|
-| S1  | 1         | Produktet har kobling til OS2's strategi                   | Standard: Understøtter OS2’s mission og vision.                       | 🟢 / 🟡 / 🔴 |                       |
-| S2  | 1         | Løsningen understøtter innovation og open source           | Standard: Fremmer innovation og åbenhed.                              | 🟢 / 🟡 / 🔴 |                       |
-| S3  | 2         | Kobling til OS2's mission, vision og strategi er beskrevet | Standard: Forbindelsen er beskrevet.                                  | 🟢 / 🟡 / 🔴 |                       |
-| S4  | 2         | Vision og strategi for produktet er udarbejdet             | Standard: Der findes en formel vision og strategi for produktet.      | 🟢 / 🟡 / 🔴 |                       |
-| S5  | 3         | Produktets overensstemmelse med OS2's vision og strategi   | Standard: Tydelig sammenhæng og beskrivelse.                          | 🟢 / 🟡 / 🔴 |                       |
+| S1  | 1         | Produktet har kobling til OS2's strategi                   | Standard: Understøtter OS2’s mission og vision.                       | 🟢 | Matcher OS2’s strategi om at dele og genbruge digitale løsninger. |
+| S2  | 1         | Løsningen understøtter innovation og open source           | Standard: Fremmer innovation og åbenhed.                              | 🟢 | Automatisering af arbejdsgange fremmer effektivitet og innovation. |
+| S3  | 2         | Kobling til OS2's mission, vision og strategi er beskrevet | Standard: Forbindelsen er beskrevet.                                  | 🟡 | Produktsiden beskriver formål, men uden eksplicit strategisk kobling. |
+| S4  | 2         | Vision og strategi for produktet er udarbejdet             | Standard: Der findes en formel vision og strategi for produktet.      | 🟡 | Vision omtalt, men ikke detaljeret dokumenteret og der er ikke tegn på nogen strategi. |
+| S5  | 3         | Produktets overensstemmelse med OS2's vision og strategi   | Standard: Tydelig sammenhæng og beskrivelse.                          | 🟢 | Støtter åbenhed og fælles ejerskab. |
 
 ## 👥 GOVERNANCE
 
