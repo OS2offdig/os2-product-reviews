@@ -15,8 +15,9 @@ OS2faktor er et udbredt og strategisk vigtigt sikkerhedsprodukt, der anvendes i 
 
 På denne baggrund vurderes OS2faktor til **ikke** at ligge højere end **niveau 1** i OS2’s governancemodel. Det anbefales, at produktet **sænkes til niveau 1**, men at der iværksættes en struktureret professionalisering med det mål at hæve til niveau 2 og senere 3.
 
+## 🔍 Vurdering af alle krav
 
-## 🌍 RELEVANS
+### 🌍 RELEVANS
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |---|--------|-------|---------------------|-----------|----------------------|
@@ -26,7 +27,7 @@ På denne baggrund vurderes OS2faktor til **ikke** at ligge højere end **niveau
 | R4 | 3 | Ophæng til nationale strategier er til stede | Standard: Understøtter fx digitaliseringsstrategi og fællesoffentlige mål. | 🟡 | Understøtter informationssikkerhed, men der er ikke dokumenteret eksplicit strategisk ophæng. |
 
 
-## 🛠️ FORMKRAV
+### 🛠️ FORMKRAV
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |----|--------|-------|---------------------|-----------|----------------------|
@@ -52,7 +53,7 @@ På denne baggrund vurderes OS2faktor til **ikke** at ligge højere end **niveau
 | F22 | 3 | Procesplan og procesansvar for drift er udarbejdet | Standard: Dokumenteret proces og ansvar ifm. idriftsættelse. | 🟡 | Visse processer kan aflæses og stykkes sammen af referater og dokumentation, men der findes ikke en samlet formel procesplan. |
 
 
-## 🏛️ STRATEGISK SAMMENHÆNG
+### 🏛️ STRATEGISK SAMMENHÆNG
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |---|--------|-------|---------------------|-----------|----------------------|
@@ -63,7 +64,7 @@ På denne baggrund vurderes OS2faktor til **ikke** at ligge højere end **niveau
 | S5 | 3 | Produktets overensstemmelse med OS2's vision og strategi | Standard: Tydelig sammenhæng og beskrivelse. | 🔴 | Ingen samlet strategibeskrivelse, der dokumenterer fuld sammenhæng med OS2’s overordnede retning. |
 
 
-## 👥 GOVERNANCE
+### 👥 GOVERNANCE
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |----|--------|-------|---------------------|-----------|----------------------|
@@ -82,15 +83,14 @@ På denne baggrund vurderes OS2faktor til **ikke** at ligge højere end **niveau
 | G13 | 3 | Aftale sikrer økonomi til koordinering og videreudvikling | Standard: Aftaler om finansiering er på plads og budget udarbejdet. | 🟡 | Finansieringen er delvist på plads gennem tilslutning, men den er minimal og dækker udelukkende videreudviklingsopgaver. Der er ikke tydeligt prioriteret og budgetteret. |
 | G14 | 3 | Fagligt fællesskab bag løsningen | Standard: Aktivt fællesskab, fx brugerklub, forum eller andet netværk. | 🔴 | Ingen formaliseret brugerklub eller fagligt netværk omkring OS2faktor. |
 
-
-### ➡️ Antal krav fordelt på tema
+### Antal krav fordelt på tema
 * Relevans: *4 krav* (R1–R4)
 * Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)
 * Strategisk sammenhæng: *5 krav* (S1–S5)
 * Governance: *14 krav* (G1–G14)
 * *I alt: 43 krav*
 
-### ➡️ Antal krav fordelt på niveau
+### Antal krav fordelt på niveau
 
 Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.
 
@@ -100,15 +100,13 @@ Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse o
 * Niveau 3: *8 krav* (43 i alt)
 * *I alt: 43 krav*
 
-### 🏷️ Hvad betyder trafiklysene?
+## 🏷️ Hvad betyder trafiklysene?
 
 - 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
 - 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
 - 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
 
-### 📊 Optælling af vurderinger pr. niveau og tema
-
-#### 1) Samlet pr. niveau
+## 📊 Optælling af vurderinger pr. niveau og tema
 
 | Niveau      | 🟢 Grøn | 🟡 Gul | 🔴 Rød | I alt |
 |-------------|--------:|-------:|------:|------:|
@@ -172,7 +170,7 @@ pie showData
 
 ```mermaid
 %%{init: {"themeVariables": {
-  "pie3": "#FFFF00", "pie2": "#FF0000", "pie1": "#008000"
+  "pie3": "#008000", "pie2": "#FFFF00", "pie1": "#FF0000"
 }}}%%
 pie showData
   title Niveau 3 (8 krav)
@@ -192,7 +190,7 @@ pie showData
   "Rød 28% (12)"  : 12
 ```
 
-### 📋 Hvordan bruges optællingen?
+## 📋 Hvordan bruges optællingen?
 
 - **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.  
 - **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.   
@@ -205,7 +203,7 @@ Ud fra optællingen kan vi vurdere, hvor produktet står samlet set:
 - Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.
 - Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.
 
-### 🔍 Overordnet vurdering
+## 🔍 Overordnet vurdering
 
 OS2faktor er et bredt anvendt og forretningskritisk produkt for rigtig mange kommuner. Relevans og fællesoffentligt potentiale har en stærk tilstedeværelse og produktet har en klar kobling til OS2’s formål og vision.
 
@@ -221,11 +219,11 @@ Governance-mæssigt er der dog væsentlige huller:
 Samlet vurderes OS2faktor til **niveau 1** i OS2’s governancemodel. Produktet er stabilt nok til at være i porteføljen og anvendes bredt, men governance og dokumentation er ikke stærke nok til at retfærdiggøre niveau 2.
 
 
-### 📈 Anbefaling
+## 📈 Anbefaling
 
 det anbefales at **sænke OS2faktor til niveau 1** formelt, og gennemfør et struktureret governance-løft med målet om at bringe produktet til **niveau 2** inden for en aftalt tidshorisont.
 
-#### Høj prioritet (kritiske governance- og sikkerhedselementer)
+### Høj prioritet (kritiske governance- og sikkerhedselementer)
 
 - **Etabler en aktiv styregruppe**
   - Udpeg formand, medlemmer og mandat.
@@ -248,7 +246,7 @@ det anbefales at **sænke OS2faktor til niveau 1** formelt, og gennemfør et str
   - Klare labels for fejl, forbedringer og sikkerhedsrelaterede issues.
   - Release-notes, der kobler issues til konkrete versioner.
 
-#### Mellem prioritet (modenhed, rammearkitektur og implementering)
+### Mellem prioritet (modenhed, rammearkitektur og implementering)
 
 - **Udarbejd implementeringsvejledninger og best practice**
   - Standardiseret “kom i gang”-pakke til nye kommuner.
@@ -266,7 +264,7 @@ det anbefales at **sænke OS2faktor til niveau 1** formelt, og gennemfør et str
   - Langsigtet økonomisk model (koordinering, vedligehold, udvikling).
   - Budget og prioriteringsprincipper for udviklingsønsker.
 
-#### Lav prioritet (fællesskab og politisk forankring)
+### Lav prioritet (fællesskab og politisk forankring)
 
 - **Etabler en brugerklub eller fagligt fællesskab**
   - Regelmæssige erfa-møder, online fællesskab eller faglige netværk.
@@ -276,7 +274,6 @@ det anbefales at **sænke OS2faktor til niveau 1** formelt, og gennemfør et str
   - One-pager til direktions-/chefniveau.
   - Materiale til politiske udvalg/byråd (formål, gevinster, risici).
   - Case-historier fra kommuner, der har implementeret OS2faktor.
-
  
 OS2faktor har en stærk forretningsmæssig og fællesoffentlig relevans, men mangler dokumenteret governance og strategisk/teknisk understøttelse.  
 Med et fokuseret governance-løft kan produktet bringes på niveau 2, hvilket vil styrke både robusthed, tillid og udbredelse i OS2-fællesskabet.
