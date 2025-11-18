@@ -1,6 +1,6 @@
 ---
 title: Evaluering af OS2autoproces
-layout: default
+layout: minimal
 nav_order: 2
 has_children: false
 has_toc: false

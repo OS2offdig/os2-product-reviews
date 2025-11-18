@@ -1,6 +1,6 @@
 ---
 title: Evaluering af OS2-skadesøkonomi
-layout: default
+layout: minimal
 nav_order: 1
 has_children: false
 has_toc: false

@@ -1,6 +1,6 @@
 ---
 title: Evaluering af OS2faktor
-layout: default
+layout: minimal
 nav_order: 3
 has_children: false
 has_toc: false
