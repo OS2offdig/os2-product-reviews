@@ -1,0 +1,14 @@
+title: Revision af OS2-produkter
+description: Revisionsrapporter udarbejdet i henhold til OS2s governance-model.
+theme: just-the-docs
+#logo: "/assets/images/os2_logo.png"
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "11.9.0"
+
+aux_links:
+  Repository: https://github.com/OS2offdig/os2-product-reviews
+#  Maintainers: ./MAINTAINERS
+#  Contribute: ./CONTRIBUTING
