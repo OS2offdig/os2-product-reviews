@@ -1,6 +1,6 @@
 // bredere content-kolonne
 // standard er 60rem
 $content-width: 80rem; 
+$content-width: 50rem !default;
 
-// Midlertidigt test: gør baggrunden lyserød, bare for at se om det virker
-$body-background-color: #ffe6e6;
+$link-color: $blue-000;
