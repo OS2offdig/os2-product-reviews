@@ -13,3 +13,7 @@ Som en del af OS2’s løbende kvalitetssikring udarbejdes der regelmæssige vur
 Audits bygger på produkternes egen governance-rapport og den dokumentation, der er tilgængelig i OS2-fællesskabet. Formålet er at skabe gennemsigtighed, understøtte modenhedsarbejdet og sikre, at hvert produkt placeres på rette OS2 produktniveau samt efterlever OS2’s principper for åbenhed, fælles ejerskab og professionel forvaltning.
 
 Her finder du de seneste produkt audits, -vurderinger og dokumentation for produktniveau.
+
+## Hvordan vurderes?
+
+[Her kan du læse om hvordan audits og vurderinger foretages](vurderingsgrundlag).
