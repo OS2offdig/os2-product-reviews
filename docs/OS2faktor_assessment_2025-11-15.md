@@ -1,20 +1,20 @@
 ---
-title: Evaluering af OS2faktor
+title: Vurdering af OS2faktor
 layout: default
 nav_order: 3
 has_children: false
-has_toc: false
+has_toc: true
 ---
 
-# Evaluering af OS2-produkt: OS2faktor
+# Vurdering af OS2-produktet: **OS2faktor**
 
-> **📄 Dokumentinformation**  
+## 📄 Dokumentinformation  
 > **Evalueringsskabelon version:** 0.9  
 > **Dato for udfyldelse:** 16-11-2025  
-> **Audit made by:** Rasmus Frey, rasmus@os2.eu    
-> **GitHub organisation:** https://github.com/OS2faktor  
-> **OS2 website link:** https://www.os2.eu/os2faktor  
-> **Governance Report used:** None found
+> **Audit udført af:** Rasmus Frey, rasmus@os2.eu    
+> **Produktets GitHub organisation:** https://github.com/OS2faktor  
+> **OS2 hjemmeside link:** https://www.os2.eu/os2faktor  
+> **Anvendt Governance Rapport:** Ingen rapport lokaliseret
 
 
 ## 📝 Resumé
@@ -91,28 +91,6 @@ På denne baggrund vurderes OS2faktor til **ikke** at ligge højere end **niveau
 | G13 | 3 | Aftale sikrer økonomi til koordinering og videreudvikling | Standard: Aftaler om finansiering er på plads og budget udarbejdet. | 🟡 | Finansieringen er delvist på plads gennem tilslutning, men den er minimal og dækker udelukkende videreudviklingsopgaver. Der er ikke tydeligt prioriteret og budgetteret. |
 | G14 | 3 | Fagligt fællesskab bag løsningen | Standard: Aktivt fællesskab, fx brugerklub, forum eller andet netværk. | 🔴 | Ingen formaliseret brugerklub eller fagligt netværk omkring OS2faktor. |
 
-### Antal krav fordelt på tema
-* Relevans: *4 krav* (R1–R4)
-* Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)
-* Strategisk sammenhæng: *5 krav* (S1–S5)
-* Governance: *14 krav* (G1–G14)
-* *I alt: 43 krav*
-
-### Antal krav fordelt på niveau
-
-Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.
-
-* Sandkasse: *6 krav*
-* Niveau 1: *10 krav* (16 i alt)
-* Niveau 2: *19 krav* (35 i alt)
-* Niveau 3: *8 krav* (43 i alt)
-* *I alt: 43 krav*
-
-## 🏷️ Hvad betyder trafiklysene?
-
-- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
-- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
-- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
 
 ## 📊 Optælling af vurderinger pr. niveau og tema
 
@@ -197,6 +175,12 @@ pie showData
   "Gul 51% (22)"  : 22
   "Rød 28% (12)"  : 12
 ```
+
+## 🏷️ Hvad betyder trafiklysene?
+
+- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
+- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
+- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
 
 ## 📋 Hvordan bruges optællingen?
 
