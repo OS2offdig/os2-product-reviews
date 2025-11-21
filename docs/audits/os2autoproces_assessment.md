@@ -1,12 +1,12 @@
 ---
-title: Evaluering af OS2autoproces
+title: Vurdering af OS2autoproces
 layout: default
 parent: Evalueringer
 ---
 
-# Evaluering af OS2-produkt: OS2autoproces
+# Vurdering af OS2-produkt: OS2autoproces
 
-> **📄 Dokumentinformation**  
+## 📄 Dokumentinformation  
 > **Evalueringsskabelon version:** 0.9  
 > **Dato for release:** [05-09-2025]  
 > **Audit made by:** Rasmus Frey, rasmus@os2.eu  
@@ -17,7 +17,9 @@ parent: Evalueringer
 
 OS2autoproces har et solidt fundament og leverer tydelig værdi gennem videndeling om automatisering af arbejdsgange i flere kommuner og regioner. Produktet er officielt forankret i OS2 og har styrker i licens, åben kode og etableret styregruppe. Revisionen peger dog på flere gule og røde områder inden for dokumentation, sikkerhed, transparens og governance. På den baggrund anbefales det at fastholde produktet på **niveau 1** i OS2’s governancemodel, med fokus på at modne de svagere områder og dermed skabe grundlag for et muligt løft til niveau 2.
 
-## 🌍 RELEVANS
+## 🔍 Vurdering af alle krav
+
+### 🌍 RELEVANS
 
 | #   | Niveau    | Krav                                             | Vurderingskriterie                                                                  | Vurdering     | Vurderingsgrundlag    |
 |-----|-----------|--------------------------------------------------|-------------------------------------------------------------------------------------|---------------|-----------------------|
@@ -26,7 +28,7 @@ OS2autoproces har et solidt fundament og leverer tydelig værdi gennem videndeli
 | R3  | 2         | Løsningen har fælles offentligt potentiale       | Standard: Kan skabe værdi og genbruges på tværs af myndigheder.                     | 🟢 | Flere kommuner og regioner anvender allerede produktet; potentiale for bred udbredelse. |
 | R4  | 3         | Ophæng til nationale strategier er til stede     | Standard: Understøtter fx digitaliseringsstrategi og fællesoffentlige mål.          | 🟡 | Understøtter effektivisering, men ingen dokumenteret kobling til nationale strategier. |
 
-## 🛠️ FORMKRAV
+### 🛠️ FORMKRAV
 
 | #    | Niveau    | Krav                                                                         | Vurderingskriterie                                                                               | Vurdering     | Vurderingsgrundlag    |
 |------|-----------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|---------------|-----------------------|
@@ -51,7 +53,7 @@ OS2autoproces har et solidt fundament og leverer tydelig værdi gennem videndeli
 | F21  | 3         | Politisk kommunikation er udarbejdet                                         | Standard: Materialer målrettet politikere og offentlighed er udarbejdet.                         | 🔴 | Ingen dedikeret politikerrettet materiale. |
 | F22  | 3         | Procesplan og procesansvar for drift er udarbejdet                           | Standard: Dokumenteret proces og ansvar ifm. idriftsættelse.                                     | 🔴 | Ikke dokumenteret offentligt. |
 
-## 🏛️ STRATEGISK SAMMENHÆNG
+### 🏛️ STRATEGISK SAMMENHÆNG
 
 | #   | Niveau    | Krav                                                       | Vurderingskriterie                                                    | Vurdering     | Vurderingsgrundlag    |
 |-----|-----------|------------------------------------------------------------|-----------------------------------------------------------------------|---------------|-----------------------|
@@ -61,7 +63,7 @@ OS2autoproces har et solidt fundament og leverer tydelig værdi gennem videndeli
 | S4  | 2         | Vision og strategi for produktet er udarbejdet             | Standard: Der findes en formel vision og strategi for produktet.      | 🟡 | Vision omtalt, men ikke detaljeret dokumenteret og der er ikke tegn på nogen strategi. |
 | S5  | 3         | Produktets overensstemmelse med OS2's vision og strategi   | Standard: Tydelig sammenhæng og beskrivelse.                          | 🟢 | Støtter åbenhed og fælles ejerskab. |
 
-## 👥 GOVERNANCE
+### 👥 GOVERNANCE
 
 | #    | Niveau    | Krav                                                       | Vurderingskriterie                                                            | Vurdering     | Vurderingsgrundlag    |
 |------|-----------|------------------------------------------------------------|-------------------------------------------------------------------------------|---------------|-----------------------|
@@ -80,35 +82,8 @@ OS2autoproces har et solidt fundament og leverer tydelig værdi gennem videndeli
 | G13  | 3         | Aftale sikrer økonomi til koordinering og videreudvikling  | Standard: Aftaler om finansiering er på plads og budget udarbejdet.           | 🟡 | Tilslutningsaftale findes, men økonomien virker begrænset da der ikke er tilstrækkelig med råderum til udvikling. |
 | G14  | 3         | Fagligt fællesskab bag løsningen                           | Standard: Aktivt fællesskab, fx brugerklub, forum eller andet netværk.        | 🔴 | Ingen tegn på aktivt fællesskab eller brugerklub og ingen formel struktur er beskrevet. |
 
----
 
-### ➡️ Antal krav fordelt på tema
-* Relevans: *4 krav* (R1–R4)
-* Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)
-* Strategisk sammenhæng: *5 krav* (S1–S5)
-* Governance: *14 krav* (G1–G14)
-* *I alt: 43 krav*
-
-### ➡️ Antal krav fordelt på niveau
-
-Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.
-
-* Sandkasse: *6 krav*
-* Niveau 1: *10 krav* (16 i alt)
-* Niveau 2: *19 krav* (35 i alt)
-* Niveau 3: *8 krav* (43 i alt)
-* *I alt: 43 krav*
-
----
-
-### 🏷️ Hvad betyder trafiklysene?
-- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
-- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
-- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
-
----
-
-### 📊 Optælling af vurderinger pr. niveau og tema
+## 📊 Optælling af vurderinger pr. niveau og tema
 
 | Niveau      | 🟢 Grøn  | 🟡 Gul   | 🔴 Rød   | I alt |
 |-------------|----------|---------|---------|---------|
@@ -130,6 +105,11 @@ Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse o
 <!--
 Nedenfor er mermaid kode til at vise procentfordeling i lagkagediagrammer.
 Bemærk at mermaid renderer efter størrelse på værdi. Så er Grøn størst vil det være pie1, men er rød størst vil det være pie1. Derfor skal du ændre på themeVariables så farvekoder bliver korrekte.
+
+Color codes used:
+Green: 008000
+Yellow: FFFF00
+Red: FF0000
 -->
 
 ```mermaid
@@ -186,9 +166,13 @@ pie showData
   "Rød 21%"  : 9
 ```
 
----
+## 🏷️ Hvad betyder trafiklysene?
 
-### 📋 Hvordan bruges optællingen?
+- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
+- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
+- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
+
+## 📋 Hvordan bruges optællingen?
 
 - **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.  
 - **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.   
@@ -201,7 +185,6 @@ Ud fra optællingen kan vi vurdere, hvor produktet står samlet set:
 - Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.
 - Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.
 
----
 
 ### 🔍 Overordnet vurdering
 
@@ -211,7 +194,6 @@ Samtidig peger vurderingen på flere udfordringer, især på **formkrav** og **g
 
 På den baggrund vurderes OS2autoproces at være placeret på **niveau 1 i OS2’s governancemodel**. Produktet har et godt fundament og viser potentiale til at løftes videre til niveau 2, hvis de identificerede forbedringsområder prioriteres.
 
----
 
 ### 📈 Anbefaling
 

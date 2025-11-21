@@ -1,12 +1,12 @@
 ---
-title: Evaluering af OS2-skadesøkonomi
+title: Vurdering af OS2-skadesøkonomi
 layout: default
 parent: Evalueringer
 ---
 
-# Evaluering af OS2-produkt: OS2-SkadesØkonomi
+# Vurdering af OS2-produkt: OS2-SkadesØkonomi
 
-> **📄 Dokumentinformation**  
+## 📄 Dokumentinformation  
 > **Evalueringsskabelon version:** 0.9  
 > **Dato for release:** 05-09-2025  
 > **Revision udført af:** Rasmus Frey, rasmus@os2.eu  
@@ -17,7 +17,9 @@ parent: Evalueringer
 
 OS2-SkadesØkonomi har et godt fundament og tydeligt potentiale, men står endnu ikke helt stærkt på niveau 1, da flere krav kun er delvist opfyldt. Produktet leverer værdi og er relevant for flere kommuner, men bør arbejde målrettet på at styrke dokumentation, sikkerhed og governance. Det anbefales at fastholde placeringen på niveau 1 og fokusere på at modne de gule områder til grønne for at gøre produktet mere robust.
 
-## 🌍 RELEVANS
+## 🔍 Vurdering af alle krav
+
+### 🌍 RELEVANS
 
 | #   | Niveau    | Krav                                             | Vurderingskriterie                                                                  | Vurdering     | Vurderingsgrundlag    |
 |-----|-----------|--------------------------------------------------|-------------------------------------------------------------------------------------|---------------|-----------------------|
@@ -26,7 +28,7 @@ OS2-SkadesØkonomi har et godt fundament og tydeligt potentiale, men står endnu
 | R3  | 2         | Løsningen har fælles offentligt potentiale       | Standard: Kan skabe værdi og genbruges på tværs af myndigheder.                     | 🟢 | Kan anvendes på tværs af kommuner og er et fælles produkt i OS2. |
 | R4  | 3         | Ophæng til nationale strategier er til stede     | Standard: Understøtter fx digitaliseringsstrategi og fællesoffentlige mål.          | 🟡 | Ingen tydelig kobling, men understøtter effektiv ressourceudnyttelse og klimatilpasning. |
 
-## 🛠️ FORMKRAV
+### 🛠️ FORMKRAV
 
 | #    | Niveau    | Krav                                                                         | Vurderingskriterie                                                                               | Vurdering     | Vurderingsgrundlag    |
 |------|-----------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|---------------|-----------------------|
@@ -51,7 +53,7 @@ OS2-SkadesØkonomi har et godt fundament og tydeligt potentiale, men står endnu
 | F21  | 3         | Politisk kommunikation er udarbejdet                                         | Standard: Materialer målrettet politikere og offentlighed er udarbejdet.                         | 🔴 | Brugercases findes, men ingen dedikeret politiker-onepager. |
 | F22  | 3         | Procesplan og procesansvar for drift er udarbejdet                           | Standard: Dokumenteret proces og ansvar ifm. idriftsættelse.                                     | 🔴 | Overordnet beskrevet, men ingen detaljeret offentlig plan. |
 
-## 🏛️ STRATEGISK SAMMENHÆNG
+### 🏛️ STRATEGISK SAMMENHÆNG
 
 | #   | Niveau    | Krav                                                       | Vurderingskriterie                                                    | Vurdering     | Vurderingsgrundlag    |
 |-----|-----------|------------------------------------------------------------|-----------------------------------------------------------------------|---------------|-----------------------|
@@ -61,7 +63,7 @@ OS2-SkadesØkonomi har et godt fundament og tydeligt potentiale, men står endnu
 | S4  | 2         | Vision og strategi for produktet er udarbejdet             | Standard: Der findes en formel vision og strategi for produktet.      | 🟡 | Vision nævnes, men uden detaljeret strategi. |
 | S5  | 3         | Produktets overensstemmelse med OS2's vision og strategi   | Standard: Tydelig sammenhæng og beskrivelse.                          | 🟢 | Løsningen bidrager til digital suverænitet og fælles ejerskab. |
 
-## 👥 GOVERNANCE
+### 👥 GOVERNANCE
 
 | #    | Niveau    | Krav                                                       | Vurderingskriterie                                                            | Vurdering     | Vurderingsgrundlag    |
 |------|-----------|------------------------------------------------------------|-------------------------------------------------------------------------------|---------------|-----------------------|
@@ -80,38 +82,8 @@ OS2-SkadesØkonomi har et godt fundament og tydeligt potentiale, men står endnu
 | G13  | 3         | Aftale sikrer økonomi til koordinering og videreudvikling  | Standard: Aftaler om finansiering er på plads og budget udarbejdet.           | 🟢 | Tilslutningsaftale og takstblad findes men der er ikke midler til koordinering. |
 | G14  | 3         | Fagligt fællesskab bag løsningen                           | Standard: Aktivt fællesskab, fx brugerklub, forum eller andet netværk.        | 🟡 | Der er aktivitet, men ingen klar struktur. |
 
----
 
-### ➡️ Antal krav fordelt på tema
-
-__Bemærk at under formkrav er F8 og F9 sammenlagt med F7__
-
-* Relevans: 4 krav (R1–R4)
-* Formkrav: 20 krav (F1–F22)
-* Strategisk sammenhæng: 5 krav (S1–S5)
-* Governance: 14 krav (G1–G14)
-* **I alt: 43 krav**
-
-### ➡️ Antal krav fordelt på niveau
-
-__Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.__
-
-* Sandkasse: 6 krav
-* Niveau 1: 10 krav
-* Niveau 2: 19 krav
-* Niveau 3: 8 krav
-* **I alt: 43 krav**
-
----
-
-### 🏷️ Hvad betyder trafiklysene?
-- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
-- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
-- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
-
----
-
-### 📊 Optælling af vurderinger pr. niveau
+## 📊 Optælling af vurderinger pr. niveau
 
 | Niveau      | 🟢 Grøn  | 🟡 Gul   | 🔴 Rød   | I alt |
 |-------------|----------|----------|---------|-------|
@@ -133,6 +105,11 @@ __Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse
 <!--
 Nedenfor er mermaid kode til at vise procentfordeling i lagkagediagrammer.
 Bemærk at mermaid renderer efter størrelse på værdi. Så er Grøn størst vil det være pie1, men er rød størst vil det være pie1. Derfor skal du ændre på themeVariables så farvekoder bliver korrekte.
+
+Color codes used:
+Green: 008000
+Yellow: FFFF00
+Red: FF0000
 -->
 
 ```mermaid
@@ -190,12 +167,16 @@ pie showData
   "Rød 20%"  : 9
 ```
 
----
+## 🏷️ Hvad betyder trafiklysene?
 
-### 📋 Hvordan bruges optællingen?
+- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
+- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
+- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
+
+## 📋 Hvordan bruges optællingen?
 
 - **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.  
-- **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.  
+- **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.   
 - **Niveau 2:** Drift, vedligehold og strategisk understøttelse – mange 🟡 eller 🔴 her peger på modenhedsproblemer.  
 - **Niveau 3:** Avanceret governance og fællesskab – et område, hvor ikke alle produkter nødvendigvis når i mål, men som er ønskværdigt for stabile og bæredygtige produkter.
 
@@ -205,13 +186,11 @@ Ud fra optællingen kan vi vurdere, hvor produktet står samlet set:
 - Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.
 - Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.
 
----
 
 ### 🔍 Overordnet vurdering
 
 OS2-SkadesØkonomi har et godt fundament med åben kildekode, organisering og en officiel plads i OS2-porteføljen. Der er dokumentation af formål og værdi, og løsningen bruges i flere kommuner. Samtidig viser revisionen, at der er et relativt stort antal gule vurderinger på både sandkasse- og niveau 1-krav. Det indikerer, at produktet ikke står helt stærkt på niveau 1 endnu, men snarere befinder sig i en fase, hvor fundamentet er lagt, og potentialet er tydeligt.
 
----
 
 ### 📈 Anbefaling
 
