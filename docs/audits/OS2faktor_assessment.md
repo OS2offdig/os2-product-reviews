@@ -1,5 +1,5 @@
 ---
-title: Vurdering af OS2faktor
+title: OS2faktor
 layout: default
 parent: Evalueringer
 ---

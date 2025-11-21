@@ -51,8 +51,8 @@ subgraph R[Styregruppespor]
 direction TB
 C2[Evaluering fremlægges<br/>for produktets styregruppe]:::sg
 D2[Styregruppen giver feedback<br/>og peger på mangler]:::sg
-E2[Sekretariatet samarbejder om<br/>forbedringer og årshjul]:::sg
-F2[Opdateret dokumentation og<br/>governancerapport]:::sgOut
+E2[Sekretariatet samarbejder<br/>om forbedringer og årshjul]:::sg
+F2[Opdateret dokumentation<br/>og governancerapport]:::sgOut
 end
 
 %% --- Flows for sporene ---
@@ -78,6 +78,7 @@ G[Ny evaluering<br/>i årshjulet]:::loop
 F1 --> G
 F2 --> G
 G --> B
+F2 --> A
 ```
 
 ## Tilgængelige evalueringer

@@ -1,5 +1,5 @@
 ---
-title: Vurdering af OS2autoproces
+title: OS2autoproces
 layout: default
 parent: Evalueringer
 ---

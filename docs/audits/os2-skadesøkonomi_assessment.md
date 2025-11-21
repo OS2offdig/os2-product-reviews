@@ -1,5 +1,5 @@
 ---
-title: Vurdering af OS2-skadesøkonomi
+title: OS2-skadesøkonomi
 layout: default
 parent: Evalueringer
 ---
