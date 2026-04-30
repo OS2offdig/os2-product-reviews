@@ -30,59 +30,57 @@ classDef sg fill:#DFF4D8,stroke:#3FA34D,color:#111;
 classDef sgOut fill:#B3E6A5,stroke:#3FA34D,color:#111;
 
 classDef loop fill:#EFEFEF,stroke:#666,color:#111;
+classDef invisible fill:none,stroke:none;
 
+%% --- Top ---
+A1[Projekt/produkt opdaterer<br/>selvevaluering og governancerapport]:::start
+A2[Projekt/produkt afholder dialog<br/>med sekretariatet]:::start
+B[Sekretariatet gennemfører evaluering<br/>ud fra opdateret selvevaluering]:::eval
 
-%% --- Top: fælles start ---
-A[Med afsæt i offentliggjort<br/>materiale og dokumentation]:::start
-B[Sekretariatet gennemfører evaluering<br/>ud fra vurderingsgrundlaget]:::eval
+A1 --> A2 --> B
 
-A --> B
+%% --- Layout control ---
+X(( )):::invisible
+B --> X
 
-%% --- Lanes via subgraphs ---
-subgraph L[Bestyrelsesspor]
+%% --- Lanes ---
+subgraph L[Styregruppespor]
 direction TB
-C1[Evaluering fremlægges<br/>for OS2's bestyrelse]:::board
-D1[Bestyrelsen vurderer<br/>generelle tiltag]:::board
-E1[Sekretariatet leder<br/>tiltag fra bestyrelsen]:::board
-F1[Opdateret produktniveau og<br/>praksis på fælles niveau]:::boardOut
+C1[Evaluering fremlægges<br/>for produktets styregruppe]:::sg
+D1[Styregruppen giver feedback<br/>og peger på mangler]:::sg
+E1[Sekretariatet samarbejder<br/>om forbedringer og årshjul]:::sg
+F1[Opdateret dokumentation<br/>og governancerapport]:::sgOut
 end
 
-subgraph R[Styregruppespor]
+subgraph R[Bestyrelsesspor]
 direction TB
-C2[Evaluering fremlægges<br/>for produktets styregruppe]:::sg
-D2[Styregruppen giver feedback<br/>og peger på mangler]:::sg
-E2[Sekretariatet samarbejder<br/>om forbedringer og årshjul]:::sg
-F2[Opdateret dokumentation<br/>og governancerapport]:::sgOut
+C2[Evaluering fremlægges<br/>for OS2's bestyrelse]:::board
+D2[Bestyrelsen vurderer<br/>generelle tiltag]:::board
+E2[Sekretariatet leder<br/>tiltag fra bestyrelsen]:::board
+F2[Opdateret produktniveau og<br/>praksis på fælles niveau]:::boardOut
 end
 
-%% --- Flows for sporene ---
-B --> C1
-B --> C2
+%% --- Force layout ---
+X --> C1
+X --> C2
 
-C1 --> D1
-C2 --> D2
-
-D1 --> E1
-D2 --> E2
-
-E1 --> F1
-E2 --> F2
+%% --- Flows ---
+C1 --> D1 --> E1 --> F1
+C2 --> D2 --> E2 --> F2
 
 %% --- Cross-links ---
 D1 <---> D2
 E1 <---> E2
 
-%% --- Bottom loop ---
-G[Ny evaluering<br/>i årshjulet]:::loop
+%% --- Loop ---
+G[Årshjul udløser<br/>ny selvevaluering]:::loop
 
 F1 --> G
 F2 --> G
-G --> B
-F2 --> A
+G --> A1
+F1 --> A1
 ```
 
 ## Tilgængelige evalueringer
 
-- [OS2-SkadesØkonomi](./docs/os2-skadesøkonomi_assessment)  
-- [OS2autoproces](./docs/os2autoproces_assessment)  
-- [OS2faktor](./docs/os2faktor_assessment)  
+Ingen godkendt evalueringer.
