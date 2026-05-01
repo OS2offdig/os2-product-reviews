@@ -7,7 +7,9 @@ nav_order: 2
 
 Udfyld status for hvert krav og tilføj dokumentation. Når du er færdig, kan du eksportere svarene til JSON.
 
-<div id="app"></div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<div id="app" class="my-4"></div>
 
 <script>
 const kravData = {
@@ -74,29 +76,24 @@ function render() {
   const app = document.getElementById("app");
   app.innerHTML = `
     <style>
-      .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:16px}
-      .meta input{width:100%}
-      table{width:100%;border-collapse:collapse;margin:16px 0;table-layout:fixed}
-      th,td{border:1px solid #ddd;padding:8px;vertical-align:top}
-      th{background:#f6f6f6}
-      th:nth-child(1), td:nth-child(1){width:6%}
-      th:nth-child(2), td:nth-child(2){width:19%}
-      th:nth-child(3), td:nth-child(3){width:10%}
-      th:nth-child(4), td:nth-child(4){width:27%}
-      th:nth-child(5), td:nth-child(5){width:12%}
-      th:nth-child(6), td:nth-child(6){width:26%}
-      select, textarea, input{width:100%}
-      textarea{min-height:96px}
-      .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+      .checklist-table{table-layout:fixed}
+      .checklist-table th,.checklist-table td{vertical-align:top}
+      .checklist-table th:nth-child(1), .checklist-table td:nth-child(1){width:6%}
+      .checklist-table th:nth-child(2), .checklist-table td:nth-child(2){width:19%}
+      .checklist-table th:nth-child(3), .checklist-table td:nth-child(3){width:10%}
+      .checklist-table th:nth-child(4), .checklist-table td:nth-child(4){width:27%}
+      .checklist-table th:nth-child(5), .checklist-table td:nth-child(5){width:12%}
+      .checklist-table th:nth-child(6), .checklist-table td:nth-child(6){width:26%}
+      .doc-textarea{min-height:110px}
     </style>
-    <div class="meta">
-      <label>Produktnavn<input id="productName" placeholder="Fx OS2 Produkt X"></label>
-      <label>Udfyldt af<input id="filledBy" placeholder="Navn/organisation"></label>
-      <label>Dato<input id="filledDate" type="date"></label>
+    <div class="row g-3 mb-3">
+      <div class="col-12 col-md-4"><label class="form-label">Produktnavn</label><input class="form-control" id="productName" placeholder="Fx OS2 Produkt X"></div>
+      <div class="col-12 col-md-4"><label class="form-label">Udfyldt af</label><input class="form-control" id="filledBy" placeholder="Navn/organisation"></div>
+      <div class="col-12 col-md-4"><label class="form-label">Dato</label><input class="form-control" id="filledDate" type="date"></div>
     </div>
     ${Object.entries(kravData).map(([section, rows]) => `
       <h2>${sectionTitle(section)}</h2>
-      <table>
+      <div class="table-responsive"><table class="table table-striped table-bordered align-top checklist-table">
         <thead><tr><th>#</th><th>Krav</th><th>Produktniveau</th><th>Retningslinjer</th><th>Efterlevet?</th><th>Dokumentation</th></tr></thead>
         <tbody>
           ${rows.map(([id, krav, niveau, guide]) => `
@@ -106,21 +103,21 @@ function render() {
               <td>${niveau}</td>
               <td>${guide}</td>
               <td>
-                <select data-id="${id}" data-field="status">
+                <select class="form-select" data-id="${id}" data-field="status">
                   <option value="">Vælg</option>
                   ${statusChoices.map(s => `<option value="${s}">${s}</option>`).join("")}
                 </select>
               </td>
-              <td><textarea data-id="${id}" data-field="dokumentation" placeholder="Tekst, links eller henvisninger"></textarea></td>
+              <td><textarea class="form-control doc-textarea" data-id="${id}" data-field="dokumentation" placeholder="Tekst, links eller henvisninger"></textarea></td>
             </tr>
           `).join("")}
         </tbody>
-      </table>
+      </table></div>
     `).join("")}
-    <div class="actions">
-      <button id="saveLocal">Gem lokalt</button>
-      <button id="loadLocal">Indlæs lokalt</button>
-      <button id="exportJson">Eksportér JSON</button>
+    <div class="d-flex gap-2 flex-wrap mt-3">
+      <button class="btn btn-outline-secondary" id="saveLocal" type="button">Gem lokalt</button>
+      <button class="btn btn-outline-secondary" id="loadLocal" type="button">Indlæs lokalt</button>
+      <button class="btn btn-primary" id="exportJson" type="button">Eksportér JSON</button>
     </div>
   `;
 
