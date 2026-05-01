@@ -28,7 +28,9 @@ jobs:
           SAFE_NAME=$(echo "${{ inputs.product_name }}" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9._-]/-/g' | sed 's/-\+/-/g' | sed 's/^-//;s/-$//')
           TS=$(date -u +"%Y%m%dT%H%M%SZ")
           FILE="docs/self-assessment/${SAFE_NAME:-os2-produkt}-${TS}.json"
-          printf '%s' '${{ inputs.checklist_json }}' > "$FILE"
+          cat > "$FILE" << 'EOF'
+          ${{ inputs.checklist_json }}
+          EOF
           echo "Saved $FILE"
 
       - name: Commit og push
