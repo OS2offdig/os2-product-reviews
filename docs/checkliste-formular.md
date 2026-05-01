@@ -140,6 +140,8 @@ function render() {
     <div class="d-flex gap-2 flex-wrap mt-3">
       <button class="btn btn-outline-secondary" id="saveLocal" type="button">Gem lokalt</button>
       <button class="btn btn-outline-secondary" id="loadLocal" type="button">Indlæs lokalt</button>
+      <button class="btn btn-outline-secondary" id="importJson" type="button">Importér JSON</button>
+      <input id="importJsonFile" type="file" accept=".json,application/json" class="d-none">
       <button class="btn btn-primary" id="exportJson" type="button">Eksportér JSON</button>
       <button class="btn btn-success d-none" id="saveGithub" type="button">Gem i GitHub</button>
     </div>
@@ -203,6 +205,29 @@ function render() {
     a.download = `${product}-checkliste.json`;
     a.click();
     URL.revokeObjectURL(url);
+  };
+  
+  document.getElementById("importJson").onclick = () => {
+    document.getElementById("importJsonFile").click();
+  };
+
+  document.getElementById("importJsonFile").onchange = async (event) => {
+    const file = event.target.files && event.target.files[0];
+    if (!file) return;
+    try {
+      const txt = await file.text();
+      const data = JSON.parse(txt);
+      if (!data || typeof data !== "object" || !Array.isArray(data.krav)) {
+        throw new Error("Ugyldigt format");
+      }
+      populate(data);
+      alert("JSON importeret. Formularen er udfyldt med tidligere data.");
+    } catch (err) {
+      console.error(err);
+      alert("Kunne ikke importere JSON-filen. Kontroller at filen er en gyldig eksport.");
+    } finally {
+      event.target.value = "";
+    }
   };
 
   const ghFields = ["ghOwner", "ghRepo", "ghToken"];
