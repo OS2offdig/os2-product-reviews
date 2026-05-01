@@ -1,11 +1,10 @@
 ---
-title: OS2 Produktcheckliste (formular)
+title: OS2 Selvevaluering (formular)
+layout: default
 nav_order: 2
+has_children: false
+has_toc: false
 ---
-
-# OS2 Produktcheckliste
-
-Udfyld status for hvert krav og tilføj dokumentation. Når du er færdig, kan du eksportere svarene til JSON.
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -87,10 +86,16 @@ function render() {
       .doc-textarea{min-height:110px}
     </style>
     <div class="row g-3 mb-3">
-      <div class="col-12"><div class="alert alert-info mb-0">Valgfrit: Udfyld GitHub-oplysninger for at gemme JSON direkte i repo under <code>docs/self-assessment/</code>.</div></div>
+      # OS2 Selvevaluering
+      Udfyld status for hvert krav og tilføj dokumentation. Når du er færdig, kan du eksportere svarene til JSON eller gemme direkte i et GitHub repo. JSON eller link til GitHub repo sendes til sekretariatet på os2@os2.eu.
+    </div>
+    <div class="row g-3 mb-3">
       <div class="col-12 col-md-4"><label class="form-label">Produktnavn</label><input class="form-control" id="productName" placeholder="Fx OS2 Produkt X"></div>
       <div class="col-12 col-md-4"><label class="form-label">Udfyldt af</label><input class="form-control" id="filledBy" placeholder="Navn/organisation"></div>
       <div class="col-12 col-md-4"><label class="form-label">Dato</label><input class="form-control" id="filledDate" type="date"></div>
+    </div>
+    <div class="row g-3 mb-3">
+      <div class="col-12"><div class="alert alert-info mb-0">Valgfrit (ekspert): Udfyld GitHub-oplysninger for at gemme JSON direkte i repo under <code>docs/self-assessment/</code>.</div></div>
       <div class="col-12 col-md-4"><label class="form-label">GitHub owner</label><input class="form-control" id="ghOwner" placeholder="fx OS2offdig"></div>
       <div class="col-12 col-md-4"><label class="form-label">GitHub repo</label><input class="form-control" id="ghRepo" placeholder="fx os2-product-audits"></div>
       <div class="col-12 col-md-4"><label class="form-label">Branch</label><input class="form-control" id="ghRef" value="main"></div>
