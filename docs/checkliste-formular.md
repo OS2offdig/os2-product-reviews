@@ -1,5 +1,5 @@
 ---
-title: OS2 Selvevaluering (formular)
+title: OS2 selvevaluering (formular)
 layout: default
 nav_order: 2
 has_children: false
@@ -86,21 +86,21 @@ function render() {
       .doc-textarea{min-height:110px}
     </style>
     <div class="row g-3 mb-3">
-      # OS2 Selvevaluering
-      Udfyld status for hvert krav og tilføj dokumentation. Når du er færdig, kan du eksportere svarene til JSON eller gemme direkte i et GitHub repo. JSON eller link til GitHub repo sendes til sekretariatet på os2@os2.eu.
+      <h1>OS2 selvevaluering</h1>
+      <p>Udfyld status for hvert krav og tilføj dokumentation. Når du er færdig, kan du eksportere svarene til JSON eller gemme direkte i et GitHub repo. Send JSON filen eller link til GitHub repo til sekretariatet på os2@os2.eu.</p>
     </div>
     <div class="row g-3 mb-3">
       <div class="col-12 col-md-4"><label class="form-label">Produktnavn</label><input class="form-control" id="productName" placeholder="Fx OS2 Produkt X"></div>
       <div class="col-12 col-md-4"><label class="form-label">Udfyldt af</label><input class="form-control" id="filledBy" placeholder="Navn/organisation"></div>
       <div class="col-12 col-md-4"><label class="form-label">Dato</label><input class="form-control" id="filledDate" type="date"></div>
     </div>
-    <div class="row g-3 mb-3">
-      <div class="col-12"><div class="alert alert-info mb-0">Valgfrit (ekspert): Udfyld GitHub-oplysninger for at gemme JSON direkte i repo under <code>docs/self-assessment/</code>.</div></div>
+    <div class="row g-3 mb-3"><div class="alert alert-info mb-0">
+      <div class="col-12">Valgfrit (ekspert): Udfyld GitHub-oplysninger for at gemme JSON direkte i repo under <code>docs/self-assessment/</code>.</div>
       <div class="col-12 col-md-4"><label class="form-label">GitHub owner</label><input class="form-control" id="ghOwner" placeholder="fx OS2offdig"></div>
       <div class="col-12 col-md-4"><label class="form-label">GitHub repo</label><input class="form-control" id="ghRepo" placeholder="fx os2-product-audits"></div>
       <div class="col-12 col-md-4"><label class="form-label">Branch</label><input class="form-control" id="ghRef" value="main"></div>
       <div class="col-12"><label class="form-label">GitHub token (fine-grained PAT med Actions:write + Contents:write)</label><input class="form-control" id="ghToken" type="password" placeholder="ghp_... (gemmes ikke automatisk)"></div>
-    </div>
+    </div></div>
     ${Object.entries(kravData).map(([section, rows]) => `
       <h2>${sectionTitle(section)}</h2>
       <div class="table-responsive"><table class="table table-striped table-bordered align-top checklist-table">
