@@ -76,11 +76,17 @@ function render() {
     <style>
       .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:16px}
       .meta input{width:100%}
-      table{width:100%;border-collapse:collapse;margin:16px 0}
+      table{width:100%;border-collapse:collapse;margin:16px 0;table-layout:fixed}
       th,td{border:1px solid #ddd;padding:8px;vertical-align:top}
       th{background:#f6f6f6}
+      th:nth-child(1), td:nth-child(1){width:6%}
+      th:nth-child(2), td:nth-child(2){width:19%}
+      th:nth-child(3), td:nth-child(3){width:10%}
+      th:nth-child(4), td:nth-child(4){width:27%}
+      th:nth-child(5), td:nth-child(5){width:12%}
+      th:nth-child(6), td:nth-child(6){width:26%}
       select, textarea, input{width:100%}
-      textarea{min-height:72px}
+      textarea{min-height:96px}
       .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
     </style>
     <div class="meta">
