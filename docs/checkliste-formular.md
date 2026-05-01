@@ -97,37 +97,25 @@ function render() {
       <div class="col-12 col-md-4"><label class="form-label">Udfyldt af</label><input class="form-control" id="filledBy" placeholder="Navn/organisation"></div>
       <div class="col-12 col-md-4"><label class="form-label">Dato</label><input class="form-control" id="filledDate" type="date"></div>
     </div>
-    <div class="accordion mb-3" id="githubAccordion">
-      <div class="accordion-item border-info">
-        <h2 class="accordion-header" id="headingGithub">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGithub" aria-expanded="false" aria-controls="collapseGithub">
-            GitHub (for eksperten)
-          </button>
-        </h2>
-        <div id="collapseGithub" class="accordion-collapse collapse" aria-labelledby="headingGithub" data-bs-parent="#githubAccordion">
-          <div class="accordion-body alert alert-info mb-0">
-            <div class="row g-3">
-              <div class="col-12">Valgfrit: Udfyld GitHub-oplysninger for at gemme JSON direkte i repo under <code>docs/self-assessment/</code>.</div>
-              <div class="col-12 col-md-4"><label class="form-label">GitHub owner</label><input class="form-control" id="ghOwner" placeholder="fx OS2offdig"></div>
-              <div class="col-12 col-md-4"><label class="form-label">GitHub repo</label><input class="form-control" id="ghRepo" placeholder="fx os2-product-audits"></div>
-              <div class="col-12 col-md-4"><label class="form-label">Branch</label><input class="form-control" id="ghRef" value="main"></div>
-              <div class="col-12"><label class="form-label">GitHub token (fine-grained PAT med Actions:write + Contents:write)</label><input class="form-control" id="ghToken" type="password" placeholder="ghp_... (gemmes ikke automatisk)"></div>
-            </div>
-          </div>
+    <div class="mb-3">
+      <div class="mb-2">
+        <button class="btn btn-link p-0 text-decoration-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGithub" aria-expanded="false" aria-controls="collapseGithub">
+          GitHub (for eksperten)
+        </button>
+      </div>
+      <div id="collapseGithub" class="collapse">
+        <div class="row g-3">
+          <div class="col-12">Valgfrit: Udfyld GitHub-oplysninger for at gemme JSON direkte i repo under <code>docs/self-assessment/</code>.</div>
+          <div class="col-12 col-md-4"><label class="form-label">GitHub owner</label><input class="form-control" id="ghOwner" placeholder="fx OS2offdig"></div>
+          <div class="col-12 col-md-4"><label class="form-label">GitHub repo</label><input class="form-control" id="ghRepo" placeholder="fx os2-product-audits"></div>
+          <div class="col-12 col-md-4"><label class="form-label">Branch</label><input class="form-control" id="ghRef" value="main"></div>
+          <div class="col-12"><label class="form-label">GitHub token (fine-grained PAT med Actions:write + Contents:write)</label><input class="form-control" id="ghToken" type="password" placeholder="ghp_... (gemmes ikke automatisk)"></div>
         </div>
       </div>
     </div>
-    <div class="accordion" id="sectionsAccordion">
-    ${Object.entries(kravData).map(([section, rows], idx) => `
-      <div class="accordion-item mb-2">
-      <h2 class="accordion-header" id="heading-${section}">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${section}" aria-expanded="true" aria-controls="collapse-${section}">
-          ${sectionTitle(section)}
-        </button>
-      </h2>
-      <div id="collapse-${section}" class="accordion-collapse collapse show" aria-labelledby="heading-${section}" data-bs-parent="">
-      <div class="accordion-body">
-      <div class="table-responsive"><table class="table table-striped table-bordered align-top checklist-table mb-0">
+    ${Object.entries(kravData).map(([section, rows]) => `
+      <h2>${sectionTitle(section)}</h2>
+      <div class="table-responsive"><table class="table table-striped table-bordered align-top checklist-table">
         <thead><tr><th>#</th><th>Krav</th><th>Produktniveau</th><th>Retningslinjer</th><th>Efterlevet?</th><th>Dokumentation</th></tr></thead>
         <tbody>
           ${rows.map(([id, krav, niveau, guide]) => `
