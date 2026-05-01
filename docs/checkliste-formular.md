@@ -9,7 +9,7 @@ Udfyld status for hvert krav og tilføj dokumentation. Når du er færdig, kan d
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<div id="app" class="my-4"></div>
+<div id="app" class="container-xl my-4 px-3 px-md-4"></div>
 
 <script>
 const kravData = {
@@ -87,9 +87,14 @@ function render() {
       .doc-textarea{min-height:110px}
     </style>
     <div class="row g-3 mb-3">
+      <div class="col-12"><div class="alert alert-info mb-0">Valgfrit: Udfyld GitHub-oplysninger for at gemme JSON direkte i repo under <code>docs/self-assessment/</code>.</div></div>
       <div class="col-12 col-md-4"><label class="form-label">Produktnavn</label><input class="form-control" id="productName" placeholder="Fx OS2 Produkt X"></div>
       <div class="col-12 col-md-4"><label class="form-label">Udfyldt af</label><input class="form-control" id="filledBy" placeholder="Navn/organisation"></div>
       <div class="col-12 col-md-4"><label class="form-label">Dato</label><input class="form-control" id="filledDate" type="date"></div>
+      <div class="col-12 col-md-4"><label class="form-label">GitHub owner</label><input class="form-control" id="ghOwner" placeholder="fx OS2offdig"></div>
+      <div class="col-12 col-md-4"><label class="form-label">GitHub repo</label><input class="form-control" id="ghRepo" placeholder="fx os2-product-audits"></div>
+      <div class="col-12 col-md-4"><label class="form-label">Branch</label><input class="form-control" id="ghRef" value="main"></div>
+      <div class="col-12"><label class="form-label">GitHub token (fine-grained PAT med Actions:write + Contents:write)</label><input class="form-control" id="ghToken" type="password" placeholder="ghp_... (gemmes ikke automatisk)"></div>
     </div>
     ${Object.entries(kravData).map(([section, rows]) => `
       <h2>${sectionTitle(section)}</h2>
@@ -118,6 +123,7 @@ function render() {
       <button class="btn btn-outline-secondary" id="saveLocal" type="button">Gem lokalt</button>
       <button class="btn btn-outline-secondary" id="loadLocal" type="button">Indlæs lokalt</button>
       <button class="btn btn-primary" id="exportJson" type="button">Eksportér JSON</button>
+      <button class="btn btn-success" id="saveGithub" type="button">Gem i GitHub</button>
     </div>
   `;
 
@@ -130,6 +136,43 @@ function render() {
     const raw = localStorage.getItem("os2ChecklistDraft");
     if (!raw) return alert("Ingen gemt kladde fundet.");
     populate(JSON.parse(raw));
+  };
+
+
+
+  document.getElementById("saveGithub").onclick = async () => {
+    const owner = document.getElementById("ghOwner").value.trim();
+    const repo = document.getElementById("ghRepo").value.trim();
+    const ref = document.getElementById("ghRef").value.trim() || "main";
+    const token = document.getElementById("ghToken").value.trim();
+    if (!owner || !repo || !token) return alert("Udfyld GitHub owner, repo og token først.");
+
+    const data = collectData();
+    const payload = {
+      ref,
+      inputs: {
+        product_name: data.productName || "os2-produkt",
+        checklist_json: JSON.stringify(data)
+      }
+    };
+
+    const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/save-self-assessment.yml/dispatches`;
+    const res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Accept": "application/vnd.github+json",
+        "Authorization": `Bearer ${token}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (!res.ok) {
+      const errTxt = await res.text();
+      console.error(errTxt);
+      return alert(`Kunne ikke gemme i GitHub (HTTP ${res.status}).`);
+    }
+    alert("Workflow startet. JSON gemmes i docs/self-assessment/ i repoet.");
   };
 
   document.getElementById("exportJson").onclick = () => {
