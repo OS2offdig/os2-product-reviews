@@ -134,8 +134,9 @@ function render() {
             </tr>
           `).join("")}
         </tbody>
-      </table></div>
+      </table></div></div></div></div>
     `).join("")}
+    </div>
     <div class="d-flex gap-2 flex-wrap mt-3">
       <button class="btn btn-outline-secondary" id="saveLocal" type="button">Gem lokalt</button>
       <button class="btn btn-outline-secondary" id="loadLocal" type="button">Indlæs lokalt</button>
