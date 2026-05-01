@@ -1,0 +1,40 @@
+name: Save self assessment JSON
+
+on:
+  workflow_dispatch:
+    inputs:
+      product_name:
+        description: Produktnavn
+        required: true
+        type: string
+      checklist_json:
+        description: JSON payload
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  save-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Gem JSON i self assessment mappe
+        run: |
+          mkdir -p docs/self-assessment
+          SAFE_NAME=$(echo "${{ inputs.product_name }}" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9._-]/-/g' | sed 's/-\+/-/g' | sed 's/^-//;s/-$//')
+          TS=$(date -u +"%Y%m%dT%H%M%SZ")
+          FILE="docs/self-assessment/${SAFE_NAME:-os2-produkt}-${TS}.json"
+          printf '%s' "${{ inputs.checklist_json }}" > "$FILE"
+          echo "Saved $FILE"
+
+      - name: Commit og push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/self-assessment/*.json
+          git commit -m "Tilføj self assessment JSON" || echo "Ingen ændringer"
+          git push
