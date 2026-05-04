@@ -1,9 +1,3 @@
----
-title: OS2autoproces
-layout: default
-parent: Evalueringer
----
-
 # Vurdering af OS2-produkt: OS2autoproces
 
 ## 📄 Dokumentinformation  

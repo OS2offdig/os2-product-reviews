@@ -1,7 +1,7 @@
 ---
 title: OS2 selvevaluering (formular)
 layout: default
-nav_order: 2
+nav_order: 50
 has_children: false
 has_toc: false
 ---

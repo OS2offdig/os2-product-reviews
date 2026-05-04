@@ -1,9 +1,3 @@
----
-title: OS2-skadesøkonomi
-layout: default
-parent: Evalueringer
----
-
 # Vurdering af OS2-produkt: OS2-SkadesØkonomi
 
 ## 📄 Dokumentinformation  

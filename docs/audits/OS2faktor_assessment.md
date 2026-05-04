@@ -1,9 +1,3 @@
----
-title: OS2faktor
-layout: default
-parent: Evalueringer
----
-
 # Vurdering af OS2-produktet: **OS2faktor**
 
 ## 📄 Dokumentinformation  

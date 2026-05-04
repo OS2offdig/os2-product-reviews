@@ -6,13 +6,23 @@ nav_order: 1
 
 # OS2-produkt evalueringer og vurderinger
 
-Version v0.0.3 – Udgivet 18. november 2025
+Version v0.1.0 – Udgivet 4. maj 2026
 {: .label .label-green }  
 
-Som en del af OS2’s løbende kvalitetssikring udarbejdes der regelmæssige vurderinger af alle produkter i porteføljen.
-Evalueringer bygger på produkternes egen governance-rapport og den dokumentation, der er tilgængelig i OS2-fællesskabet. Formålet er at skabe gennemsigtighed, understøtte modenhedsarbejdet og sikre, at hvert produkt placeres på rette OS2 produktniveau samt efterlever OS2’s principper for åbenhed, fælles ejerskab og professionel forvaltning.
+Som en del af OS2’s kvalitetssikring offentliggøres der to gange årligt evalueringer af alle produkter og projekter i porteføljen.
 
-Her finder du de seneste produkt evalueringer, -vurderinger og dokumentation for produktniveau.
+Evalueringerne har til formål at skabe gennemsigtighed i fællesskabet, tydeliggøre det enkelte produkts placering på OS2’s produktniveauer og understøtte en løbende udvikling af kvalitet, organisering og forvaltning.
+
+Hver evaluering baserer sig på produktets egen selvevaluering samt den dokumentation, der er tilgængelig i OS2-fællesskabet. Det er derfor en forudsætning, at alle produkter gennemfører og opdaterer en selvevaluering minimum to gange årligt i dialog med sekretariatet, som herefter koordinerer offentliggørelsen af den samlede evalueringsrapport.
+
+Evalueringerne fungerer både som status og som arbejdsredskab. De peger på styrker og udviklingsområder i det enkelte produkt og kan samtidig danne grundlag for prioriteringer og opfølgning fra både produktorganisationen og OS2’s bestyrelse.
+
+På denne side finder du:
+
+* en vejledning til selvevaluering og evaluering.
+* en procesbeskrivelse for udarbejdelse og offentliggørelse.
+* en formular til at oprette og vedligeholde selvevaluering.
+* mulighed for at generere en kladde til evalueringsrapport baseret på indtastede data.
 
 ## Hvordan vurderes?
 

@@ -1,13 +1,30 @@
+---
+title: Skabelon til evalueringsrapport
+layout: default
+parent: Vurderingsgrundlag
+nav_order: 10
+has_children: false
+has_toc: false
+---
+
 # Evaluering af OS2-produkt: [Produktnavn]
 
 > **📄 Dokumentinformation**  
 > **Evalueringsskabelon version:** 0.9.1  
 > **Dato for udfyldelse:** [dd-mm-yyyy]  
-> **Audit made by:** [Navn]  
+> **Evaluering lavet af:** [Navn]  
 > **GitHub organisation:** [indsæt link til github organisation/repo]  
 
 ## 📝 Resumé
 [Her skrives et meget kort resumé af den samlede vurdering og anbefaling.]
+
+## 🔍 Overordnet vurdering
+[Her skrives en samlet vurdering: hvilke styrker, hvilke forbedringspunkter, anbefalinger til næste skridt.]
+
+## 📈 Anbefaling
+[Her skrives et overblik over anbefalinger - gerne i punktform]
+
+---
 
 ## 🌍 RELEVANS
 
@@ -74,33 +91,7 @@
 
 ---
 
-### ➡️ Antal krav fordelt på tema
-* Relevans: *4 krav* (R1–R4)
-* Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)
-* Strategisk sammenhæng: *5 krav* (S1–S5)
-* Governance: *14 krav* (G1–G14)
-* *I alt: 43 krav*
-
-### ➡️ Antal krav fordelt på niveau
-
-Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.
-
-* Sandkasse: *6 krav*
-* Niveau 1: *10 krav* (16 i alt)
-* Niveau 2: *19 krav* (35 i alt)
-* Niveau 3: *8 krav* (43 i alt)
-* *I alt: 43 krav*
-
----
-
-### 🏷️ Hvad betyder trafiklysene?
-- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
-- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
-- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
-
----
-
-### 📊 Optælling af vurderinger pr. niveau og tema
+## 📊 Optælling af vurderinger pr. niveau og tema
 
 | Niveau      | 🟢 Grøn              | 🟡 Gul               | 🔴 Rød               |
 |-------------|----------------------|----------------------|-----------------------|
@@ -181,7 +172,12 @@ pie showData
 
 ---
 
-### 📋 Hvordan bruges optællingen?
+## 🏷️ Hvad betyder trafiklysene?
+- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
+- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
+- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
+
+## 📋 Hvordan bruges optællingen?
 
 - **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.  
 - **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.   
@@ -194,12 +190,21 @@ Ud fra optællingen kan vi vurdere, hvor produktet står samlet set:
 - Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.
 - Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.
 
----
+## ➡️ Hvor mange krav er der?
 
-### 🔍 Overordnet vurdering
-[Her skrives en samlet vurdering: hvilke styrker, hvilke forbedringspunkter, anbefalinger til næste skridt.]
+### ➡️ Antal krav fordelt på tema
+* Relevans: *4 krav* (R1–R4)
+* Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)
+* Strategisk sammenhæng: *5 krav* (S1–S5)
+* Governance: *14 krav* (G1–G14)
+* *I alt: 43 krav*
 
----
+### ➡️ Antal krav fordelt på niveau
 
-### 📈 Anbefaling
-[Her skrives et overblik over anbefalinger - gerne i punktform]
+Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.
+
+* Sandkasse: *6 krav*
+* Niveau 1: *10 krav* (16 i alt)
+* Niveau 2: *19 krav* (35 i alt)
+* Niveau 3: *8 krav* (43 i alt)
+* *I alt: 43 krav*
