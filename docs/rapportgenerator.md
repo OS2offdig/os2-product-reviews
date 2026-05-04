@@ -66,7 +66,8 @@ const levelOrder = {"Sandkasse":0,"1":1,"2":2,"3":3};
 function mapStatus(v) {
   if (v === "Ja") return { emoji: "🟢", key: "green" };
   if (v === "Nej") return { emoji: "🔴", key: "red" };
-  return { emoji: "🟡", key: "yellow" };
+  if (v === "Ved ikke") return { emoji: "🟡", key: "yellow" };
+  return { emoji: "🔴", key: "red" };
 }
 
 function esc(s){ return String(s||"").replace(/\|/g, "\\|").replace(/\n/g,"<br/>"); }
@@ -109,7 +110,8 @@ async function generate() {
     const rows = REQUIREMENTS.filter(r => r[0] === theme).map(([_, id, lvl, req, crit]) => {
       const k = byId.get(id) || {};
       const m = mapStatus(k.efterlevet);
-      return `| ${id} | ${lvl} | ${esc(req)} | ${esc(crit)} | ${m.emoji} | ${esc(k.dokumentation || "") } |`;
+      const grundlag = (k.dokumentation || "").trim() || "Ingen data i selvevalueringsrapport.";
+      return `| ${id} | ${lvl} | ${esc(req)} | ${esc(crit)} | ${m.emoji} | ${esc(grundlag)} |`;
     }).join("\n");
     tableBlocks[theme] = rows;
   });
@@ -124,12 +126,36 @@ async function generate() {
     });
     return acc;
   }
+  function bucketExact(level, theme = null) {
+    const acc = {green:0,yellow:0,red:0};
+    REQUIREMENTS.forEach(([t,id,lvl]) => {
+      if (theme && t !== theme) return;
+      if (lvl !== level) return;
+      const m = mapStatus((byId.get(id) || {}).efterlevet).key;
+      acc[m]++;
+    });
+    return acc;
+  }
 
   const bSand = bucketFor("Sandkasse");
   const b1 = bucketFor("1");
   const b2 = bucketFor("2");
   const b3 = bucketFor("3");
   const total = b3;
+
+  const assertMax = (bucket, max, label) => {
+    const sum = bucket.green + bucket.yellow + bucket.red;
+    if (sum > max) throw new Error(`Optælling for ${label} overstiger maks (${sum}/${max}).`);
+  };
+  assertMax(bucketFor("3", "relevans"), 4, "Relevans");
+  assertMax(bucketFor("3", "formkrav"), 20, "Formkrav");
+  assertMax(bucketFor("3", "strategisk"), 5, "Strategisk sammenhæng");
+  assertMax(bucketFor("3", "governance"), 14, "Governance");
+  assertMax(bucketExact("Sandkasse"), 6, "Sandkasse");
+  assertMax(bucketExact("1"), 10, "Niveau 1");
+  assertMax(bucketExact("2"), 19, "Niveau 2");
+  assertMax(bucketExact("3"), 8, "Niveau 3");
+  assertMax(bucketFor("3"), 43, "Samlet");
 
   const levelTable = `| Niveau      | 🟢 Grøn | 🟡 Gul | 🔴 Rød |\n|-------------|---------|--------|--------|\n| Sandkasse   | ${bSand.green} | ${bSand.yellow} | ${bSand.red} |\n| Niveau 1    | ${b1.green} | ${b1.yellow} | ${b1.red} |\n| Niveau 2    | ${b2.green} | ${b2.yellow} | ${b2.red} |\n| Niveau 3    | ${b3.green} | ${b3.yellow} | ${b3.red} |\n| **Samlet**  | ${total.green} | ${total.yellow} | ${total.red} |`;
 
@@ -149,7 +175,7 @@ async function generate() {
   }
 
   const dateVal = document.getElementById("reportDate").value || new Date().toISOString().slice(0,10).split("-").reverse().join("-");
-  const md = `# Evaluering af OS2-produkt: ${esc(data.productName || "[Produktnavn]")}\n\n> **📄 Dokumentinformation**  \n> **Evalueringsskabelon version:** 0.9.1  \n> **Dato for udfyldelse:** ${esc(dateVal)}  \n> **Audit made by:** ${esc(document.getElementById("auditBy").value || "[Navn]")}  \n> **GitHub organisation:** ${esc(document.getElementById("githubLink").value || "[indsæt link til github organisation/repo]")}  \n\n## 📝 Resumé\n${esc(document.getElementById("summary").value || "")}\n\n## 🌍 RELEVANS\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.relevans}\n\n## 🛠️ FORMKRAV\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.formkrav}\n\n## 🏛️ STRATEGISK SAMMENHÆNG\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.strategisk}\n\n## 👥 GOVERNANCE\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.governance}\n\n### 📊 Optælling af vurderinger pr. niveau og tema\n\n${levelTable}\n\n| Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |\n|---|---|---|---|---|---|\n${themeRows}\n\n${mermaid("Sandkasse", 6, bSand)}\n\n${mermaid("Niveau 1", 16, b1)}\n\n${mermaid("Niveau 2", 35, b2)}\n\n${mermaid("Niveau 3", 43, b3)}\n\n${mermaid("Samlet", 43, total)}\n\n### 🔍 Overordnet vurdering\n${esc(document.getElementById("overall").value || "")}\n\n### 📈 Anbefaling\n${esc(document.getElementById("recommendation").value || "")}`;
+  const md = `# Evaluering af OS2-produkt: ${esc(data.productName || "[Produktnavn]")}\n\n> **📄 Dokumentinformation**<br/>\n> **Evalueringsskabelon version:** 0.9.1<br/>\n> **Dato for udfyldelse:** ${esc(dateVal)}<br/>\n> **Audit made by:** ${esc(document.getElementById("auditBy").value || "[Navn]")}<br/>\n> **GitHub organisation:** ${esc(document.getElementById("githubLink").value || "[indsæt link til github organisation/repo]")}<br/>\n\n## 📝 Resumé\n${esc(document.getElementById("summary").value || "Udfyldes senere.")}\n\n## 🌍 RELEVANS\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.relevans}\n\n## 🛠️ FORMKRAV\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.formkrav}\n\n## 🏛️ STRATEGISK SAMMENHÆNG\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.strategisk}\n\n## 👥 GOVERNANCE\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.governance}\n\n### 📊 Optælling af vurderinger pr. niveau og tema\n\n${levelTable}\n\n| Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |\n|---|---|---|---|---|---|\n${themeRows}\n\n${mermaid("Sandkasse", 6, bSand)}\n\n${mermaid("Niveau 1", 16, b1)}\n\n${mermaid("Niveau 2", 35, b2)}\n\n${mermaid("Niveau 3", 43, b3)}\n\n${mermaid("Samlet", 43, total)}\n\n### 🔍 Overordnet vurdering\n${esc(document.getElementById("overall").value || "Udfyldes senere.")}\n\n### 📈 Anbefaling\n${esc(document.getElementById("recommendation").value || "Udfyldes senere.")}`;
 
   lastMarkdown = md;
   document.getElementById("output").value = md;
