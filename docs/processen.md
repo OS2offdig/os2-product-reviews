@@ -84,7 +84,3 @@ F2 --> G
 G --> A1
 F1 --> A1
 ```
-
-## Tilgængelige evalueringer
-
-Ingen godkendt evalueringer.
