@@ -166,16 +166,29 @@ async function generate() {
 
   function mermaid(levelTitle, totalCount, b) {
     const p = (n) => totalCount ? Math.round((n / totalCount) * 100) : 0;
-    return "```mermaid\n%%{init: {\"themeVariables\": {\"pie1\": \"#008000\", \"pie2\": \"#FFFF00\", \"pie3\": \"#FF0000\"}}}%%\npie showData\n"+
-      `  title ${levelTitle} (${totalCount} krav)\n`+
-      `  \"Grøn ${p(b.green)}%\" : ${b.green}\n`+
-      `  \"Gul ${p(b.yellow)}%\"  : ${b.yellow}\n`+
-      `  \"Rød ${p(b.red)}%\"  : ${b.red}\n`+
+    const ranked = [
+      {key: "green", value: b.green, color: "#008000"},
+      {key: "yellow", value: b.yellow, color: "#FFFF00"},
+      {key: "red", value: b.red, color: "#FF0000"}
+    ].sort((a, c) => c.value - a.value);
+    const themeVars = `{"pie1": "${ranked[0].color}", "pie2": "${ranked[1].color}", "pie3": "${ranked[2].color}"}`;
+    return `\`\`\`mermaid
+%%{init: {"themeVariables": ${themeVars}}}%%
+pie showData
+`+
+      `  title ${levelTitle} (${totalCount} krav)
+`+
+      `  "Grøn ${p(b.green)}%" : ${b.green}
+`+
+      `  "Gul ${p(b.yellow)}%"  : ${b.yellow}
+`+
+      `  "Rød ${p(b.red)}%"  : ${b.red}
+`+
       "```";
   }
 
   const dateVal = document.getElementById("reportDate").value || new Date().toISOString().slice(0,10).split("-").reverse().join("-");
-  const md = `# Evaluering af OS2-produkt: ${esc(data.productName || "[Produktnavn]")}\n\n> **📄 Dokumentinformation**<br/>\n> **Evalueringsskabelon version:** 0.9.1<br/>\n> **Dato for udfyldelse:** ${esc(dateVal)}<br/>\n> **Audit made by:** ${esc(document.getElementById("auditBy").value || "[Navn]")}<br/>\n> **GitHub organisation:** ${esc(document.getElementById("githubLink").value || "[indsæt link til github organisation/repo]")}<br/>\n\n## 📝 Resumé\n${esc(document.getElementById("summary").value || "Udfyldes senere.")}\n\n## 🌍 RELEVANS\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.relevans}\n\n## 🛠️ FORMKRAV\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.formkrav}\n\n## 🏛️ STRATEGISK SAMMENHÆNG\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.strategisk}\n\n## 👥 GOVERNANCE\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.governance}\n\n### 📊 Optælling af vurderinger pr. niveau og tema\n\n${levelTable}\n\n| Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |\n|---|---|---|---|---|---|\n${themeRows}\n\n${mermaid("Sandkasse", 6, bSand)}\n\n${mermaid("Niveau 1", 10, b1)}\n\n${mermaid("Niveau 2", 19, b2)}\n\n${mermaid("Niveau 3", 8, b3)}\n\n${mermaid("Samlet", 43, total)}\n\n### 🔍 Overordnet vurdering\n${esc(document.getElementById("overall").value || "Udfyldes senere.")}\n\n### 📈 Anbefaling\n${esc(document.getElementById("recommendation").value || "Udfyldes senere.")}`;
+  const md = `# Evaluering af OS2-produkt: ${esc(data.productName || "[Produktnavn]")}\n\n> **📄 Dokumentinformation**<br/>\n> **Evalueringsskabelon version:** 0.9.1<br/>\n> **Dato for udfyldelse:** ${esc(dateVal)}<br/>\n> **Audit made by:** ${esc(document.getElementById("auditBy").value || "[Navn]")}<br/>\n> **GitHub organisation:** ${esc(document.getElementById("githubLink").value || "[indsæt link til github organisation/repo]")}<br/>\n\n## 📝 Resumé\n${esc(document.getElementById("summary").value || "Udfyldes senere.")}\n\n### 🔍 Overordnet vurdering\n${esc(document.getElementById("overall").value || "Udfyldes senere.")}\n\n### 📈 Anbefaling\n${esc(document.getElementById("recommendation").value || "Udfyldes senere.")}\n\n## 🌍 RELEVANS\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.relevans}\n\n## 🛠️ FORMKRAV\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.formkrav}\n\n## 🏛️ STRATEGISK SAMMENHÆNG\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.strategisk}\n\n## 👥 GOVERNANCE\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.governance}\n\n### 📊 Optælling af vurderinger pr. niveau og tema\n\n${levelTable}\n\n| Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |\n|---|---|---|---|---|---|\n${themeRows}\n\n${mermaid("Sandkasse", 6, bSand)}\n\n${mermaid("Niveau 1", 10, b1)}\n\n${mermaid("Niveau 2", 19, b2)}\n\n${mermaid("Niveau 3", 8, b3)}\n\n${mermaid("Samlet", 43, total)}\n\n## 🏷️ Hvad betyder trafiklysene?\n- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.\n- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.\n- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.\n\n## 📋 Hvordan bruges optællingen?\n\n- **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.  \n- **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.   \n- **Niveau 2:** Drift, vedligehold og strategisk understøttelse – mange 🟡 eller 🔴 her peger på modenhedsproblemer.  \n- **Niveau 3:** Avanceret governance og fællesskab – et område, hvor ikke alle produkter nødvendigvis når i mål, men som er ønskværdigt for stabile og bæredygtige produkter.\n\nUd fra optællingen kan vi vurdere, hvor produktet står samlet set:\n\n- Mange 🟢 → Produktet er solidt forankret i governance-kravene.\n- Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.\n- Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.\n\n### ➡️ Antal krav fordelt på tema\n* Relevans: *4 krav* (R1–R4)\n* Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)\n* Strategisk sammenhæng: *5 krav* (S1–S5)\n* Governance: *14 krav* (G1–G14)\n* *I alt: 43 krav*\n\n### ➡️ Antal krav fordelt på niveau\n\nBemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.\n\n* Sandkasse: *6 krav*\n* Niveau 1: *10 krav* (16 i alt)\n* Niveau 2: *19 krav* (35 i alt)\n* Niveau 3: *8 krav* (43 i alt)\n* *I alt: 43 krav*`;
 
   lastMarkdown = md;
   document.getElementById("output").value = md;
