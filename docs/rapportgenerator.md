@@ -8,7 +8,7 @@ has_toc: false
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-<div id="app" class="container-xl my-4 px-3 px-md-4"></div>
+<div id="app" class="container-fluid my-4 px-3 px-md-5"></div>
 
 <script>
 const REQUIREMENTS = [
@@ -137,11 +137,11 @@ async function generate() {
     return acc;
   }
 
-  const bSand = bucketFor("Sandkasse");
-  const b1 = bucketFor("1");
-  const b2 = bucketFor("2");
-  const b3 = bucketFor("3");
-  const total = b3;
+  const bSand = bucketExact("Sandkasse");
+  const b1 = bucketExact("1");
+  const b2 = bucketExact("2");
+  const b3 = bucketExact("3");
+  const total = bucketFor("3");
 
   const assertMax = (bucket, max, label) => {
     const sum = bucket.green + bucket.yellow + bucket.red;
@@ -160,7 +160,7 @@ async function generate() {
   const levelTable = `| Niveau      | 🟢 Grøn | 🟡 Gul | 🔴 Rød |\n|-------------|---------|--------|--------|\n| Sandkasse   | ${bSand.green} | ${bSand.yellow} | ${bSand.red} |\n| Niveau 1    | ${b1.green} | ${b1.yellow} | ${b1.red} |\n| Niveau 2    | ${b2.green} | ${b2.yellow} | ${b2.red} |\n| Niveau 3    | ${b3.green} | ${b3.yellow} | ${b3.red} |\n| **Samlet**  | ${total.green} | ${total.yellow} | ${total.red} |`;
 
   const themeRows = THEMES.map(theme => {
-    const s = bucketFor("Sandkasse", theme), n1 = bucketFor("1", theme), n2 = bucketFor("2", theme), n3 = bucketFor("3", theme), tt = bucketFor("3", theme);
+    const s = bucketExact("Sandkasse", theme), n1 = bucketExact("1", theme), n2 = bucketExact("2", theme), n3 = bucketExact("3", theme), tt = bucketFor("3", theme);
     return `| ${THEME_LABELS[theme]} | 🟢 ${s.green} 🟡 ${s.yellow} 🔴 ${s.red} | 🟢 ${n1.green} 🟡 ${n1.yellow} 🔴 ${n1.red} | 🟢 ${n2.green} 🟡 ${n2.yellow} 🔴 ${n2.red} | 🟢 ${n3.green} 🟡 ${n3.yellow} 🔴 ${n3.red} | 🟢 ${tt.green} 🟡 ${tt.yellow} 🔴 ${tt.red} |`;
   }).join("\n");
 
@@ -175,7 +175,7 @@ async function generate() {
   }
 
   const dateVal = document.getElementById("reportDate").value || new Date().toISOString().slice(0,10).split("-").reverse().join("-");
-  const md = `# Evaluering af OS2-produkt: ${esc(data.productName || "[Produktnavn]")}\n\n> **📄 Dokumentinformation**<br/>\n> **Evalueringsskabelon version:** 0.9.1<br/>\n> **Dato for udfyldelse:** ${esc(dateVal)}<br/>\n> **Audit made by:** ${esc(document.getElementById("auditBy").value || "[Navn]")}<br/>\n> **GitHub organisation:** ${esc(document.getElementById("githubLink").value || "[indsæt link til github organisation/repo]")}<br/>\n\n## 📝 Resumé\n${esc(document.getElementById("summary").value || "Udfyldes senere.")}\n\n## 🌍 RELEVANS\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.relevans}\n\n## 🛠️ FORMKRAV\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.formkrav}\n\n## 🏛️ STRATEGISK SAMMENHÆNG\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.strategisk}\n\n## 👥 GOVERNANCE\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.governance}\n\n### 📊 Optælling af vurderinger pr. niveau og tema\n\n${levelTable}\n\n| Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |\n|---|---|---|---|---|---|\n${themeRows}\n\n${mermaid("Sandkasse", 6, bSand)}\n\n${mermaid("Niveau 1", 16, b1)}\n\n${mermaid("Niveau 2", 35, b2)}\n\n${mermaid("Niveau 3", 43, b3)}\n\n${mermaid("Samlet", 43, total)}\n\n### 🔍 Overordnet vurdering\n${esc(document.getElementById("overall").value || "Udfyldes senere.")}\n\n### 📈 Anbefaling\n${esc(document.getElementById("recommendation").value || "Udfyldes senere.")}`;
+  const md = `# Evaluering af OS2-produkt: ${esc(data.productName || "[Produktnavn]")}\n\n> **📄 Dokumentinformation**<br/>\n> **Evalueringsskabelon version:** 0.9.1<br/>\n> **Dato for udfyldelse:** ${esc(dateVal)}<br/>\n> **Audit made by:** ${esc(document.getElementById("auditBy").value || "[Navn]")}<br/>\n> **GitHub organisation:** ${esc(document.getElementById("githubLink").value || "[indsæt link til github organisation/repo]")}<br/>\n\n## 📝 Resumé\n${esc(document.getElementById("summary").value || "Udfyldes senere.")}\n\n## 🌍 RELEVANS\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.relevans}\n\n## 🛠️ FORMKRAV\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.formkrav}\n\n## 🏛️ STRATEGISK SAMMENHÆNG\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.strategisk}\n\n## 👥 GOVERNANCE\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.governance}\n\n### 📊 Optælling af vurderinger pr. niveau og tema\n\n${levelTable}\n\n| Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |\n|---|---|---|---|---|---|\n${themeRows}\n\n${mermaid("Sandkasse", 6, bSand)}\n\n${mermaid("Niveau 1", 10, b1)}\n\n${mermaid("Niveau 2", 19, b2)}\n\n${mermaid("Niveau 3", 8, b3)}\n\n${mermaid("Samlet", 43, total)}\n\n### 🔍 Overordnet vurdering\n${esc(document.getElementById("overall").value || "Udfyldes senere.")}\n\n### 📈 Anbefaling\n${esc(document.getElementById("recommendation").value || "Udfyldes senere.")}`;
 
   lastMarkdown = md;
   document.getElementById("output").value = md;
