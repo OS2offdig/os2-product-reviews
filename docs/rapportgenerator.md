@@ -66,6 +66,7 @@ const levelOrder = {"Sandkasse":0,"1":1,"2":2,"3":3};
 function mapStatus(v) {
   if (v === "Ja") return { emoji: "🟢", key: "green" };
   if (v === "Nej") return { emoji: "🔴", key: "red" };
+  if (v === "Ikke relevant") return { emoji: "🟢", key: "green" };
   if (v === "Ved ikke") return { emoji: "🟡", key: "yellow" };
   return { emoji: "🔴", key: "red" };
 }
