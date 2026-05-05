@@ -1,7 +1,7 @@
 ---
 title: OS2-test-assessment
 layout: default
-parent: Evalueringer
+parent: Offentliggjorte evalueringer
 ---
 
 # Evaluering af OS2-produkt: OS2-test-selvevaluering
