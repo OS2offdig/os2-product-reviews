@@ -8,9 +8,9 @@ parent: Evalueringer
 
 > **📄 Dokumentinformation**<br/>
 > **Evalueringsskabelon version:** 0.9.1<br/>
-> **Dato for udfyldelse:** 2026-05-04<br/>
-> **Audit made by:** Rasmus Frey<br/>
-> **GitHub organisation:** https://github.com/OS2offdig/os2-product-audits<br/>
+> **Dato for udfyldelse:** 05-05-2026<br/>
+> **Audit made by:** [Navn]<br/>
+> **GitHub organisation:** [indsæt link til github organisation/repo]<br/>
 
 ## 📝 Resumé
 Udfyldes senere.
@@ -74,14 +74,14 @@ Udfyldes senere.
 | G3 | 1 | Projektleder/tovholder er udpeget | Standard: Der er udpeget en fast kontaktperson/koordinator. | 🟢 | Sekretariatschefen er produktejer. |
 | G4 | 1 | Bestyrelsen er orienteret | Standard: Bestyrelsen kender til projektet. | 🟢 | Løsningen er et resultat af en bestyrelsesbeslutning. |
 | G5 | 2 | Bestyrelsen har godkendt produktet | Standard: Formelt godkendt i referater. | 🔴 | Løsningen er ikke formelt præsenteret og godkendt. |
-| G6 | 2 | Der er nedsat en styregruppe | Standard: Der findes en aktiv styregruppe. | 🔴 | Ingen data i selvevalueringsrapport. |
-| G7 | 2 | Der er nedsat en koordinationsgruppe | Standard: Der findes en aktiv koordinationsgruppe. | 🔴 | Ingen data i selvevalueringsrapport. |
-| G8 | 2 | Projektmodel anvendes og dokumenteret (anbefaling) | Standard: Der arbejdes efter en dokumenteret projektmodel. | 🔴 | Ingen data i selvevalueringsrapport. |
+| G6 | 2 | Der er nedsat en styregruppe | Standard: Der findes en aktiv styregruppe. | 🟢 | Projektet referere til OS2s bestyrelse. |
+| G7 | 2 | Der er nedsat en koordinationsgruppe | Standard: Der findes en aktiv koordinationsgruppe. | 🟢 | Ingen data i selvevalueringsrapport. |
+| G8 | 2 | Projektmodel anvendes og dokumenteret (anbefaling) | Standard: Der arbejdes efter en dokumenteret projektmodel. | 🟢 | Continuous development and deployment. |
 | G9 | 2 | Review af kode foretages af tredjepart (anbefaling) | Standard: Uafhængig kodegennemgang gennemføres og procedure er beskrevet. | 🔴 | Ingen data i selvevalueringsrapport. |
-| G10 | 2 | Tilslutningserklæring til sikring af økonomi (anbefaling) | Standard: OS2-tilslutningsaftale findes og er effektueret. | 🔴 | Ingen data i selvevalueringsrapport. |
-| G11 | 3 | Bestyrelsen har godkendt styregruppen | Standard: Formelt godkendt i referater. | 🔴 | Ingen data i selvevalueringsrapport. |
-| G12 | 3 | Bestyrelsen er repræsenteret i styregruppen | Standard: Bestyrelsesmedlem deltager. | 🔴 | Ingen data i selvevalueringsrapport. |
-| G13 | 3 | Aftale sikrer økonomi til koordinering og videreudvikling | Standard: Aftaler om finansiering er på plads og budget udarbejdet. | 🔴 | Ingen data i selvevalueringsrapport. |
+| G10 | 2 | Tilslutningserklæring til sikring af økonomi (anbefaling) | Standard: OS2-tilslutningsaftale findes og er effektueret. | 🟢 | Udgifter dækkes via OS2s centrale budget. |
+| G11 | 3 | Bestyrelsen har godkendt styregruppen | Standard: Formelt godkendt i referater. | 🟢 | Det er en kerneopgave for OS2-sekretariatet at porteføljestyre. Betyrelsen har til januar seminar i 2026 besluttet at produkter skal selvevaluere. Heri ligger beslutningen om Audit værktøj. |
+| G12 | 3 | Bestyrelsen er repræsenteret i styregruppen | Standard: Bestyrelsesmedlem deltager. | 🟢 | Bestyrelsen udgør styregruppen. |
+| G13 | 3 | Aftale sikrer økonomi til koordinering og videreudvikling | Standard: Aftaler om finansiering er på plads og budget udarbejdet. | 🟢 | Dækkes af OS2s budget. |
 | G14 | 3 | Fagligt fællesskab bag løsningen | Standard: Aktivt fællesskab, fx brugerklub, forum eller andet netværk. | 🔴 | Ingen data i selvevalueringsrapport. |
 
 ### 📊 Optælling af vurderinger pr. niveau og tema
@@ -90,49 +90,70 @@ Udfyldes senere.
 |-------------|---------|--------|--------|
 | Sandkasse | 6 | 0 | 0 |
 | Niveau 1 | 6 | 0 | 4 |
-| Niveau 2 | 4 | 0 | 15 |
-| Niveau 3 | 1 | 1 | 6 |
-| **Samlet** | 17 | 1 | 25 |
+| Niveau 2 | 8 | 0 | 11 |
+| Niveau 3 | 4 | 1 | 3 |
+| **Samlet** | 24 | 1 | 18 |
 
 | Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |
 |---|---|---|---|---|---|
 | Relevans | 🟢 1 🟡 0 🔴 0 | 🟢 0 🟡 0 🔴 0 | 🟢 2 🟡 0 🔴 0 | 🟢 0 🟡 1 🔴 0 | 🟢 3 🟡 1 🔴 0 |
 | Formkrav | 🟢 5 🟡 0 🔴 0 | 🟢 0 🟡 0 🔴 4 | 🟢 0 🟡 0 🔴 9 | 🟢 0 🟡 0 🔴 2 | 🟢 5 🟡 0 🔴 15 |
 | Strategisk sammenhæng | 🟢 0 🟡 0 🔴 0 | 🟢 2 🟡 0 🔴 0 | 🟢 2 🟡 0 🔴 0 | 🟢 1 🟡 0 🔴 0 | 🟢 5 🟡 0 🔴 0 |
-| Governance | 🟢 0 🟡 0 🔴 0 | 🟢 4 🟡 0 🔴 0 | 🟢 0 🟡 0 🔴 6 | 🟢 0 🟡 0 🔴 4 | 🟢 4 🟡 0 🔴 10 |
+| Governance | 🟢 0 🟡 0 🔴 0 | 🟢 4 🟡 0 🔴 0 | 🟢 4 🟡 0 🔴 2 | 🟢 3 🟡 0 🔴 1 | 🟢 11 🟡 0 🔴 3 |
 
 ```mermaid
 %%{init: {"themeVariables": {
-	"pie1": "#008000", "pie2": "#FFFF00", "pie3": "#FF0000"
+ "pie1": "#008000", "pie2": "#FFFF00", "pie3": "#FF0000"
 }}}%%
 pie showData
-	title Sandkasse (6 krav)
-	"Grøn 100%" : 6 
-	"Gul 0%" : 0 
-	"Rød 0%" : 0
+ title Sandkasse (6 krav)
+ "Grøn 100%" : 6
+ "Gul 0%" : 0
+ "Rød 0%" : 0
 ```
 
 ```mermaid
 %%{init: {"themeVariables": {
-	"pie1": "#008000", "pie2": "#FF0000", "pie3": "#FFFF00"
+ "pie1": "#008000", "pie2": "#FF0000", "pie3": "#FFFF00"
 }}}%%
 pie showData
-	title Niveau 1 (10 krav)
-	"Grøn 60%" : 6
-	"Gul 0%" : 0
-	"Rød 40%" : 4
+ title Niveau 1 (10 krav)
+ "Grøn 60%" : 6
+ "Gul 0%" : 0
+ "Rød 40%" : 4
 ```
 
 ```mermaid
-%%{init: {"themeVariables": {"pie1": "#FF0000", "pie2": "#008000", "pie3": "#FFFF00"}}}%% pie showData  title Niveau 2 (19 krav)  "Grøn 21%" : 4  "Gul 0%" : 0  "Rød 79%" : 15
+%%{init: {"themeVariables": {
+ "pie1": "#FF0000", "pie2": "#008000", "pie3": "#FFFF00"
+}}}%%
+pie showData
+ title Niveau 2 (19 krav)
+ "Grøn 42%" : 8
+ "Gul 0%" : 0
+ "Rød 58%" : 11
 ```
 
 ```mermaid
-%%{init: {"themeVariables": {"pie1": "#FF0000", "pie2": "#008000", "pie3": "#FFFF00"}}}%% pie showData  title Niveau 3 (8 krav)  "Grøn 13%" : 1  "Gul 13%" : 1  "Rød 75%" : 6
+%%{init: {"themeVariables": {
+ "pie1": "#008000", "pie2": "#FF0000", "pie3": "#FFFF00"
+}}}%%
+pie showData
+ title Niveau 3 (8 krav)
+ "Grøn 50%" : 4
+ "Gul 13%" : 1
+ "Rød 38%" : 3
 ```
 
 ```mermaid
-%%{init: {"themeVariables": {"pie1": "#FF0000", "pie2": "#008000", "pie3": "#FFFF00"}}}%% pie showData  title Samlet (43 krav)  "Grøn 40%" : 17  "Gul 2%" : 1  "Rød 58%" : 25
+%%{init: {"themeVariables": {
+ "pie1": "#008000", "pie2": "#FF0000", "pie3": "#FFFF00"
+}}}%%
+pie showData
+ title Samlet (43 krav)
+ "Grøn 56%" : 24
+ "Gul 2%" : 1
+ "Rød 42%" : 18
 ```
 
 ## 🏷️ Hvad betyder trafiklysene?
