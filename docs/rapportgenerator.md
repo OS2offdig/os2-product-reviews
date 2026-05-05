@@ -171,20 +171,17 @@ async function generate() {
       {key: "yellow", value: b.yellow, color: "#FFFF00"},
       {key: "red", value: b.red, color: "#FF0000"}
     ].sort((a, c) => c.value - a.value);
-    const themeVars = `{"pie1": "${ranked[0].color}", "pie2": "${ranked[1].color}", "pie3": "${ranked[2].color}"}`;
+
     return `\`\`\`mermaid
-%%{init: {"themeVariables": ${themeVars}}}%%
+%%{init: {"themeVariables": {
+	"pie1": "${ranked[0].color}", "pie2": "${ranked[1].color}", "pie3": "${ranked[2].color}"
+}}}%%
 pie showData
-`+
-      `  title ${levelTitle} (${totalCount} krav)
-`+
-      `  "Grøn ${p(b.green)}%" : ${b.green}
-`+
-      `  "Gul ${p(b.yellow)}%"  : ${b.yellow}
-`+
-      `  "Rød ${p(b.red)}%"  : ${b.red}
-`+
-      "```";
+	title ${levelTitle} (${totalCount} krav)
+	"Grøn ${p(b.green)}%" : ${b.green}
+	"Gul ${p(b.yellow)}%" : ${b.yellow}
+	"Rød ${p(b.red)}%" : ${b.red}
+\`\`\``;
   }
 
   const dateVal = document.getElementById("reportDate").value || new Date().toISOString().slice(0,10).split("-").reverse().join("-");
