@@ -91,6 +91,18 @@ function render() {
       <div class="col-12">
         <h1>OS2 selvevaluering</h1>
         <p>Udfyld status for hvert krav og tilføj dokumentation. Når du er færdig, kan du eksportere svarene til JSON eller gemme direkte i et GitHub repo. Send JSON filen eller link til GitHub repo til sekretariatet på os2@os2.eu.</p>
+        <div class="alert alert-info" role="alert">
+          <p>Du udfylder checklisten ved at anvende en af de følgende markeringer under 🔽 kolonnen:</p>
+          <ul>
+            <li>(JA) ✅ Kriteriet er opfyldt</li>
+            <li>(NEJ) ❌ Kriteriet er IKKE opfyldt</li>
+            <li>(Ikke relevant) ➖ Kriteriet er ikke relevant for dette produkt</li>
+            <li>(Ved ikke) ❓ Der er tvivl om, hvordan dette kriterie evalueres</li>
+          </ul>
+          <p>Hvis feltet efterlades tomt, betragtes selvevalueringen som ikke færdiggjort.</p>
+          <p>Har du spørgsmål? <a href="https://os2.eu/kontakt">Kontakt OS2's sekretariat</a>, vi er her for at hjælpe.</p>
+          <p>Information om OS2's produktniveauer og baggrunden herfor kan der <a href="https://governance.os2.eu">læses mere om her</a>.</p>
+        </div>
       </div>
     </div>
     <div class="row g-3 mb-3">

@@ -1,5 +1,5 @@
 ---
-title: Skabelon til evalueringsrapport
+title: Evalueringsrapporten
 layout: default
 parent: Vurderingsgrundlag
 nav_order: 10
@@ -7,16 +7,38 @@ has_children: false
 has_toc: false
 ---
 
+# OS2's Evalueringsrapport (autoritativ version)
+
+> Version: 0.9.2  
+> Sidste release: Maj 2026  
+  
+> Dette dokument er OS2's autoritative skabelon til evaluering af OS2-projekter og -produkter. Evalueringsrapporten anvendes til at foretage en samlet vurdering af efterlevelsen af kravene i OS2’s governancerapport og til at fastlægge produktets aktuelle niveau.  
+>  
+> Evalueringsrapporten tager afsæt i den senest opdaterede selvevaluering og dokumentation fra projektet eller produktet. Vurderingen baseres på det dokumenterede grundlag og har til formål at sikre en ensartet, gennemsigtig og sammenlignelig vurdering på tværs af OS2’s portefølje.  
+>  
+> Evalueringen gennemføres af OS2-sekretariatet på mandat fra bestyrelsen. Evalueringen foretages altid i dialog med projektet eller produktet og dets styregruppe og underliggende organisation.  
+>  
+>  Den endelige vurdering og placering på produktniveau udgør OS2’s officielle vurdering på det givne tidspunkt.  
+>  
+>  Dialogen i evalueringen har til formål at sikre fælles forståelse af vurderingsgrundlaget og skabe mulighed for at afklare uenigheder.  
+>  
+>  Uenighed, som ikke kan løses gennem dialog, håndteres i overensstemmelse med OS2’s Code of Conduct. Inden eskalation kan der indhentes en faglig second opinion for at kvalificere vurderingsgrundlaget. Hvis der fortsat ikke kan opnås enighed, vil næste led i beslutningskæden være bestyrelsen.  
+>  
+> Evalueringsrapporten danner grundlag for videre dialog om produktets status, udvikling og eventuelle behov for ændringer i organisering, dokumentation eller retning.  
+>  
+> Information om OS2's produktniveauer og baggrunden herfor [kan læses her](https://governance.os2.eu).  
+
+
 # Evaluering af OS2-produkt: [Produktnavn]
 
 > **📄 Dokumentinformation**  
-> **Evalueringsskabelon version:** 0.9.1  
+> **Version for anvendt evalueringsskabelon:** 0.9.2  
 > **Dato for udfyldelse:** [dd-mm-yyyy]  
 > **Evaluering lavet af:** [Navn]  
-> **GitHub organisation:** [indsæt link til github organisation/repo]  
+> **Link til Git organisation:** [indsæt link til git organisation/repo]  
 
 ## 📝 Resumé
-[Her skrives et meget kort resumé af den samlede vurdering og anbefaling.]
+[Her skrives et kort resumé af den samlede vurdering og anbefaling.]
 
 ## 🔍 Overordnet vurdering
 [Her skrives en samlet vurdering: hvilke styrker, hvilke forbedringspunkter, anbefalinger til næste skridt.]
@@ -28,12 +50,12 @@ has_toc: false
 
 ## 🌍 RELEVANS
 
-| #   | Niveau    | Krav                                             | Vurderingskriterie                                                                  | Vurdering     | Vurderingsgrundlag    |
-|-----|-----------|--------------------------------------------------|-------------------------------------------------------------------------------------|---------------|-----------------------|
-| R1  | Sandkasse | Løsningen skaber lokal værdi                     | Standard: Produktet giver konkret og dokumenterbar værdi for den enkelte myndighed. | 🟢 / 🟡 / 🔴 |                       |
-| R2  | 2         | Løsningen er accepteret af lokal linjeledelse    | Standard: Linjeledelsen har bakket op om deltagelsen i udviklingen og anvendelsen.  | 🟢 / 🟡 / 🔴 |                       |
-| R3  | 2         | Løsningen har fælles offentligt potentiale       | Standard: Kan skabe værdi og genbruges på tværs af myndigheder.                     | 🟢 / 🟡 / 🔴 |                       |
-| R4  | 3         | Ophæng til nationale strategier er til stede     | Standard: Understøtter fx digitaliseringsstrategi og fællesoffentlige mål.          | 🟢 / 🟡 / 🔴 |                       |
+| #   | Niveau    | Krav                                             | Vurderingskriterie                                                                  | Vurdering         | Vurderingsgrundlag    |
+|-----|-----------|--------------------------------------------------|-------------------------------------------------------------------------------------|-------------------|-----------------------|
+| R1  | Sandkasse | Løsningen skaber lokal værdi                     | Standard: Produktet giver konkret og dokumenterbar værdi for den enkelte myndighed. | 🟢 / 🟡 / 🔴 / ⚪ |                       |
+| R2  | 2         | Løsningen er accepteret af lokal linjeledelse    | Standard: Linjeledelsen har bakket op om deltagelsen i udviklingen og anvendelsen.  | 🟢 / 🟡 / 🔴 / ⚪ |                       |
+| R3  | 2         | Løsningen har fælles offentligt potentiale       | Standard: Kan skabe værdi og genbruges på tværs af myndigheder.                     | 🟢 / 🟡 / 🔴 / ⚪ |                       |
+| R4  | 3         | Ophæng til nationale strategier er til stede     | Standard: Understøtter fx digitaliseringsstrategi og fællesoffentlige mål.          | 🟢 / 🟡 / 🔴 / ⚪ |                       |
 
 ## 🛠️ FORMKRAV
 
@@ -93,22 +115,22 @@ has_toc: false
 
 ## 📊 Optælling af vurderinger pr. niveau og tema
 
-| Niveau      | 🟢 Grøn              | 🟡 Gul               | 🔴 Rød               |
-|-------------|----------------------|----------------------|-----------------------|
-| Sandkasse   | [antal 🟢 Sandkasse] | [antal 🟡 Sandkasse] | [antal 🔴 Sandkasse] |
-| Niveau 1    | [antal 🟢 Niveau 1]  | [antal 🟡 Niveau 1]  | [antal 🔴 Niveau 1]  |
-| Niveau 2    | [antal 🟢 Niveau 2]  | [antal 🟡 Niveau 2]  | [antal 🔴 Niveau 2]  |
-| Niveau 3    | [antal 🟢 Niveau 3]  | [antal 🟡 Niveau 3]  | [antal 🔴 Niveau 3]  |
-| **Samlet**  | [antal 🟢 Total]     | [antal 🟡 Total]     | [antal 🔴 Total]     |
+| Niveau / Vurdering      | 🟢 Grøn              | 🟡 Gul               | 🔴 Rød               | ⚪ Grå               |
+|-------------------------|----------------------|----------------------|----------------------|----------------------|
+| Sandkasse               | [antal 🟢 Sandkasse] | [antal 🟡 Sandkasse] | [antal 🔴 Sandkasse] | [antal ⚪ Sandkasse] |
+| Niveau 1                | [antal 🟢 Niveau 1]  | [antal 🟡 Niveau 1]  | [antal 🔴 Niveau 1]  | [antal ⚪ Niveau 1]  |
+| Niveau 2                | [antal 🟢 Niveau 2]  | [antal 🟡 Niveau 2]  | [antal 🔴 Niveau 2]  | [antal ⚪ Niveau 2]  |
+| Niveau 3                | [antal 🟢 Niveau 3]  | [antal 🟡 Niveau 3]  | [antal 🔴 Niveau 3]  | [antal ⚪ Niveau 3]  |
+| **Total**               | [antal 🟢 Total]     | [antal 🟡 Total]     | [antal 🔴 Total]     | [antal ⚪ Total]     |
 
 
-| Tema / Niveau        | Sandkasse<br/>(6 krav)   | Niveau 1<br/>(6+10 krav) | Niveau 2<br/>(19 + 16 krav) | Niveau 3<br/>>(8 + 35 krav) | Total                       |
-|----------------------|--------------------------|--------------------------|-----------------------------|-----------------------------|-----------------------------|
-| Relevans             | 🟢 [G] 🟡 [Y] 🔴 [R]    | 🟢 [G] 🟡 [Y] 🔴 [R]    | 🟢 [G] 🟡 [Y] 🔴 [R]       | 🟢 [G] 🟡 [Y] 🔴 [R]        | 🟢 [sum] 🟡 [sum] 🔴 [sum] |
-| Formkrav             | 🟢 [G] 🟡 [Y] 🔴 [R]    | 🟢 [G] 🟡 [Y] 🔴 [R]    | 🟢 [G] 🟡 [Y] 🔴 [R]       | 🟢 [G] 🟡 [Y] 🔴 [R]        | 🟢 [sum] 🟡 [sum] 🔴 [sum] |
-| Strategisk sammenhæng| 🟢 [G] 🟡 [Y] 🔴 [R]    | 🟢 [G] 🟡 [Y] 🔴 [R]    | 🟢 [G] 🟡 [Y] 🔴 [R]       | 🟢 [G] 🟡 [Y] 🔴 [R]        | 🟢 [sum] 🟡 [sum] 🔴 [sum] |
-| Governance           | 🟢 [G] 🟡 [Y] 🔴 [R]    | 🟢 [G] 🟡 [Y] 🔴 [R]    | 🟢 [G] 🟡 [Y] 🔴 [R]       | 🟢 [G] 🟡 [Y] 🔴 [R]        | 🟢 [sum] 🟡 [sum] 🔴 [sum] |
-| **Samlet**           | 🟢 [G] 🟡 [Y] 🔴 [R]    | 🟢 [G] 🟡 [Y] 🔴 [R]    | 🟢 [G] 🟡 [Y] 🔴 [R]       | 🟢 [G] 🟡 [Y] 🔴 [R]        | 🟢 [sum] 🟡 [sum] 🔴 [sum] |
+| Tema / Niveau        | Sandkasse                   | Niveau 1                    | Niveau 2                    | Niveau 3                    | Total                               |
+|----------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-------------------------------------|
+| Relevans             | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [sum] 🟡 [sum] 🔴 [sum] ⚪ [sum] |
+| Formkrav             | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [sum] 🟡 [sum] 🔴 [sum] ⚪ [sum] |
+| Strategisk sammenhæng| 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [sum] 🟡 [sum] 🔴 [sum] ⚪ [sum] |
+| Governance           | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [sum] 🟡 [sum] 🔴 [sum] ⚪ [sum] |
+| **Total**            | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [G] 🟡 [Y] 🔴 [R] ⚪ [x] | 🟢 [sum] 🟡 [sum] 🔴 [sum] ⚪ [sum] |
 
 <!--
 Nedenfor er mermaid kode til at vise procentfordeling i lagkagediagrammer.
@@ -176,11 +198,12 @@ pie showData
 - 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
 - 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
 - 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
+- ⚪ **Grå** → Kravet er ikke relevant og medtages ikke i vurderingen.
 
 ## 📋 Hvordan bruges optællingen?
 
 - **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.  
-- **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.   
+- **Niveau 1:** Basis governance og dokumentation – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.   
 - **Niveau 2:** Drift, vedligehold og strategisk understøttelse – mange 🟡 eller 🔴 her peger på modenhedsproblemer.  
 - **Niveau 3:** Avanceret governance og fællesskab – et område, hvor ikke alle produkter nødvendigvis når i mål, men som er ønskværdigt for stabile og bæredygtige produkter.
 
