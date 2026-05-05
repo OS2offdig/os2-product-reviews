@@ -66,7 +66,7 @@ const kravData = {
   ]
 };
 
-const statusChoices = ["Ja", "Nej", "Ved ikke"];
+const statusChoices = ["Ja", "Nej", "Ikke relevant", "Ved ikke"];
 
 function sectionTitle(key) {
   return ({ relevans: "Relevans", formkrav: "Formkrav", strategisk: "Strategisk sammenhæng", governance: "Governance" })[key] || key;

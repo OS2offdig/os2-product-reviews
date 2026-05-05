@@ -66,6 +66,7 @@ const levelOrder = {"Sandkasse":0,"1":1,"2":2,"3":3};
 function mapStatus(v) {
   if (v === "Ja") return { emoji: "🟢", key: "green" };
   if (v === "Nej") return { emoji: "🔴", key: "red" };
+  if (v === "Ikke relevant") return { emoji: "⚪", key: "gray" };
   if (v === "Ved ikke") return { emoji: "🟡", key: "yellow" };
   return { emoji: "🔴", key: "red" };
 }
@@ -117,7 +118,7 @@ async function generate() {
   });
 
   function bucketFor(levelMax, theme = null) {
-    const acc = {green:0,yellow:0,red:0};
+    const acc = {green:0,yellow:0,red:0,gray:0};
     REQUIREMENTS.forEach(([t,id,lvl]) => {
       if (theme && t !== theme) return;
       if (levelOrder[lvl] > levelOrder[levelMax]) return;
@@ -127,7 +128,7 @@ async function generate() {
     return acc;
   }
   function bucketExact(level, theme = null) {
-    const acc = {green:0,yellow:0,red:0};
+    const acc = {green:0,yellow:0,red:0,gray:0};
     REQUIREMENTS.forEach(([t,id,lvl]) => {
       if (theme && t !== theme) return;
       if (lvl !== level) return;
@@ -144,7 +145,7 @@ async function generate() {
   const total = bucketFor("3");
 
   const assertMax = (bucket, max, label) => {
-    const sum = bucket.green + bucket.yellow + bucket.red;
+    const sum = bucket.green + bucket.yellow + bucket.red + bucket.gray;
     if (sum > max) throw new Error(`Optælling for ${label} overstiger maks (${sum}/${max}).`);
   };
   assertMax(bucketFor("3", "relevans"), 4, "Relevans");
@@ -157,11 +158,11 @@ async function generate() {
   assertMax(bucketExact("3"), 8, "Niveau 3");
   assertMax(bucketFor("3"), 43, "Samlet");
 
-  const levelTable = `| Niveau      | 🟢 Grøn | 🟡 Gul | 🔴 Rød |\n|-------------|---------|--------|--------|\n| Sandkasse   | ${bSand.green} | ${bSand.yellow} | ${bSand.red} |\n| Niveau 1    | ${b1.green} | ${b1.yellow} | ${b1.red} |\n| Niveau 2    | ${b2.green} | ${b2.yellow} | ${b2.red} |\n| Niveau 3    | ${b3.green} | ${b3.yellow} | ${b3.red} |\n| **Samlet**  | ${total.green} | ${total.yellow} | ${total.red} |`;
+  const levelTable = `| Niveau      | 🟢 Grøn | 🟡 Gul | 🔴 Rød | ⚪ Grå |\n|-------------|---------|--------|--------|--------|\n| Sandkasse   | ${bSand.green} | ${bSand.yellow} | ${bSand.red} | ${bSand.gray} |\n| Niveau 1    | ${b1.green} | ${b1.yellow} | ${b1.red} | ${b1.gray} |\n| Niveau 2    | ${b2.green} | ${b2.yellow} | ${b2.red} | ${b2.gray} |\n| Niveau 3    | ${b3.green} | ${b3.yellow} | ${b3.red} | ${b3.gray} |\n| **Samlet**  | ${total.green} | ${total.yellow} | ${total.red} | ${total.gray} |`;
 
   const themeRows = THEMES.map(theme => {
     const s = bucketExact("Sandkasse", theme), n1 = bucketExact("1", theme), n2 = bucketExact("2", theme), n3 = bucketExact("3", theme), tt = bucketFor("3", theme);
-    return `| ${THEME_LABELS[theme]} | 🟢 ${s.green} 🟡 ${s.yellow} 🔴 ${s.red} | 🟢 ${n1.green} 🟡 ${n1.yellow} 🔴 ${n1.red} | 🟢 ${n2.green} 🟡 ${n2.yellow} 🔴 ${n2.red} | 🟢 ${n3.green} 🟡 ${n3.yellow} 🔴 ${n3.red} | 🟢 ${tt.green} 🟡 ${tt.yellow} 🔴 ${tt.red} |`;
+    return `| ${THEME_LABELS[theme]} | 🟢 ${s.green} 🟡 ${s.yellow} 🔴 ${s.red} ⚪ ${s.gray} | 🟢 ${n1.green} 🟡 ${n1.yellow} 🔴 ${n1.red} ⚪ ${n1.gray} | 🟢 ${n2.green} 🟡 ${n2.yellow} 🔴 ${n2.red} ⚪ ${n2.gray} | 🟢 ${n3.green} 🟡 ${n3.yellow} 🔴 ${n3.red} ⚪ ${n3.gray} | 🟢 ${tt.green} 🟡 ${tt.yellow} 🔴 ${tt.red} ⚪ ${tt.gray} |`;
   }).join("\n");
 
   function mermaid(levelTitle, totalCount, b) {
@@ -169,26 +170,29 @@ async function generate() {
     const ranked = [
       {key: "green", value: b.green, color: "#008000"},
       {key: "yellow", value: b.yellow, color: "#FFFF00"},
-      {key: "red", value: b.red, color: "#FF0000"}
+      {key: "red", value: b.red, color: "#FF0000"},
+      {key: "gray", value: b.gray, color: "#808080"}
     ].sort((a, c) => c.value - a.value);
-    const themeVars = `{"pie1": "${ranked[0].color}", "pie2": "${ranked[1].color}", "pie3": "${ranked[2].color}"}`;
-    return `\`\`\`mermaid
-%%{init: {"themeVariables": ${themeVars}}}%%
-pie showData
-`+
-      `  title ${levelTitle} (${totalCount} krav)
-`+
-      `  "Grøn ${p(b.green)}%" : ${b.green}
-`+
-      `  "Gul ${p(b.yellow)}%"  : ${b.yellow}
-`+
-      `  "Rød ${p(b.red)}%"  : ${b.red}
-`+
-      "```";
+
+    return [
+      "```mermaid",
+      "%%{init: {\"themeVariables\": {",
+      `	\"pie1\": \"${ranked[0].color}\", \"pie2\": \"${ranked[1].color}\", \"pie3\": \"${ranked[2].color}\", \"pie4\": \"${ranked[3].color}\"`,
+      "}}}%%",
+      "pie showData",
+      `	title ${levelTitle} (${totalCount} krav)`,
+      `	"Grøn ${p(b.green)}%" : ${b.green}`,
+      `	"Gul ${p(b.yellow)}%" : ${b.yellow}`,
+      `	"Rød ${p(b.red)}%" : ${b.red}`,
+      `	"Grå ${p(b.gray)}%" : ${b.gray}`,
+      "```"
+    ].join("\n");
   }
 
+
   const dateVal = document.getElementById("reportDate").value || new Date().toISOString().slice(0,10).split("-").reverse().join("-");
-  const md = `# Evaluering af OS2-produkt: ${esc(data.productName || "[Produktnavn]")}\n\n> **📄 Dokumentinformation**<br/>\n> **Evalueringsskabelon version:** 0.9.1<br/>\n> **Dato for udfyldelse:** ${esc(dateVal)}<br/>\n> **Audit made by:** ${esc(document.getElementById("auditBy").value || "[Navn]")}<br/>\n> **GitHub organisation:** ${esc(document.getElementById("githubLink").value || "[indsæt link til github organisation/repo]")}<br/>\n\n## 📝 Resumé\n${esc(document.getElementById("summary").value || "Udfyldes senere.")}\n\n### 🔍 Overordnet vurdering\n${esc(document.getElementById("overall").value || "Udfyldes senere.")}\n\n### 📈 Anbefaling\n${esc(document.getElementById("recommendation").value || "Udfyldes senere.")}\n\n## 🌍 RELEVANS\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.relevans}\n\n## 🛠️ FORMKRAV\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.formkrav}\n\n## 🏛️ STRATEGISK SAMMENHÆNG\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.strategisk}\n\n## 👥 GOVERNANCE\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.governance}\n\n### 📊 Optælling af vurderinger pr. niveau og tema\n\n${levelTable}\n\n| Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |\n|---|---|---|---|---|---|\n${themeRows}\n\n${mermaid("Sandkasse", 6, bSand)}\n\n${mermaid("Niveau 1", 10, b1)}\n\n${mermaid("Niveau 2", 19, b2)}\n\n${mermaid("Niveau 3", 8, b3)}\n\n${mermaid("Samlet", 43, total)}\n\n## 🏷️ Hvad betyder trafiklysene?\n- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.\n- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.\n- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.\n\n## 📋 Hvordan bruges optællingen?\n\n- **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.  \n- **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.   \n- **Niveau 2:** Drift, vedligehold og strategisk understøttelse – mange 🟡 eller 🔴 her peger på modenhedsproblemer.  \n- **Niveau 3:** Avanceret governance og fællesskab – et område, hvor ikke alle produkter nødvendigvis når i mål, men som er ønskværdigt for stabile og bæredygtige produkter.\n\nUd fra optællingen kan vi vurdere, hvor produktet står samlet set:\n\n- Mange 🟢 → Produktet er solidt forankret i governance-kravene.\n- Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.\n- Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.\n\n### ➡️ Antal krav fordelt på tema\n* Relevans: *4 krav* (R1–R4)\n* Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)\n* Strategisk sammenhæng: *5 krav* (S1–S5)\n* Governance: *14 krav* (G1–G14)\n* *I alt: 43 krav*\n\n### ➡️ Antal krav fordelt på niveau\n\nBemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.\n\n* Sandkasse: *6 krav*\n* Niveau 1: *10 krav* (16 i alt)\n* Niveau 2: *19 krav* (35 i alt)\n* Niveau 3: *8 krav* (43 i alt)\n* *I alt: 43 krav*`;
+  const md = `# Evaluering af OS2-produkt: ${esc(data.productName || "[Produktnavn]")}\n\n> **📄 Dokumentinformation**<br/>\n> **Evalueringsskabelon version:** 0.9.1<br/>\n> **Dato for udfyldelse:** ${esc(dateVal)}<br/>\n> **Audit made by:** ${esc(document.getElementById("auditBy").value || "[Navn]")}<br/>\n> **GitHub organisation:** ${esc(document.getElementById("githubLink").value || "[indsæt link til github organisation/repo]")}<br/>\n\n## 📝 Resumé\n${esc(document.getElementById("summary").value || "Udfyldes senere.")}\n\n### 🔍 Overordnet vurdering\n${esc(document.getElementById("overall").value || "Udfyldes senere.")}\n\n### 📈 Anbefaling\n${esc(document.getElementById("recommendation").value || "Udfyldes senere.")}\n\n## 🌍 RELEVANS\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.relevans}\n\n## 🛠️ FORMKRAV\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.formkrav}\n\n## 🏛️ STRATEGISK SAMMENHÆNG\n\n| #   | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|-----|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.strategisk}\n\n## 👥 GOVERNANCE\n\n| #    | Niveau    | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |\n|------|-----------|------|--------------------|-----------|--------------------|\n${tableBlocks.governance}\n\n### 📊 Optælling af vurderinger pr. niveau og tema\n\n${levelTable}\n\n| Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |\n|---|---|---|---|---|---|\n${themeRows}\n\n${mermaid("Sandkasse", 6, bSand)}\n\n${mermaid("Niveau 1", 10, b1)}\n\n${mermaid("Niveau 2", 19, b2)}\n\n${mermaid("Niveau 3", 8, b3)}\n\n${mermaid("Samlet", 43, total)}\n\n## 🏷️ Hvad betyder trafiklysene?\n- 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.\n- 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.\n- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
+- ⚪ **Grå** → Kravet er markeret som ikke relevant (ikke vurderet ift. efterlevelse).\n\n## 📋 Hvordan bruges optællingen?\n\n- **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.  \n- **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.   \n- **Niveau 2:** Drift, vedligehold og strategisk understøttelse – mange 🟡 eller 🔴 her peger på modenhedsproblemer.  \n- **Niveau 3:** Avanceret governance og fællesskab – et område, hvor ikke alle produkter nødvendigvis når i mål, men som er ønskværdigt for stabile og bæredygtige produkter.\n\nUd fra optællingen kan vi vurdere, hvor produktet står samlet set:\n\n- Mange 🟢 → Produktet er solidt forankret i governance-kravene.\n- Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.\n- Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.\n\n### ➡️ Antal krav fordelt på tema\n* Relevans: *4 krav* (R1–R4)\n* Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)\n* Strategisk sammenhæng: *5 krav* (S1–S5)\n* Governance: *14 krav* (G1–G14)\n* *I alt: 43 krav*\n\n### ➡️ Antal krav fordelt på niveau\n\nBemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.\n\n* Sandkasse: *6 krav*\n* Niveau 1: *10 krav* (16 i alt)\n* Niveau 2: *19 krav* (35 i alt)\n* Niveau 3: *8 krav* (43 i alt)\n* *I alt: 43 krav*`;
 
   lastMarkdown = md;
   document.getElementById("output").value = md;
