@@ -52,8 +52,8 @@ Udfyldes senere.
 | F18 | 2 | Rammearkitektur og standarder er fulgt og afvigelser forklaret | Standard: Overensstemmelse med rammearkitektur er beskrevet. | 🔴 | Ingen data i selvevalueringsrapport. |
 | F19 | 2 | Løsningen leveret i containerformat | Standard: Fx Docker anvendes. | 🔴 | Ingen data i selvevalueringsrapport. |
 | F20 | 2 | Uddannelsesmateriale er udarbejdet | Standard: Undervisningsmaterialer findes. | 🔴 | Ingen data i selvevalueringsrapport. |
-| F21 | 3 | Politisk kommunikation er udarbejdet | Standard: Materialer målrettet politikere og offentlighed er udarbejdet. | 🔴 | Ingen data i selvevalueringsrapport. |
-| F22 | 3 | Procesplan og procesansvar for drift er udarbejdet | Standard: Dokumenteret proces og ansvar ifm. idriftsættelse. | 🔴 | Ingen data i selvevalueringsrapport. |
+| F21 | 3 | Politisk kommunikation er udarbejdet | Standard: Materialer målrettet politikere og offentlighed er udarbejdet. | ⚪ | Ingen data i selvevalueringsrapport. |
+| F22 | 3 | Procesplan og procesansvar for drift er udarbejdet | Standard: Dokumenteret proces og ansvar ifm. idriftsættelse. | ⚪ | Ingen data i selvevalueringsrapport. |
 
 ## 🏛️ STRATEGISK SAMMENHÆNG
 
@@ -82,84 +82,89 @@ Udfyldes senere.
 | G11 | 3 | Bestyrelsen har godkendt styregruppen | Standard: Formelt godkendt i referater. | 🟢 | Det er en kerneopgave for OS2-sekretariatet at porteføljestyre. Betyrelsen har til januar seminar i 2026 besluttet at produkter skal selvevaluere. Heri ligger beslutningen om Audit værktøj. |
 | G12 | 3 | Bestyrelsen er repræsenteret i styregruppen | Standard: Bestyrelsesmedlem deltager. | 🟢 | Bestyrelsen udgør styregruppen. |
 | G13 | 3 | Aftale sikrer økonomi til koordinering og videreudvikling | Standard: Aftaler om finansiering er på plads og budget udarbejdet. | 🟢 | Dækkes af OS2s budget. |
-| G14 | 3 | Fagligt fællesskab bag løsningen | Standard: Aktivt fællesskab, fx brugerklub, forum eller andet netværk. | 🔴 | Ingen data i selvevalueringsrapport. |
+| G14 | 3 | Fagligt fællesskab bag løsningen | Standard: Aktivt fællesskab, fx brugerklub, forum eller andet netværk. | ⚪ | Ingen data i selvevalueringsrapport. |
 
 ### 📊 Optælling af vurderinger pr. niveau og tema
 
-| Niveau | 🟢 Grøn | 🟡 Gul | 🔴 Rød |
-|-------------|---------|--------|--------|
-| Sandkasse | 6 | 0 | 0 |
-| Niveau 1 | 6 | 0 | 4 |
-| Niveau 2 | 8 | 0 | 11 |
-| Niveau 3 | 4 | 1 | 3 |
-| **Samlet** | 24 | 1 | 18 |
+| Niveau | 🟢 Grøn | 🟡 Gul | 🔴 Rød | ⚪ Grå |
+|-------------|---------|--------|--------|--------|
+| Sandkasse | 6 | 0 | 0 | 0 |
+| Niveau 1 | 6 | 0 | 4 | 0 |
+| Niveau 2 | 8 | 0 | 11 | 0 |
+| Niveau 3 | 4 | 1 | 0 | 3 |
+| **Samlet** | 24 | 1 | 15 | 3 |
 
 | Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |
 |---|---|---|---|---|---|
-| Relevans | 🟢 1 🟡 0 🔴 0 | 🟢 0 🟡 0 🔴 0 | 🟢 2 🟡 0 🔴 0 | 🟢 0 🟡 1 🔴 0 | 🟢 3 🟡 1 🔴 0 |
-| Formkrav | 🟢 5 🟡 0 🔴 0 | 🟢 0 🟡 0 🔴 4 | 🟢 0 🟡 0 🔴 9 | 🟢 0 🟡 0 🔴 2 | 🟢 5 🟡 0 🔴 15 |
-| Strategisk sammenhæng | 🟢 0 🟡 0 🔴 0 | 🟢 2 🟡 0 🔴 0 | 🟢 2 🟡 0 🔴 0 | 🟢 1 🟡 0 🔴 0 | 🟢 5 🟡 0 🔴 0 |
-| Governance | 🟢 0 🟡 0 🔴 0 | 🟢 4 🟡 0 🔴 0 | 🟢 4 🟡 0 🔴 2 | 🟢 3 🟡 0 🔴 1 | 🟢 11 🟡 0 🔴 3 |
+| Relevans | 🟢 1 🟡 0 🔴 0 ⚪ 0 | 🟢 0 🟡 0 🔴 0 ⚪ 0 | 🟢 2 🟡 0 🔴 0 ⚪ 0 | 🟢 0 🟡 1 🔴 0 ⚪ 0 | 🟢 3 🟡 1 🔴 0 ⚪ 0 |
+| Formkrav | 🟢 5 🟡 0 🔴 0 ⚪ 0 | 🟢 0 🟡 0 🔴 4 ⚪ 0 | 🟢 0 🟡 0 🔴 9 ⚪ 0 | 🟢 0 🟡 0 🔴 0 ⚪ 2 | 🟢 5 🟡 0 🔴 13 ⚪ 2 |
+| Strategisk sammenhæng | 🟢 0 🟡 0 🔴 0 ⚪ 0 | 🟢 2 🟡 0 🔴 0 ⚪ 0 | 🟢 2 🟡 0 🔴 0 ⚪ 0 | 🟢 1 🟡 0 🔴 0 ⚪ 0 | 🟢 5 🟡 0 🔴 0 ⚪ 0 |
+| Governance | 🟢 0 🟡 0 🔴 0 ⚪ 0 | 🟢 4 🟡 0 🔴 0 ⚪ 0 | 🟢 4 🟡 0 🔴 2 ⚪ 0 | 🟢 3 🟡 0 🔴 0 ⚪ 1 | 🟢 11 🟡 0 🔴 2 ⚪ 1 |
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#008000", "pie2": "#FFFF00", "pie3": "#FF0000"
+ "pie1": "#008000", "pie2": "#FFFF00", "pie3": "#FF0000", "pie4": "#808080"
 }}}%%
 pie showData
  title Sandkasse (6 krav)
  "Grøn 100%" : 6
  "Gul 0%" : 0
  "Rød 0%" : 0
+ "Grå 0%" : 0
 ```
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#008000", "pie2": "#FF0000", "pie3": "#FFFF00"
+ "pie1": "#008000", "pie2": "#FF0000", "pie3": "#FFFF00", "pie4": "#808080"
 }}}%%
 pie showData
  title Niveau 1 (10 krav)
  "Grøn 60%" : 6
  "Gul 0%" : 0
  "Rød 40%" : 4
+ "Grå 0%" : 0
 ```
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#FF0000", "pie2": "#008000", "pie3": "#FFFF00"
+ "pie1": "#FF0000", "pie2": "#008000", "pie3": "#FFFF00", "pie4": "#808080"
 }}}%%
 pie showData
  title Niveau 2 (19 krav)
  "Grøn 42%" : 8
  "Gul 0%" : 0
  "Rød 58%" : 11
+ "Grå 0%" : 0
 ```
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#008000", "pie2": "#FF0000", "pie3": "#FFFF00"
+ "pie1": "#008000", "pie2": "#808080", "pie3": "#FFFF00", "pie4": "#FF0000"
 }}}%%
 pie showData
  title Niveau 3 (8 krav)
  "Grøn 50%" : 4
  "Gul 13%" : 1
- "Rød 38%" : 3
+ "Rød 0%" : 0
+ "Grå 38%" : 3
 ```
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#008000", "pie2": "#FF0000", "pie3": "#FFFF00"
+ "pie1": "#008000", "pie2": "#FF0000", "pie3": "#808080", "pie4": "#FFFF00"
 }}}%%
 pie showData
  title Samlet (43 krav)
  "Grøn 56%" : 24
  "Gul 2%" : 1
- "Rød 42%" : 18
+ "Rød 35%" : 15
+ "Grå 7%" : 3
 ```
 
 ## 🏷️ Hvad betyder trafiklysene?
 - 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
 - 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
-- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
+- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling. - ⚪ **Grå** → Kravet er markeret som ikke relevant (ikke vurderet ift. efterlevelse).
 
 ## 📋 Hvordan bruges optællingen?
 
