@@ -92,16 +92,37 @@ function render() {
         <h1>OS2 selvevaluering</h1>
         <p>Udfyld status for hvert krav og tilføj dokumentation. Når du er færdig, kan du eksportere svarene til JSON eller gemme direkte i et GitHub repo. Send JSON filen eller link til GitHub repo til sekretariatet på os2@os2.eu.</p>
         <div class="alert alert-info" role="alert">
-          <p>Du udfylder checklisten ved at anvende en af de følgende markeringer under 🔽 kolonnen:</p>
-          <ul>
-            <li>(JA) ✅ Kriteriet er opfyldt</li>
-            <li>(NEJ) ❌ Kriteriet er IKKE opfyldt</li>
-            <li>(Ikke relevant) ➖ Kriteriet er ikke relevant for dette produkt</li>
-            <li>(Ved ikke) ❓ Der er tvivl om, hvordan dette kriterie evalueres</li>
-          </ul>
-          <p>Hvis feltet efterlades tomt, betragtes selvevalueringen som ikke færdiggjort.</p>
-          <p>Har du spørgsmål? <a href="https://os2.eu/kontakt">Kontakt OS2's sekretariat</a>, vi er her for at hjælpe.</p>
-          <p>Information om OS2's produktniveauer og baggrunden herfor kan der <a href="https://governance.os2.eu">læses mere om her</a>.</p>
+          <div class="alert alert-info" role="alert">
+            <p>
+              Du udfylder checklisten ved at vælge en markering for hvert krav:
+            </p>
+
+            <ul>
+              <li>(JA) ✅ Kriteriet er opfyldt</li>
+              <li>(NEJ) ❌ Kriteriet er IKKE opfyldt</li>
+              <li>(Ikke relevant) ➖ Kriteriet er ikke relevant for dette produkt</li>
+              <li>(Ved ikke) ❓ Der er tvivl om, hvordan dette kriterie evalueres</li>
+            </ul>
+
+            <p>
+              For hvert krav skal du uddybe din vurdering i fritekstfeltet. Her beskriver du, hvordan kravet er opfyldt, ikke opfyldt eller hvorfor det eventuelt ikke er relevant. Henvis gerne til konkret dokumentation, fx links til repository, dokumenter eller beslutninger.
+            </p>
+
+            <p>
+              Hvis et felt efterlades tomt, betragtes selvevalueringen som ikke færdiggjort.
+            </p>
+
+            <p>
+              Formålet med selvevalueringen er ikke at opfylde alle krav, men at give et retvisende billede af produktets nuværende status. En ærlig og præcis vurdering er afgørende for, at evalueringen kan bruges til dialog, prioritering og videre udvikling.
+            </p>
+
+            <p>
+              Har du spørgsmål? <a href="https://os2.eu/kontakt">Kontakt OS2's sekretariat</a>, vi er her for at hjælpe.
+            </p>
+            <p>
+              Information om OS2's produktniveauer og baggrunden herfor kan der <a href="https://governance.os2.eu">læses mere om her</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -151,12 +172,12 @@ function render() {
     `).join("")}
     </div>
     <div class="d-flex gap-2 flex-wrap mt-3">
-      <button class="btn btn-outline-secondary" id="saveLocal" type="button">Gem lokalt</button>
-      <button class="btn btn-outline-secondary" id="loadLocal" type="button">Indlæs lokalt</button>
-      <button class="btn btn-outline-secondary" id="importJson" type="button">Importér JSON</button>
+      <!--<button class="btn btn-outline-secondary" id="saveLocal" type="button">Gem lokalt</button>
+      <button class="btn btn-outline-secondary" id="loadLocal" type="button">Indlæs lokalt</button>-->
+      <button class="btn btn-outline-secondary" id="importJson" type="button">Importér JSON data</button>
       <input id="importJsonFile" type="file" accept=".json,application/json" class="d-none">
-      <button class="btn btn-primary" id="exportJson" type="button">Eksportér JSON</button>
-      <button class="btn btn-success d-none" id="saveGithub" type="button">Gem i GitHub</button>
+      <button class="btn btn-primary" id="exportJson" type="button">Eksportér data som JSON</button>
+      <button class="btn btn-success d-none" id="saveGithub" type="button">Gem JSON data i GitHub</button>
     </div>
   `;
 
