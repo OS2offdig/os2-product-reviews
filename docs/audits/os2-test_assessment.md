@@ -14,33 +14,29 @@ parent: Offentliggjorte evalueringer
 
 # Evaluering af OS2-produkt: OS2-test-selvevaluering
 
-> **Dokumentinformation**<br/>
-> **Evalueringsskabelon version:** 0.9.1<br/>
-> **Dato for udfyldelse:** 05-05-2026<br/>
-> **Audit made by:** [Navn]<br/>
-> **GitHub organisation:** [indsæt link til github organisation/repo]<br/>
+> **📄 Dokumentinformation**<br/>
+> **Version for anvendt evalueringsskabelon:** 0.9.2<br/>
+> **Dato for udfyldelse:** 2026-05-06<br/>
+> **Evaluering lavet af:** Rasmus Frey<br/>
+> **Link til Git organisation:** https://github.com/OS2offdig/os2-product-audits<br/>
 
 ## Resumé
 Udfyldes senere.
 
-## 🔍 Overordnet vurdering
+## Overordnet vurdering
 Udfyldes senere.
 
 ## Anbefaling
 Udfyldes senere.
 
----
-
-# Krav i OS2s styringsmodel
-
-## RELEVANS
+--- # Evaluering i henhold til krav i OS2s styringsmodel ## RELEVANS
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |-----|-----------|------|--------------------|-----------|--------------------|
 | R1 | Sandkasse | Løsningen skaber lokal værdi | Standard: Produktet giver konkret og dokumenterbar værdi for den enkelte myndighed. | 🟢 | Det er en løsning som hjælper OS2 med at evaluere produktniveau |
 | R2 | 2 | Løsningen er accepteret af lokal linjeledelse | Standard: Linjeledelsen har bakket op om deltagelsen i udviklingen og anvendelsen. | 🟢 | OS2 bestyrelse har bedt om og godkendt at alle produkter i OS2 skal foretage selvevaluering. |
 | R3 | 2 | Løsningen har fælles offentligt potentiale | Standard: Kan skabe værdi og genbruges på tværs af myndigheder. | 🟢 | Løsningen anvendes bredt i OS2 og det data som løsningen generere er med til at hjælp kommuner og andre offentlig myndigheder i Deres vurdering af OS2-produkter. |
-| R4 | 3 | Ophæng til nationale strategier er til stede | Standard: Understøtter fx digitaliseringsstrategi og fællesoffentlige mål. | 🟡 | Ingen data i selvevalueringsrapport. |
+| R4 | 3 | Ophæng til nationale strategier er til stede | Standard: Understøtter fx digitaliseringsstrategi og fællesoffentlige mål. | ⚪ | Det er et internt evalueringsværktøj og ikke umiddelbart relevant i henhold til nationale strategier. |
 
 ## FORMKRAV
 
@@ -51,11 +47,11 @@ Udfyldes senere.
 | F3 | Sandkasse | Udbudsregler og almindelig lovformlighed er overholdt | Standard: Projektet følger udbudsregler og gældende lovgivning. | 🟢 | Løsningen er egen udviklet. |
 | F4 | Sandkasse | Der er tænkt på sikkerheden i løsningen | Standard: Der forefindes dokumenteret sikkerhedsarbejde og/eller procedurer. | 🟢 | Det er en simple løsning som ikke er kritisk og ikke giver adgang til andre systemer. Løsningen hostes på GitHub Pages and anvender GitHubs sikkerhedsmekanismer. |
 | F5 | Sandkasse | Løsningens formål og værdi er beskrevet | Standard: Formål og værdi er klart beskrevet, gerne i en README tilknyttet kodebasen. | 🟢 | Er beskrevet i repo, https://github.com/OS2offdig/os2-product-audits |
-| F6 | 1 | Kildekoden er overdraget og placeret under OS2's GitHub | Standard: Koden er juridisk overdraget og hostes under OS2's GitHub. | 🔴 | Ingen data i selvevalueringsrapport. |
-| F7 | 1 | Dokumentation udarbejdes med og overholder OS2's standardskabelon | Standard: Dokumentation i åbent format (fx Markdown) og OS2’s skabelon anvendt. | 🔴 | Ingen data i selvevalueringsrapport. |
-| F10 | 1 | OS2's kommunikationskanaler anvendes | Standard: Information findes på os2.eu. | 🔴 | Ingen data i selvevalueringsrapport. |
-| F11 | 1 | Offentlig issue-tracking anvendes | Standard: Opgaver (issues) og kodeændringer spores offentligt og tilknyttes GitHub. | 🔴 | Ingen data i selvevalueringsrapport. |
-| F12 | 2 | Kun én version af core-koden (master) | Standard: Ingen parallelle versioner af kodebasen. | 🔴 | Ingen data i selvevalueringsrapport. |
+| F6 | 1 | Kildekoden er overdraget og placeret under OS2's GitHub | Standard: Koden er juridisk overdraget og hostes under OS2's GitHub. | 🟢 | Kildekode forvaltes og udvikles af OS2-sekretariatet. Det foregår i følgende repo: https://github.com/OS2offdig/os2-product-audits |
+| F7 | 1 | Dokumentation udarbejdes med og overholder OS2's standardskabelon | Standard: Dokumentation i åbent format (fx Markdown) og OS2’s skabelon anvendt. | 🟢 | Skabelonen anvendes en til en. |
+| F10 | 1 | OS2's kommunikationskanaler anvendes | Standard: Information findes på os2.eu. | 🟢 | Værktøjes publiceres under OS2s governanceinformation of som et subdomæne til os2.eu. På audit.os2.eu. |
+| F11 | 1 | Offentlig issue-tracking anvendes | Standard: Opgaver (issues) og kodeændringer spores offentligt og tilknyttes GitHub. | 🟢 | Issue tracker er placeret i repo: https://github.com/OS2offdig/os2-product-audits |
+| F12 | 2 | Kun én version af core-koden (master) | Standard: Ingen parallelle versioner af kodebasen. | 🟢 | Der vedligeholdes og udvikles kun en version. |
 | F13 | 2 | Præsentationsmateriale af løsningen er udarbejdet | Standard: Der findes præsentationer om produktet. | 🔴 | Ingen data i selvevalueringsrapport. |
 | F14 | 2 | Kommunikationsmateriale til strategisk niveau | Standard: Der findes materialer målrettet ledelse og strategi. | 🔴 | Ingen data i selvevalueringsrapport. |
 | F15 | 2 | Best practice for implementering i organisationen dokumenteres | Standard: Vejledninger og erfaringer er beskrevet. | 🔴 | Ingen data i selvevalueringsrapport. |
@@ -96,22 +92,20 @@ Udfyldes senere.
 | G13 | 3 | Aftale sikrer økonomi til koordinering og videreudvikling | Standard: Aftaler om finansiering er på plads og budget udarbejdet. | 🟢 | Dækkes af OS2s budget. |
 | G14 | 3 | Fagligt fællesskab bag løsningen | Standard: Aktivt fællesskab, fx brugerklub, forum eller andet netværk. | ⚪ | Ingen data i selvevalueringsrapport. |
 
----
+ # Optælling af vurderinger pr. niveau og tema
 
-# Optælling af vurderinger pr. niveau og tema
-
-| Niveau | 🟢 Grøn | 🟡 Gul | 🔴 Rød | ⚪ Grå |
-|-------------|---------|--------|--------|--------|
+| Niveau / Vurdering | 🟢 Grøn | 🟡 Gul | 🔴 Rød | ⚪ Grå |
+|-------------------------|---------|--------|--------|--------|
 | Sandkasse | 6 | 0 | 0 | 0 |
-| Niveau 1 | 6 | 0 | 4 | 0 |
-| Niveau 2 | 8 | 0 | 11 | 0 |
-| Niveau 3 | 4 | 1 | 0 | 3 |
-| **Samlet** | 24 | 1 | 15 | 3 |
+| Niveau 1 | 10 | 0 | 0 | 0 |
+| Niveau 2 | 9 | 0 | 10 | 0 |
+| Niveau 3 | 4 | 0 | 0 | 4 |
+| **Total** | 29 | 0 | 10 | 4 |
 
 | Tema / Niveau | Sandkasse | Niveau 1 | Niveau 2 | Niveau 3 | Total |
 |---|---|---|---|---|---|
-| Relevans | 🟢 1 🟡 0 🔴 0 ⚪ 0 | 🟢 0 🟡 0 🔴 0 ⚪ 0 | 🟢 2 🟡 0 🔴 0 ⚪ 0 | 🟢 0 🟡 1 🔴 0 ⚪ 0 | 🟢 3 🟡 1 🔴 0 ⚪ 0 |
-| Formkrav | 🟢 5 🟡 0 🔴 0 ⚪ 0 | 🟢 0 🟡 0 🔴 4 ⚪ 0 | 🟢 0 🟡 0 🔴 9 ⚪ 0 | 🟢 0 🟡 0 🔴 0 ⚪ 2 | 🟢 5 🟡 0 🔴 13 ⚪ 2 |
+| Relevans | 🟢 1 🟡 0 🔴 0 ⚪ 0 | 🟢 0 🟡 0 🔴 0 ⚪ 0 | 🟢 2 🟡 0 🔴 0 ⚪ 0 | 🟢 0 🟡 0 🔴 0 ⚪ 1 | 🟢 3 🟡 0 🔴 0 ⚪ 1 |
+| Formkrav | 🟢 5 🟡 0 🔴 0 ⚪ 0 | 🟢 4 🟡 0 🔴 0 ⚪ 0 | 🟢 1 🟡 0 🔴 8 ⚪ 0 | 🟢 0 🟡 0 🔴 0 ⚪ 2 | 🟢 10 🟡 0 🔴 8 ⚪ 2 |
 | Strategisk sammenhæng | 🟢 0 🟡 0 🔴 0 ⚪ 0 | 🟢 2 🟡 0 🔴 0 ⚪ 0 | 🟢 2 🟡 0 🔴 0 ⚪ 0 | 🟢 1 🟡 0 🔴 0 ⚪ 0 | 🟢 5 🟡 0 🔴 0 ⚪ 0 |
 | Governance | 🟢 0 🟡 0 🔴 0 ⚪ 0 | 🟢 4 🟡 0 🔴 0 ⚪ 0 | 🟢 4 🟡 0 🔴 2 ⚪ 0 | 🟢 3 🟡 0 🔴 0 ⚪ 1 | 🟢 11 🟡 0 🔴 2 ⚪ 1 |
 
@@ -129,13 +123,13 @@ pie showData
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#008000", "pie2": "#FF0000", "pie3": "#FFFF00", "pie4": "#808080"
+ "pie1": "#008000", "pie2": "#FFFF00", "pie3": "#FF0000", "pie4": "#808080"
 }}}%%
 pie showData
  title Niveau 1 (10 krav)
- "Grøn 60%" : 6
+ "Grøn 100%" : 10
  "Gul 0%" : 0
- "Rød 40%" : 4
+ "Rød 0%" : 0
  "Grå 0%" : 0
 ```
 
@@ -145,9 +139,9 @@ pie showData
 }}}%%
 pie showData
  title Niveau 2 (19 krav)
- "Grøn 42%" : 8
+ "Grøn 47%" : 9
  "Gul 0%" : 0
- "Rød 58%" : 11
+ "Rød 53%" : 10
  "Grå 0%" : 0
 ```
 
@@ -158,9 +152,9 @@ pie showData
 pie showData
  title Niveau 3 (8 krav)
  "Grøn 50%" : 4
- "Gul 13%" : 1
+ "Gul 0%" : 0
  "Rød 0%" : 0
- "Grå 38%" : 3
+ "Grå 50%" : 4
 ```
 
 ```mermaid
@@ -169,17 +163,16 @@ pie showData
 }}}%%
 pie showData
  title Samlet (43 krav)
- "Grøn 56%" : 24
- "Gul 2%" : 1
- "Rød 35%" : 15
- "Grå 7%" : 3
+ "Grøn 67%" : 29
+ "Gul 0%" : 0
+ "Rød 23%" : 10
+ "Grå 9%" : 4
 ```
 
 ## Hvad betyder trafiklysene?
 - 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
 - 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
-- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
-- ⚪ **Grå** → Kravet er markeret som ikke relevant (ikke vurderet ift. efterlevelse).
+- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling. - ⚪ **Grå** → Kravet er ikke relevant og medtages ikke i vurderingen.
 
 ## Hvordan bruges optællingen?
 
@@ -192,10 +185,9 @@ Ud fra optællingen kan vi vurdere, hvor produktet står samlet set:
 
 - Mange 🟢 → Produktet er solidt forankret i governance-kravene.
 - Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.
-- Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.
-- Mange ⚪ → Produktet har alvorlige mangler i forhold til OS2 kompatabilitet og kræver et særligt fokus.
+- Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning. - Mange ⚪ → Produktet har alvorlige mangler i forhold til OS2 kompatabilitet og kræver et særligt fokus.
 
-### Antal krav fordelt på tema
+## Hvor mange krav er der? ### Antal krav fordelt på tema
 * Relevans: *4 krav* (R1–R4)
 * Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)
 * Strategisk sammenhæng: *5 krav* (S1–S5)
