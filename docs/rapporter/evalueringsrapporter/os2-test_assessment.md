@@ -23,9 +23,9 @@ Udfyldes senere.
 
 ---
 
- # Evaluering i henhold til krav i OS2s styringsmodel
+# Evaluering i henhold til krav i OS2s styringsmodel
 
- ## RELEVANS
+## RELEVANS
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |-----|-----------|------|--------------------|-----------|--------------------|
