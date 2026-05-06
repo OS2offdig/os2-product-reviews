@@ -91,7 +91,7 @@ function render() {
       <div class="col-12">
         <h1>OS2 selvevaluering</h1>
         <p>Udfyld status for hvert krav og tilføj dokumentation. Når du er færdig, kan du eksportere svarene til JSON eller gemme direkte i et GitHub repo. Send JSON filen eller link til GitHub repo til sekretariatet på os2@os2.eu.</p>
-        <blockquote note-title>
+        <blockquote class="note-title">
           <p>
             Du udfylder checklisten ved at vælge en markering for hvert krav:
           </p>

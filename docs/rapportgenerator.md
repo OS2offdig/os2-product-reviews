@@ -77,7 +77,10 @@ function esc(s){ return String(s||"").replace(/\|/g, "\\|").replace(/\n/g,"<br/>
 function render() {
   document.getElementById("app").innerHTML = `
     <h1>OS2 evalueringsrapport generator</h1>
-    <p>Upload JSON fra selvevaluering og generér en udfyldt rapport i Markdown-format.</p>
+    <blockquote class="note-title">
+      <p>Denne formular anvendes til at generere en evalueringsrapport baseret på data fra en selvevalueringsrapport.</p>
+      <p>Upload JSON fra selvevaluering og generér en udfyldt rapport i Markdown-format.</p>
+    </blockquote>
     <div class="row g-3 mb-3">
       <div class="col-12 col-md-4"><label class="form-label">JSON-fil</label><input id="jsonFile" class="form-control" type="file" accept=".json,application/json"></div>
       <div class="col-12 col-md-4"><label class="form-label">Audit made by</label><input id="auditBy" class="form-control" placeholder="Navn"></div>
