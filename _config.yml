@@ -3,6 +3,8 @@ description: Evaluerings- og vurderingsrapporter udarbejdet i henhold til OS2s g
 theme: just-the-docs
 logo: "/assets/images/os2_logo.png"
 color_scheme: wider
+back_to_top: true
+back_to_top_text: "Til toppen"
 
 mermaid:
   # Version of mermaid library
