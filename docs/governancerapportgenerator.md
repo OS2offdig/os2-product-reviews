@@ -103,21 +103,22 @@ async function generate() {
   THEMES.forEach(theme => {
     const rows = REQUIREMENTS.filter(r => r[0] === theme).map(([_, id, req, level, guideline]) => {
       const k = byId.get(id) || {};
+      const status = (k.efterlevet || "[Udfyldes i selvevaluering]").trim();
       const doc = (k.dokumentation || "").trim() || "[Udfyldes i selvevaluering]";
-      return `| ${id} | ${esc(req)} | ${level} | ${esc(doc)} |`;
+      return `| ${id} | ${esc(req)} | ${level} | ${esc(guideline)} | ${esc(status)} | ${esc(doc)} |`;
     }).join("\n");
     tableBlocks[theme] = rows;
   });
 
   const dateVal = document.getElementById("reportDate").value || new Date().toISOString().slice(0,10).split("-").reverse().join("-");
-  const md = `# Governancerapport for ${esc(data.productName || "[produktnavn]")}\n\n> **📄 Dokumentinformation**  \n> **Version for anvendt governancerapport:** 1.1.0  \n> **Dato for udfyldelse:** ${esc(dateVal)}  \n> **Udfyldt af:** ${esc(document.getElementById("filledBy").value || data.filledBy || "[Navn]")}  \n> **Link til Git organisation:** ${esc(document.getElementById("githubLink").value || "[indsæt link til git organisation/repo]")}  \n\n## RELEVANS\n\n| #   | Krav                                          | Produktniveau | Retningslinjer |
-| --- | --------------------------------------------- | --------------| -------------- |
-${tableBlocks.relevans}\n\n## FORMKRAV\n\n| #   | Krav                                          | Produktniveau | Retningslinjer |
-| --- | --------------------------------------------- | --------------| -------------- |
-${tableBlocks.formkrav}\n\n## STRATEGISK SAMMENHÆNG\n\n| #   | Krav                                          | Produktniveau | Retningslinjer |
-| --- | --------------------------------------------- | --------------| -------------- |
-${tableBlocks.strategisk}\n\n## GOVERNANCE\n\n| #   | Krav                                          | Produktniveau | Retningslinjer |
-| --- | --------------------------------------------- | --------------| -------------- |
+  const md = `# Governancerapport for ${esc(data.productName || "[produktnavn]")}\n\n> **📄 Dokumentinformation**  \n> **Version for anvendt governancerapport:** 1.1.0  \n> **Dato for udfyldelse:** ${esc(dateVal)}  \n> **Udfyldt af:** ${esc(document.getElementById("filledBy").value || data.filledBy || "[Navn]")}  \n> **Link til Git organisation:** ${esc(document.getElementById("githubLink").value || "[indsæt link til git organisation/repo]")}  \n\n## RELEVANS\n\n| #   | Krav                                          | Produktniveau | Retningslinjer | Efterlevet? | Dokumentation |
+| --- | --------------------------------------------- | ------------- | -------------- | ----------- | ------------- |
+${tableBlocks.relevans}\n\n## FORMKRAV\n\n| #   | Krav                                          | Produktniveau | Retningslinjer | Efterlevet? | Dokumentation |
+| --- | --------------------------------------------- | ------------- | -------------- | ----------- | ------------- |
+${tableBlocks.formkrav}\n\n## STRATEGISK SAMMENHÆNG\n\n| #   | Krav                                          | Produktniveau | Retningslinjer | Efterlevet? | Dokumentation |
+| --- | --------------------------------------------- | ------------- | -------------- | ----------- | ------------- |
+${tableBlocks.strategisk}\n\n## GOVERNANCE\n\n| #   | Krav                                          | Produktniveau | Retningslinjer | Efterlevet? | Dokumentation |
+| --- | --------------------------------------------- | ------------- | -------------- | ----------- | ------------- |
 ${tableBlocks.governance}`;
 
   lastMarkdown = md;
