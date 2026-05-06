@@ -7,7 +7,7 @@ has_children: false
 has_toc: false
 ---
 
-{: .note-title }
+{: .note }
 > OS2's Governancerapport (autoritativ version)
 >
 > Version: 1.1.0

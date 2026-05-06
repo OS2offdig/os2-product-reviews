@@ -1,8 +1,8 @@
 ---
-title: OS2 governancerapport (generator)
+title: Governancerapport (generator)
 layout: default
 parent: Evalueringer
-nav_order: 3
+nav_order: 2
 has_children: false
 has_toc: false
 ---
@@ -69,7 +69,7 @@ function esc(s){ return String(s || "").replace(/\|/g, "\\|").replace(/\n/g, "<b
 function render() {
   document.getElementById("app").innerHTML = `
     <h1>OS2 governancerapport generator</h1>
-    <blockquote class="note-title">
+    <blockquote class="note">
       <p>Denne formular anvendes til at generere en governancerapport baseret på data fra en selvevaluering.</p>
       <p>Upload JSON fra selvevaluering og generér en udfyldt rapport i Markdown-format.</p>
     </blockquote>

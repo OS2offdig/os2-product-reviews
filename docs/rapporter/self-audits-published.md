@@ -1,18 +1,10 @@
 ---
-title: Offentliggjorte selvevalueringer
+title: Selvevalueringer
 layout: default
-parent: Evalueringer
+parent: Rapporter
 nav_order: 6
 has_children: true
 has_toc: false
----
-
-# Indhold på siden
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
 ---
 
 # Selvevalueringsrapporter for OS2-produkter

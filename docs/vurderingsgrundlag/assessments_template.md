@@ -7,7 +7,7 @@ has_children: false
 has_toc: false
 ---
 
-{: .note-title }
+{: .note }
 > OS2's Evalueringsrapport (autoritativ version)
 >
 > Version: 0.9.2

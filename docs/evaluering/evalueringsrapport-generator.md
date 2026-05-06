@@ -1,8 +1,8 @@
 ---
-title: OS2 evalueringsrapport (generator)
+title: Evalueringsrapport (generator)
 layout: default
 parent: Evalueringer
-nav_order: 2
+nav_order: 3
 has_children: false
 has_toc: false
 ---

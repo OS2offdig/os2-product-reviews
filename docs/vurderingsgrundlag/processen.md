@@ -5,14 +5,6 @@ parent: Vurderingsgrundlag
 nav_order: 1
 ---
 
-# Indhold på siden
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
-
 # Introduktion til evalueringsprocessen
 
 OS2 gennemfører evalueringer af alle produkter og projekter (følgende benævnt samlet som produktet) to gange årligt som en fast del af fællesskabets porteføljestyring.

@@ -1,5 +1,5 @@
 ---
-title: OS2 selvevaluering (formular)
+title: Selvevaluering (formular)
 layout: default
 parent: Evalueringer
 nav_order: 1

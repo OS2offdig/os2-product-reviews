@@ -6,14 +6,6 @@ has_children: true
 has_toc: false
 ---
 
-# Indhold på siden
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
-
 # Vurderingsgrundlag
 En vurdering af et OS2-produkt bygger på et dokumenteret og transparent fundament. Formålet er at skabe et ensartet billede af projekter og produktets modenhed, governance og dokumentation, så styregrupper, koordinatorer og anvendere kan prioritere udvikling og kvalitetssikring på et oplyst grundlag.  
 
