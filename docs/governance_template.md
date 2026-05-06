@@ -7,21 +7,28 @@ has_children: false
 has_toc: false
 ---
 
+
+{: .note-title }
+> My note title
+>
+> A paragraph with a custom title callout
+
+
 {: .note-title }
 > OS2's Governancerapport (autoritativ version)
->  
-> Version: 1.1.0  
-> Sidste release: Juni 2025  
->    
-> Dette dokument er OS2's autoritative checkliste med krav, som anvendes til at belyse niveauet af et OS2-projekt eller -produkt.  
->  
-> Det er styregruppens ansvar at sikre, at kravene efterleves. Styregruppen har samtidig ansvar for strategisk at forholde sig til, hvilket produktniveau der styres efter. Der er dermed en forventning om, at alle OS2-projekter og -produkter aktivt anvender OS2’s styringsmodel og denne kravcheckliste.  
->  
-> Såfremt der ikke er nedsat en styregruppe, påhviler ansvaret den organisatoriske enhed med beslutningskompetence for projektet eller produktet.  
->  
-> Selvevaluering gennemføres via den tilhørende formular på denne side. Det er denne, der anvendes til at dokumentere og opdatere status på efterlevelse af kravene.  
->  
-> Information om OS2's produktniveauer og baggrunden herfor [kan læses her](https://governance.os2.eu).  
+>
+> Version: 1.1.0
+> Sidste release: Juni 2025
+>
+> Dette dokument er OS2's autoritative checkliste med krav, som anvendes til at belyse niveauet af et OS2-projekt eller -produkt.
+>
+> Det er styregruppens ansvar at sikre, at kravene efterleves. Styregruppen har samtidig ansvar for strategisk at forholde sig til, hvilket produktniveau der styres efter. Der er dermed en forventning om, at alle OS2-projekter og -produkter aktivt anvender OS2’s styringsmodel og denne kravcheckliste.
+>
+> Såfremt der ikke er nedsat en styregruppe, påhviler ansvaret den organisatoriske enhed med beslutningskompetence for projektet eller produktet.
+>
+> Selvevaluering gennemføres via den tilhørende formular på denne side. Det er denne, der anvendes til at dokumentere og opdatere status på efterlevelse af kravene.
+>
+> Information om OS2's produktniveauer og baggrunden herfor [kan læses her](https://governance.os2.eu).
 
 <!-- BEGIN REPORT TEMPLATE -->
 
