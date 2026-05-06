@@ -1,10 +1,14 @@
-title: Audits af OS2-produkter
-description: Evaluerings- og vurderingsrapporter udarbejdet i henhold til OS2s governance-model.
+title: Porteføljestyring af OS2-projekter og -produkter
+description: Indeholder dokumentation i relation til OS2s porteføljestyring og arbejde med OS2s styringsmodel.
 theme: just-the-docs
 logo: "/assets/images/os2_logo.png"
 color_scheme: wider
 back_to_top: true
 back_to_top_text: "Til toppen"
+
+just_the_docs:
+  custom_css:
+    - custom
 
 mermaid:
   # Version of mermaid library
