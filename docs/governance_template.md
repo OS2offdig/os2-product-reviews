@@ -7,13 +7,6 @@ has_children: false
 has_toc: false
 ---
 
-
-{: .note-title }
-> My note title
->
-> A paragraph with a custom title callout
-
-
 {: .note-title }
 > OS2's Governancerapport (autoritativ version)
 >

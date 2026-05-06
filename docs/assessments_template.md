@@ -9,25 +9,25 @@ has_toc: false
 
 {: .note-title }
 > OS2's Evalueringsrapport (autoritativ version)
->  
-> Version: 0.9.2  
-> Sidste release: Maj 2026  
->  
-> Dette dokument er OS2's autoritative skabelon til evaluering af OS2-projekter og -produkter. Evalueringsrapporten anvendes til at foretage en samlet vurdering af efterlevelsen af kravene i OS2’s governancerapport og til at fastlægge produktets aktuelle niveau.  
->  
-> Evalueringsrapporten tager afsæt i den senest opdaterede selvevaluering og dokumentation fra projektet eller produktet. Vurderingen baseres på det dokumenterede grundlag og har til formål at sikre en ensartet, gennemsigtig og sammenlignelig vurdering på tværs af OS2’s portefølje.  
->  
-> Evalueringen gennemføres af OS2-sekretariatet på mandat fra bestyrelsen. Evalueringen foretages altid i dialog med projektet eller produktet og dets styregruppe og underliggende organisation.  
->  
->  Den endelige vurdering og placering på produktniveau udgør OS2’s officielle vurdering på det givne tidspunkt.  
->  
->  Dialogen i evalueringen har til formål at sikre fælles forståelse af vurderingsgrundlaget og skabe mulighed for at afklare uenigheder.  
->  
->  Uenighed, som ikke kan løses gennem dialog, håndteres i overensstemmelse med OS2’s Code of Conduct. Inden eskalation kan der indhentes en faglig second opinion for at kvalificere vurderingsgrundlaget. Hvis der fortsat ikke kan opnås enighed, vil næste led i beslutningskæden være bestyrelsen.  
->  
-> Evalueringsrapporten danner grundlag for videre dialog om produktets status, udvikling og eventuelle behov for ændringer i organisering, dokumentation eller retning.  
->  
-> Information om OS2's produktniveauer og baggrunden herfor [kan læses her](https://governance.os2.eu).  
+>
+> Version: 0.9.2
+> Sidste release: Maj 2026
+>
+> Dette dokument er OS2's autoritative skabelon til evaluering af OS2-projekter og -produkter. Evalueringsrapporten anvendes til at foretage en samlet vurdering af efterlevelsen af kravene i OS2’s governancerapport og til at fastlægge produktets aktuelle niveau.
+>
+> Evalueringsrapporten tager afsæt i den senest opdaterede selvevaluering og dokumentation fra projektet eller produktet. Vurderingen baseres på det dokumenterede grundlag og har til formål at sikre en ensartet, gennemsigtig og sammenlignelig vurdering på tværs af OS2’s portefølje.
+>
+> Evalueringen gennemføres af OS2-sekretariatet på mandat fra bestyrelsen. Evalueringen foretages altid i dialog med projektet eller produktet og dets styregruppe og underliggende organisation.
+>
+>  Den endelige vurdering og placering på produktniveau udgør OS2’s officielle vurdering på det givne tidspunkt.
+>
+>  Dialogen i evalueringen har til formål at sikre fælles forståelse af vurderingsgrundlaget og skabe mulighed for at afklare uenigheder.
+>
+>  Uenighed, som ikke kan løses gennem dialog, håndteres i overensstemmelse med OS2’s Code of Conduct. Inden eskalation kan der indhentes en faglig second opinion for at kvalificere vurderingsgrundlaget. Hvis der fortsat ikke kan opnås enighed, vil næste led i beslutningskæden være bestyrelsen.
+>
+> Evalueringsrapporten danner grundlag for videre dialog om produktets status, udvikling og eventuelle behov for ændringer i organisering, dokumentation eller retning.
+>
+> Information om OS2's produktniveauer og baggrunden herfor [kan læses her](https://governance.os2.eu).
 
 <!-- BEGIN REPORT TEMPLATE -->
 
