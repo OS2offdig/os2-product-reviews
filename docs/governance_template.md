@@ -7,6 +7,14 @@ has_children: false
 has_toc: false
 ---
 
+## Indhold på siden
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 # OS2's Governancerapport (autoritativ version)
 
 > Version: 1.1.0  

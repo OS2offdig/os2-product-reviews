@@ -7,9 +7,6 @@ has_children: false
 has_toc: false
 ---
 
-Opleves fejl - kontakt OS2-sekretariatet, os2@os2.eu
-{: .label .label-red }  
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
 <div id="app" class="container-fluid my-4 px-3 px-md-5"></div>

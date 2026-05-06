@@ -7,15 +7,8 @@ has_children: false
 has_toc: false
 ---
 
-## Indhold på siden
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
-
 # OS2's Evalueringsrapport (autoritativ version)
+{: .no_toc }
 
 > Version: 0.9.2  
 > Sidste release: Maj 2026  
@@ -36,6 +29,15 @@ has_toc: false
 >  
 > Information om OS2's produktniveauer og baggrunden herfor [kan læses her](https://governance.os2.eu).  
 
+---
+
+# Indhold på siden
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 # Evaluering af OS2-produkt: [Produktnavn]
 
@@ -55,6 +57,8 @@ has_toc: false
 [Her skrives et overblik over anbefalinger - gerne i punktform]
 
 ---
+
+# Krav i OS2s styringsmodel
 
 ## 🌍 RELEVANS
 
@@ -121,7 +125,7 @@ has_toc: false
 
 ---
 
-## 📊 Optælling af vurderinger pr. niveau og tema
+# 📊 Optælling af vurderinger pr. niveau og tema
 
 | Niveau / Vurdering      | 🟢 Grøn              | 🟡 Gul               | 🔴 Rød               | ⚪ Grå               |
 |-------------------------|----------------------|----------------------|----------------------|----------------------|
@@ -200,8 +204,6 @@ pie showData
   "Rød 20%"  : 9
 ```
 
----
-
 ## 🏷️ Hvad betyder trafiklysene?
 - 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
 - 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
@@ -216,7 +218,6 @@ pie showData
 - **Niveau 3:** Avanceret governance og fællesskab – et område, hvor ikke alle produkter nødvendigvis når i mål, men som er ønskværdigt for stabile og bæredygtige produkter.
 
 Ud fra optællingen kan vi vurdere, hvor produktet står samlet set:
-
 - Mange 🟢 → Produktet er solidt forankret i governance-kravene.
 - Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.
 - Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.
