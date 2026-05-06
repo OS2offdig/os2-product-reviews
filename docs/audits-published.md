@@ -4,7 +4,14 @@ layout: default
 parent: Evalueringer
 nav_order: 5
 has_children: true
-has_toc: false
+---
+
+## Indhold på siden
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ---
 
 # Evalueringsrapporter for OS2-produkter

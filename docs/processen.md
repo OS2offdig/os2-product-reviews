@@ -11,6 +11,8 @@ nav_order: 1
 1. TOC
 {:toc}
 
+---
+
 # Introduktion til evalueringsprocessen
 
 OS2 gennemfører evalueringer af alle produkter og projekter (følgende benævnt samlet som produktet) to gange årligt som en fast del af fællesskabets porteføljestyring.
@@ -94,11 +96,11 @@ F1 --> A1
 
 ### Styregruppe (for produktet)
 
-**Ansvar**
+Ansvar:
 - Sikre efterlevelse af OS2’s styringsmodel og krav.
 - Tage strategisk stilling til produktets niveau og udvikling.
 
-**Opgaver**
+Opgaver:
 - Udfylde og vedligeholde selvevalueringen.
 - Fremlægge dokumentation for opfyldelse af krav.
 - Indgå aktivt i dialog med sekretariatet under evalueringen.
@@ -106,47 +108,47 @@ F1 --> A1
 
 ### Projektleder / koordinator / tovholder
 
-**Ansvar**
+Ansvar:
 - Koordinere arbejdet med selvevalueringen.
 
-**Opgaver**
+Opgaver:
 - Indsamle input og dokumentation fra relevante aktører.
 - Udfylde selvevalueringsformularen i samarbejde med styregruppen.
 - Sikre at evalueringen er opdateret og fyldestgørende.
 
 ### OS2-sekretariatet
 
-**Ansvar**
+Ansvar:
 - Gennemføre evalueringen på mandat fra bestyrelsen.
 - Sikre ensartet, faglig og dokumenteret vurdering på tværs af produkter.
 - Stå på mål for den samlede vurdering af OS2’s portefølje.
 
-**Opgaver**
+Opgaver:
 - Gennemgå selvevaluering og dokumentation.
 - Foretage en samlet vurdering af kravopfyldelse.
 - Udarbejde evalueringsrapport og fastlægge produktniveau.
 - Indgå i dialog med styregruppen om vurderingen.
 - Indhente faglig second opinion ved behov.
 
-**Bemærkning**
+Bemærkning:
 - Sekretariatet kan, på et dokumenteret og fagligt grundlag, nå frem til en anden vurdering end styregruppen. Den endelige vurdering fastlægges af sekretariatet.
 
 ### Bestyrelsen
 
-**Ansvar**
+Ansvar:
 - Overordnet ansvar for OS2’s styringsmodel og portefølje.
 
-**Opgaver**
+Opgaver:
 - Fungere som sidste instans ved uenighed.
 - Træffe beslutning ved eskalerede vurderinger.
 - Fastlægge strategisk retning og rammer for modellen.
 
 ### OS2-fællesskabet (øvrige deltagere)
 
-**Ansvar**
+Ansvar:
 - Bidrage til transparens og kvalitet i fællesskabet.
 
-**Opgaver**
+Opgaver:
 - Levere input og erfaringer til produkter.
 - Anvende og bidrage til dokumentation og løsninger.
 - Understøtte åbenhed og videndeling.

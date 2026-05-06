@@ -7,6 +7,8 @@ has_children: false
 has_toc: false
 ---
 
+  
+  
 Opleves fejl - kontakt OS2-sekretariatet, os2@os2.eu
 {: .label .label-red }  
 

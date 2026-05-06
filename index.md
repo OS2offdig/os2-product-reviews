@@ -21,7 +21,7 @@ På denne side finder du:
 
 * en checkliste til [selvevaluering](docs/governance_template) og [evaluering](docs/assessments_template).
 * en [procesbeskrivelse](docs/processen) for udarbejdelse og offentliggørelse.
-* en [formular](docs/checkliste-formular.md) til at oprette og vedligeholde selvevaluering.
+* en [formular](docs/checkliste-formular) til at oprette og vedligeholde selvevaluering.
 * mulighed for at [generere en kladde](docs/rapportgenerator) til evalueringsrapport baseret på indtastede data.
 
 ## Hvordan vurderes?
