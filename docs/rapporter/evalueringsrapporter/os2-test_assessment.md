@@ -88,7 +88,7 @@ Udfyldes senere.
 | G13 | 3 | Aftale sikrer økonomi til koordinering og videreudvikling | Standard: Aftaler om finansiering er på plads og budget udarbejdet. | 🟢 | Dækkes af OS2s budget. |
 | G14 | 3 | Fagligt fællesskab bag løsningen | Standard: Aktivt fællesskab, fx brugerklub, forum eller andet netværk. | ⚪ | Ingen data i selvevalueringsrapport. |
 
- # Optælling af vurderinger pr. niveau og tema
+# Optælling af vurderinger pr. niveau og tema
 
 | Niveau / Vurdering | 🟢 Grøn | 🟡 Gul | 🔴 Rød | ⚪ Grå |
 |-------------------------|---------|--------|--------|--------|
@@ -168,20 +168,22 @@ pie showData
 ## Hvad betyder trafiklysene?
 - 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
 - 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
-- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling. - ⚪ **Grå** → Kravet er ikke relevant og medtages ikke i vurderingen.
+- 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
+- ⚪ **Grå** → Kravet er ikke relevant og medtages ikke i vurderingen.
 
 ## Hvordan bruges optællingen?
 
-- **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt. 
-- **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab. 
-- **Niveau 2:** Drift, vedligehold og strategisk understøttelse – mange 🟡 eller 🔴 her peger på modenhedsproblemer. 
+- **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt.
+- **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab.
+- **Niveau 2:** Drift, vedligehold og strategisk understøttelse – mange 🟡 eller 🔴 her peger på modenhedsproblemer.
 - **Niveau 3:** Avanceret governance og fællesskab – et område, hvor ikke alle produkter nødvendigvis når i mål, men som er ønskværdigt for stabile og bæredygtige produkter.
 
 Ud fra optællingen kan vi vurdere, hvor produktet står samlet set:
 
 - Mange 🟢 → Produktet er solidt forankret i governance-kravene.
 - Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.
-- Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning. - Mange ⚪ → Produktet har alvorlige mangler i forhold til OS2 kompatabilitet og kræver et særligt fokus.
+- Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.
+- Mange ⚪ → Produktet har alvorlige mangler i forhold til OS2 kompatabilitet og kræver et særligt fokus.
 
 ## Hvor mange krav er der?
 
