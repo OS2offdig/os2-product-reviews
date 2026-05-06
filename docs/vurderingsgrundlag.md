@@ -6,7 +6,7 @@ has_children: true
 has_toc: false
 ---
 
-## Indhold på siden
+# Indhold på siden
 {: .no_toc .text-delta }
 
 1. TOC
@@ -18,6 +18,29 @@ has_toc: false
 En vurdering af et OS2-produkt bygger på et dokumenteret og transparent fundament. Formålet er at skabe et ensartet billede af projekter og produktets modenhed, governance og dokumentation, så styregrupper, koordinatorer og anvendere kan prioritere udvikling og kvalitetssikring på et oplyst grundlag.  
 
 Vurderingen baserer sig altid på **det materiale, projektet og produktet selv har offentliggjort i OS2**, kombineret med sekretariatets gennemgang af repository, dokumentation, aftaler og relevante beslutninger.
+
+
+## Processen
+
+Vurderingen af et OS2-produkt følger en [fast proces](processen), som sikrer transparens, ensartethed og dialog:
+
+- Selvevaluering  
+  Produktet udfylder governancerapporten via formularen og beskriver status samt henviser til relevant dokumentation.
+
+- Dokumentationsgrundlag  
+  Vurderingen baseres på det materiale, som produktet selv har offentliggjort via selvevalueringen og governancerapporten, herunder repository, dokumentation, aftaler og beslutninger.
+
+- Gennemgang og vurdering  
+  OS2-sekretariatet gennemgår materialet og foretager en samlet vurdering af efterlevelsen af kravene i governancerapporten.
+
+- Dialog med produktet  
+  Vurderingen kvalificeres i dialog med styregruppen, hvor vurderingsgrundlag og eventuelle uenigheder afklares.
+
+- Fastlæggelse af niveau  
+  Sekretariatet fastlægger produktets niveau og udarbejder evalueringsrapporten, som udgør den officielle vurdering.
+
+- Offentliggørelse og opfølgning  
+  Evalueringsrapporten offentliggøres og danner grundlag for videre dialog, prioritering og udvikling af produktet.
 
 
 ## Governancerapporten

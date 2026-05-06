@@ -6,7 +6,7 @@ nav_order: 5
 has_children: true
 ---
 
-## Indhold på siden
+# Indhold på siden
 {: .no_toc .text-delta }
 
 1. TOC
