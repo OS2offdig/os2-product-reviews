@@ -8,9 +8,9 @@ parent: Evalueringsrapporter
 
 > **📄 Dokumentinformation**<br/>
 > **Version for anvendt evalueringsskabelon:** 0.9.2<br/>
-> **Dato for udfyldelse:** 2026-05-06<br/>
-> **Evaluering lavet af:** Rasmus Frey<br/>
-> **Link til Git organisation:** https://github.com/OS2offdig/os2-product-audits<br/>
+> **Dato for udfyldelse:** 06-05-2026<br/>
+> **Evaluering lavet af:** [Navn]<br/>
+> **Link til Git organisation:** [indsæt link til git organisation/repo]<br/>
 
 ## Resumé
 Udfyldes senere.
@@ -21,7 +21,11 @@ Udfyldes senere.
 ## Anbefaling
 Udfyldes senere.
 
---- # Evaluering i henhold til krav i OS2s styringsmodel ## RELEVANS
+---
+
+ # Evaluering i henhold til krav i OS2s styringsmodel
+
+ ## RELEVANS
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |-----|-----------|------|--------------------|-----------|--------------------|
@@ -179,7 +183,9 @@ Ud fra optællingen kan vi vurdere, hvor produktet står samlet set:
 - Mange 🟡 → Produktet har et godt grundlag, men kræver en prioriteret indsats på udvalgte områder.
 - Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning. - Mange ⚪ → Produktet har alvorlige mangler i forhold til OS2 kompatabilitet og kræver et særligt fokus.
 
-## Hvor mange krav er der? ### Antal krav fordelt på tema
+## Hvor mange krav er der?
+
+### Antal krav fordelt på tema
 * Relevans: *4 krav* (R1–R4)
 * Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)
 * Strategisk sammenhæng: *5 krav* (S1–S5)
