@@ -170,27 +170,12 @@ function render() {
     `).join("")}
     </div>
     <div class="d-flex gap-2 flex-wrap mt-3">
-      <!--<button class="btn btn-outline-secondary" id="saveLocal" type="button">Gem lokalt</button>
-      <button class="btn btn-outline-secondary" id="loadLocal" type="button">Indlæs lokalt</button>-->
       <button class="btn btn-outline-secondary" id="importJson" type="button">Importér JSON data</button>
       <input id="importJsonFile" type="file" accept=".json,application/json" class="d-none">
       <button class="btn btn-primary" id="exportJson" type="button">Eksportér data som JSON</button>
       <button class="btn btn-success d-none" id="saveGithub" type="button">Gem JSON data i GitHub</button>
     </div>
   `;
-
-  document.getElementById("saveLocal").onclick = () => {
-    localStorage.setItem("os2ChecklistDraft", JSON.stringify(collectData()));
-    alert("Kladde gemt i browseren.");
-  };
-
-  document.getElementById("loadLocal").onclick = () => {
-    const raw = localStorage.getItem("os2ChecklistDraft");
-    if (!raw) return alert("Ingen gemt kladde fundet.");
-    populate(JSON.parse(raw));
-  };
-
-
 
   document.getElementById("saveGithub").onclick = async () => {
     const owner = document.getElementById("ghOwner").value.trim();
