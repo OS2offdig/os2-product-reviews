@@ -169,7 +169,7 @@ async function generate() {
     return `| ${THEME_LABELS[theme]} | 🟢 ${s.green} 🟡 ${s.yellow} 🔴 ${s.red} ⚪ ${s.gray} | 🟢 ${n1.green} 🟡 ${n1.yellow} 🔴 ${n1.red} ⚪ ${n1.gray} | 🟢 ${n2.green} 🟡 ${n2.yellow} 🔴 ${n2.red} ⚪ ${n2.gray} | 🟢 ${n3.green} 🟡 ${n3.yellow} 🔴 ${n3.red} ⚪ ${n3.gray} | 🟢 ${tt.green} 🟡 ${tt.yellow} 🔴 ${tt.red} ⚪ ${tt.gray} |`;
   }).join("\n");
 
-  function mermaid(levelTitle, totalCount, b) {
+  /*function mermaid(levelTitle, totalCount, b) {
     const p = (n) => totalCount ? Math.round((n / totalCount) * 100) : 0;
     const ranked = [
       {key: "green", value: b.green, color: "#008000"},
@@ -189,6 +189,43 @@ async function generate() {
       `	"Gul ${p(b.yellow)}%" : ${b.yellow}`,
       `	"Rød ${p(b.red)}%" : ${b.red}`,
       `	"Grå ${p(b.gray)}%" : ${b.gray}`,
+      "```"
+    ].join("\n");
+  }*/
+
+  function mermaid(levelTitle, totalCount, b) {
+    const p = (n) => totalCount ? Math.round((n / totalCount) * 100) : 0;
+
+    const labels = {
+      green: "Grøn",
+      yellow: "Gul",
+      red: "Rød",
+      gray: "Grå"
+    };
+
+    const ranked = [
+      {key: "green", value: b.green || 0, color: "#008000"},
+      {key: "yellow", value: b.yellow || 0, color: "#FFFF00"},
+      {key: "red", value: b.red || 0, color: "#FF0000"},
+      {key: "gray", value: b.gray || 0, color: "#808080"}
+    ].sort((a, c) => c.value - a.value);
+
+    const pieColors = ranked
+      .map((item, index) => `\t"pie${index + 1}": "${item.color}"`)
+      .join(", ");
+
+    const pieRows = ranked
+      .map(item => `\t"${labels[item.key]} ${p(item.value)}%" : ${item.value}`)
+      .join("\n");
+
+    return [
+      "```mermaid",
+      "%%{init: {\"themeVariables\": {",
+      pieColors,
+      "}}}%%",
+      "pie showData",
+      `\ttitle ${levelTitle} (${totalCount} krav)`,
+      pieRows,
       "```"
     ].join("\n");
   }

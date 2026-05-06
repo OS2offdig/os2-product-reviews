@@ -137,6 +137,10 @@ has_toc: false
 <!--
 Nedenfor er mermaid kode til at vise procentfordeling i lagkagediagrammer.
 Bemærk at mermaid renderer efter størrelse på værdi. Så er Grøn størst vil det være pie1, men er rød størst vil det være pie1. Derfor skal du ændre på themeVariables så farvekoder bliver korrekte.
+Rød: #FF0000
+Gul: #FFFF00
+Grøn: #008000
+Grå: #808080
 -->
 
 ```mermaid
