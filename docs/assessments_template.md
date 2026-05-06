@@ -7,20 +7,12 @@ has_children: false
 has_toc: false
 ---
 
-# Indhold på siden
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
-
-# OS2's Evalueringsrapport (autoritativ version)
-{: .no_toc }
-
+{: .note-title }
+> OS2's Evalueringsrapport (autoritativ version)
+>  
 > Version: 0.9.2  
 > Sidste release: Maj 2026  
-  
+>  
 > Dette dokument er OS2's autoritative skabelon til evaluering af OS2-projekter og -produkter. Evalueringsrapporten anvendes til at foretage en samlet vurdering af efterlevelsen af kravene i OS2’s governancerapport og til at fastlægge produktets aktuelle niveau.  
 >  
 > Evalueringsrapporten tager afsæt i den senest opdaterede selvevaluering og dokumentation fra projektet eller produktet. Vurderingen baseres på det dokumenterede grundlag og har til formål at sikre en ensartet, gennemsigtig og sammenlignelig vurdering på tværs af OS2’s portefølje.  
@@ -36,8 +28,6 @@ has_toc: false
 > Evalueringsrapporten danner grundlag for videre dialog om produktets status, udvikling og eventuelle behov for ændringer i organisering, dokumentation eller retning.  
 >  
 > Information om OS2's produktniveauer og baggrunden herfor [kan læses her](https://governance.os2.eu).  
-
----
 
 <!-- BEGIN REPORT TEMPLATE -->
 
@@ -60,7 +50,7 @@ has_toc: false
 
 ---
 
-# Krav i OS2s styringsmodel
+# Evaluering i henhold til krav i OS2s styringsmodel
 
 ## RELEVANS
 
@@ -124,8 +114,6 @@ has_toc: false
 | G12  | 3         | Bestyrelsen er repræsenteret i styregruppen                | Standard: Bestyrelsesmedlem deltager.                                    | 🟢 / 🟡 / 🔴 / ⚪ |                       |
 | G13  | 3         | Aftale sikrer økonomi til koordinering og videreudvikling  | Standard: Aftaler om finansiering er på plads og budget udarbejdet.      | 🟢 / 🟡 / 🔴 / ⚪ |                       |
 | G14  | 3         | Fagligt fællesskab bag løsningen                           | Standard: Aktivt fællesskab, fx brugerklub, forum eller andet netværk.   | 🟢 / 🟡 / 🔴 / ⚪ |                       |
-
----
 
 # Optælling af vurderinger pr. niveau og tema
 

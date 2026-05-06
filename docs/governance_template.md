@@ -7,19 +7,12 @@ has_children: false
 has_toc: false
 ---
 
-# Indhold på siden
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
-
-# OS2's Governancerapport (autoritativ version)
-
+{: .note-title }
+> OS2's Governancerapport (autoritativ version)
+>  
 > Version: 1.1.0  
 > Sidste release: Juni 2025  
-  
+>    
 > Dette dokument er OS2's autoritative checkliste med krav, som anvendes til at belyse niveauet af et OS2-projekt eller -produkt.  
 >  
 > Det er styregruppens ansvar at sikre, at kravene efterleves. Styregruppen har samtidig ansvar for strategisk at forholde sig til, hvilket produktniveau der styres efter. Der er dermed en forventning om, at alle OS2-projekter og -produkter aktivt anvender OS2’s styringsmodel og denne kravcheckliste.  
