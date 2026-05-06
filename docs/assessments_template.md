@@ -39,6 +39,8 @@ has_toc: false
 
 ---
 
+<!-- BEGIN REPORT TEMPLATE -->
+
 # Evaluering af OS2-produkt: [Produktnavn]
 
 > **📄 Dokumentinformation**  
@@ -241,3 +243,5 @@ Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse o
 * Niveau 2: *19 krav* (35 i alt)
 * Niveau 3: *8 krav* (43 i alt)
 * *I alt: 43 krav*
+
+<!-- END REPORT TEMPLATE -->

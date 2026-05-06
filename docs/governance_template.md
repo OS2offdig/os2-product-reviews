@@ -30,7 +30,15 @@ has_toc: false
 >  
 > Information om OS2's produktniveauer og baggrunden herfor [kan læses her](https://governance.os2.eu).  
 
-# Checklisten for efterlevelse af OS2's niveaukrav
+<!-- BEGIN REPORT TEMPLATE -->
+
+# Governancerapport for [produktnavn]
+
+> **📄 Dokumentinformation**  
+> **Version for anvendt governancerapport:** 1.1.0  
+> **Dato for udfyldelse:** [dd-mm-yyyy]  
+> **Udfyldt af:** [Navn]  
+> **Link til Git organisation:** [indsæt link til git organisation/repo]  
 
 ## RELEVANS
 
@@ -95,3 +103,4 @@ has_toc: false
 | G13 | Der foreligger en aftale der sikrer økonomi til koordinering og videreudvikling    | 3           | Vedlæg eller beskriv finansieringsaftalen.                            |
 | G14 | Der er etableret et fagligt fællesskab bag løsningen hvor erfaringer kan udveksles | 3           | Henvis til brugerforum og/eller årshjul for aktiviteter.          |
 
+<!-- END REPORT TEMPLATE -->
