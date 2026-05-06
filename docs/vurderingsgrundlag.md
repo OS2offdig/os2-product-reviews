@@ -21,7 +21,7 @@ Vurderingen baserer sig altid på **det materiale, projektet og produktet selv h
 
 
 ## Governancerapporten
-Governancerapporten er et centralt dokument i vurderingen og er produktets egen selvdeklaration. Den beskriver:
+[Governancerapporten](governance_template) er et centralt dokument i vurderingen og er produktets egen selvdeklaration. Den beskriver:
 
 - hvordan produktet opfylder OS2’s krav til relevans, formkrav, governance og strategisk sammenhæng  
 - hvor der er afvigelser eller mangler  
@@ -33,7 +33,7 @@ Governancerapporten er den autorative kilde til de krav som stilles i OS2's styr
 
 
 ## Evalueringsrapporten
-Evalueringsrapporten bruges til at gennemføre selve vurderingen. Den sikrer, at alle produkter vurderes efter samme systematik og indeholder:
+[Evalueringsrapporten](assessments_template) bruges til at gennemføre selve vurderingen. Den sikrer, at alle produkter vurderes efter samme systematik og indeholder:
 
 - en gennemgang af alle kriterier under de fire temaer i OS2's styringsmodel   
 - trafiklysmarkeringer for hvert enkelt krav  
