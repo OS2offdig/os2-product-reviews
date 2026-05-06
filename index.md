@@ -19,11 +19,11 @@ Evalueringerne fungerer både som status og som arbejdsredskab. De peger på sty
 
 På denne side finder du:
 
-* en checkliste til [selvevaluering](governance_template) og [evaluering](assessments_template).
-* en [procesbeskrivelse](processen) for udarbejdelse og offentliggørelse.
-* en [formular](checkliste-formular.md) til at oprette og vedligeholde selvevaluering.
-* mulighed for at [generere en kladde](rapportgenerator) til evalueringsrapport baseret på indtastede data.
+* en checkliste til [selvevaluering](docs/governance_template) og [evaluering](docs/assessments_template).
+* en [procesbeskrivelse](docs/processen) for udarbejdelse og offentliggørelse.
+* en [formular](docs/checkliste-formular.md) til at oprette og vedligeholde selvevaluering.
+* mulighed for at [generere en kladde](docs/rapportgenerator) til evalueringsrapport baseret på indtastede data.
 
 ## Hvordan vurderes?
 
-[Her kan du læse om hvordan evaluering og vurdering foretages](vurderingsgrundlag).
+[Her kan du læse om hvordan evaluering og vurdering foretages](docs/vurderingsgrundlag).

@@ -3,11 +3,12 @@ title: Processen
 layout: default
 parent: Vurderingsgrundlag
 nav_order: 1
-has_children: false
-has_toc: true
 ---
 
-1. Indhold på side
+## Indhold på siden
+{: .no_toc .text-delta }
+
+1. TOC
 {:toc}
 
 # Introduktion til evalueringsprocessen
