@@ -1,15 +1,7 @@
 ---
 title: OS2-test-assessment
 layout: default
-parent: Offentliggjorte evalueringer
----
-
-# Indhold på siden
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
+parent: Evalueringsrapporter
 ---
 
 # Evaluering af OS2-produkt: OS2-test-selvevaluering

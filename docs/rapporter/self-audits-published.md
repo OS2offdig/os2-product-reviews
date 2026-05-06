@@ -4,7 +4,7 @@ layout: default
 parent: Rapporter
 nav_order: 6
 has_children: true
-has_toc: false
+has_toc: true
 ---
 
 # Selvevalueringsrapporter for OS2-produkter
@@ -12,5 +12,3 @@ has_toc: false
 Denne side opdateres, efterhånden som selvevalueringer bliver færdige.
 
 ## Tilgængelige selvevalueringer
-
-Ingen governancerapporter er offentliggjort.

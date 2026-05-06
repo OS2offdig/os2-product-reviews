@@ -1,7 +1,7 @@
 ---
 title: OS2-test-assessment
 layout: default
-parent: Offentliggjorte selvevalueringer
+parent: Selvevalueringer
 ---
 
 # Governancerapport for OS2-test-selvevaluering

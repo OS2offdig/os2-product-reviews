@@ -4,7 +4,7 @@ layout: default
 parent: Rapporter
 nav_order: 5
 has_children: true
-has_toc: false
+has_toc: true
 ---
 
 # Evalueringsrapporter for OS2-produkter
@@ -12,5 +12,3 @@ has_toc: false
 Denne side opdateres, efterhånden som nye evalueringer bliver færdige.
 
 ## Tilgængelige evalueringer
-
-Ingen godkendt evalueringer.
