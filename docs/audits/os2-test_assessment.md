@@ -14,26 +14,26 @@ parent: Offentliggjorte evalueringer
 
 # Evaluering af OS2-produkt: OS2-test-selvevaluering
 
-> **📄 Dokumentinformation**<br/>
+> **Dokumentinformation**<br/>
 > **Evalueringsskabelon version:** 0.9.1<br/>
 > **Dato for udfyldelse:** 05-05-2026<br/>
 > **Audit made by:** [Navn]<br/>
 > **GitHub organisation:** [indsæt link til github organisation/repo]<br/>
 
-## 📝 Resumé
+## Resumé
 Udfyldes senere.
 
 ## 🔍 Overordnet vurdering
 Udfyldes senere.
 
-## 📈 Anbefaling
+## Anbefaling
 Udfyldes senere.
 
 ---
 
 # Krav i OS2s styringsmodel
 
-## 🌍 RELEVANS
+## RELEVANS
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |-----|-----------|------|--------------------|-----------|--------------------|
@@ -42,7 +42,7 @@ Udfyldes senere.
 | R3 | 2 | Løsningen har fælles offentligt potentiale | Standard: Kan skabe værdi og genbruges på tværs af myndigheder. | 🟢 | Løsningen anvendes bredt i OS2 og det data som løsningen generere er med til at hjælp kommuner og andre offentlig myndigheder i Deres vurdering af OS2-produkter. |
 | R4 | 3 | Ophæng til nationale strategier er til stede | Standard: Understøtter fx digitaliseringsstrategi og fællesoffentlige mål. | 🟡 | Ingen data i selvevalueringsrapport. |
 
-## 🛠️ FORMKRAV
+## FORMKRAV
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |------|-----------|------|--------------------|-----------|--------------------|
@@ -67,7 +67,7 @@ Udfyldes senere.
 | F21 | 3 | Politisk kommunikation er udarbejdet | Standard: Materialer målrettet politikere og offentlighed er udarbejdet. | ⚪ | Ingen data i selvevalueringsrapport. |
 | F22 | 3 | Procesplan og procesansvar for drift er udarbejdet | Standard: Dokumenteret proces og ansvar ifm. idriftsættelse. | ⚪ | Ingen data i selvevalueringsrapport. |
 
-## 🏛️ STRATEGISK SAMMENHÆNG
+## STRATEGISK SAMMENHÆNG
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |-----|-----------|------|--------------------|-----------|--------------------|
@@ -77,7 +77,7 @@ Udfyldes senere.
 | S4 | 2 | Vision og strategi for produktet er udarbejdet | Standard: Der findes en formel vision og strategi for produktet. | 🟢 | Visionen er at gøre det let for et OS2-produkt at vedligeholde sin egen evaluering i henhold til OS2s styringsmodel. Det er en målsætningen at løsningen skal udvikle sig til i høj grad at automatisere arbejdet med at udfærdige produktevalueringer. |
 | S5 | 3 | Produktets overensstemmelse med OS2's vision og strategi | Standard: Tydelig sammenhæng og beskrivelse. | 🟢 | Løsningen er direkte koblet til OS2s formål og bygger på OS2s værdier og vision om at styrke digitaliseringen i Danmark. |
 
-## 👥 GOVERNANCE
+## GOVERNANCE
 
 | # | Niveau | Krav | Vurderingskriterie | Vurdering | Vurderingsgrundlag |
 |------|-----------|------|--------------------|-----------|--------------------|
@@ -98,7 +98,7 @@ Udfyldes senere.
 
 ---
 
-# 📊 Optælling af vurderinger pr. niveau og tema
+# Optælling af vurderinger pr. niveau og tema
 
 | Niveau | 🟢 Grøn | 🟡 Gul | 🔴 Rød | ⚪ Grå |
 |-------------|---------|--------|--------|--------|
@@ -175,13 +175,13 @@ pie showData
  "Grå 7%" : 3
 ```
 
-## 🏷️ Hvad betyder trafiklysene?
+## Hvad betyder trafiklysene?
 - 🟢 **Grøn** → Kravet er fuldt opfyldt og fungerer som forventet.
 - 🟡 **Gul** → Kravet er delvist opfyldt, men der er mangler, som bør adresseres.
 - 🔴 **Rød** → Kravet er ikke opfyldt, og der er behov for handling.
 - ⚪ **Grå** → Kravet er markeret som ikke relevant (ikke vurderet ift. efterlevelse).
 
-## 📋 Hvordan bruges optællingen?
+## Hvordan bruges optællingen?
 
 - **Sandkasse:** Grundlæggende formalia – mange 🔴 her betyder, at produktet skal løftes bare for at blive betragtet som OS2-kompatibelt. 
 - **Niveau 1:** Basis governance og dokumentation – – mange 🟡 eller 🔴 her peger på udfordringer med at skabe overblik og ejerskab. 
@@ -195,14 +195,14 @@ Ud fra optællingen kan vi vurdere, hvor produktet står samlet set:
 - Mange 🔴 → Produktet har alvorlige governance-mangler og kræver en struktureret genopretning.
 - Mange ⚪ → Produktet har alvorlige mangler i forhold til OS2 kompatabilitet og kræver et særligt fokus.
 
-### ➡️ Antal krav fordelt på tema
+### Antal krav fordelt på tema
 * Relevans: *4 krav* (R1–R4)
 * Formkrav: *20 krav* (F1–F22, minus F8 og F9 som er sammenlagt med F7)
 * Strategisk sammenhæng: *5 krav* (S1–S5)
 * Governance: *14 krav* (G1–G14)
 * *I alt: 43 krav*
 
-### ➡️ Antal krav fordelt på niveau
+### Antal krav fordelt på niveau
 
 Bemærk at der nedarves så et niveau 2 produkt skal også efterleve sandkasse og niveau 2.
 

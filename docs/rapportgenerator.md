@@ -9,7 +9,7 @@ has_toc: false
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-<div id="app" class="container-fluid my-4 px-3 px-md-5"></div>
+<div id="app" class="container-fluid my-4 px-3 px-md-4"></div>
 
 <script>
 const REQUIREMENTS = [

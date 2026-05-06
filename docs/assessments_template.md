@@ -7,6 +7,14 @@ has_children: false
 has_toc: false
 ---
 
+# Indhold på siden
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 # OS2's Evalueringsrapport (autoritativ version)
 {: .no_toc }
 
@@ -28,14 +36,6 @@ has_toc: false
 > Evalueringsrapporten danner grundlag for videre dialog om produktets status, udvikling og eventuelle behov for ændringer i organisering, dokumentation eller retning.  
 >  
 > Information om OS2's produktniveauer og baggrunden herfor [kan læses her](https://governance.os2.eu).  
-
----
-
-# Indhold på siden
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
 
 ---
 
