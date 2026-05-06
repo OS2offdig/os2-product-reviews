@@ -104,7 +104,7 @@ async function generate() {
     const rows = REQUIREMENTS.filter(r => r[0] === theme).map(([_, id, req, level, guideline]) => {
       const k = byId.get(id) || {};
       const status = (k.efterlevet || "[Udfyldes i selvevaluering]").trim();
-      const doc = (k.dokumentation || "").trim() || "[Udfyldes i selvevaluering]";
+      const doc = (k.dokumentation || "").trim() || "[Ikke udfyldt]";
       return `| ${id} | ${esc(req)} | ${level} | ${esc(guideline)} | ${esc(status)} | ${esc(doc)} |`;
     }).join("\n");
     tableBlocks[theme] = rows;
