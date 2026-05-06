@@ -107,62 +107,62 @@ Udfyldes senere.
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#008000", "pie2": "#FFFF00", "pie3": "#FF0000", "pie4": "#808080"
+	"pie1": "#008000", 	"pie2": "#FFFF00", 	"pie3": "#FF0000", 	"pie4": "#808080"
 }}}%%
 pie showData
- title Sandkasse (6 krav)
- "Grøn 100%" : 6
- "Gul 0%" : 0
- "Rød 0%" : 0
- "Grå 0%" : 0
+	title Sandkasse (6 krav)
+	"Grøn 100%" : 6
+	"Gul 0%" : 0
+	"Rød 0%" : 0
+	"Grå 0%" : 0
 ```
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#008000", "pie2": "#FFFF00", "pie3": "#FF0000", "pie4": "#808080"
+	"pie1": "#008000", 	"pie2": "#FFFF00", 	"pie3": "#FF0000", 	"pie4": "#808080"
 }}}%%
 pie showData
- title Niveau 1 (10 krav)
- "Grøn 100%" : 10
- "Gul 0%" : 0
- "Rød 0%" : 0
- "Grå 0%" : 0
+	title Niveau 1 (10 krav)
+	"Grøn 100%" : 10
+	"Gul 0%" : 0
+	"Rød 0%" : 0
+	"Grå 0%" : 0
 ```
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#FF0000", "pie2": "#008000", "pie3": "#FFFF00", "pie4": "#808080"
+	"pie1": "#FF0000", 	"pie2": "#008000", 	"pie3": "#FFFF00", 	"pie4": "#808080"
 }}}%%
 pie showData
- title Niveau 2 (19 krav)
- "Grøn 47%" : 9
- "Gul 0%" : 0
- "Rød 53%" : 10
- "Grå 0%" : 0
+	title Niveau 2 (19 krav)
+	"Rød 53%" : 10
+	"Grøn 47%" : 9
+	"Gul 0%" : 0
+	"Grå 0%" : 0
 ```
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#008000", "pie2": "#808080", "pie3": "#FFFF00", "pie4": "#FF0000"
+	"pie1": "#008000", 	"pie2": "#808080", 	"pie3": "#FFFF00", 	"pie4": "#FF0000"
 }}}%%
 pie showData
- title Niveau 3 (8 krav)
- "Grøn 50%" : 4
- "Gul 0%" : 0
- "Rød 0%" : 0
- "Grå 50%" : 4
+	title Niveau 3 (8 krav)
+	"Grøn 50%" : 4
+	"Grå 50%" : 4
+	"Gul 0%" : 0
+	"Rød 0%" : 0
 ```
 
 ```mermaid
 %%{init: {"themeVariables": {
- "pie1": "#008000", "pie2": "#FF0000", "pie3": "#808080", "pie4": "#FFFF00"
+	"pie1": "#008000", 	"pie2": "#FF0000", 	"pie3": "#808080", 	"pie4": "#FFFF00"
 }}}%%
 pie showData
- title Samlet (43 krav)
- "Grøn 67%" : 29
- "Gul 0%" : 0
- "Rød 23%" : 10
- "Grå 9%" : 4
+	title Samlet (43 krav)
+	"Grøn 67%" : 29
+	"Rød 23%" : 10
+	"Grå 9%" : 4
+	"Gul 0%" : 0
 ```
 
 ## Hvad betyder trafiklysene?
