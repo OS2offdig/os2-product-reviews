@@ -7,8 +7,12 @@ has_children: true
 has_toc: true
 ---
 
-# Selvevalueringsrapporter for OS2-produkter
+# Selvevalueringsrapporter for OS2-projekter og -produkter
 
-Denne side opdateres, efterhånden som selvevalueringer bliver færdige.
+Her offentliggøres governancerapporter udfyldt af OS2-projekter og -produkter som led i deres selvevaluering. Rapporterne beskriver produktets egen vurdering af status, dokumentation, governance og efterlevelse af kravene i OS2’s styringsmodel.
+
+Selvevalueringsrapporterne udgør produktets eget dokumentationsgrundlag og anvendes som input til OS2-sekretariatets evaluering. De er ikke i sig selv en officiel vurdering af produktets niveau.
+
+Siden opdateres løbende, efterhånden som nye selvevalueringer gennemføres og offentliggøres.
 
 ## Tilgængelige selvevalueringer

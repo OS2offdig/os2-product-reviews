@@ -2,20 +2,29 @@
 title: Beslutningslog
 layout: default
 parent: Rapporter
-nav_order: 1
+nav_order: 7
 has_children: false
 has_toc: false
 ---
 
 # Beslutningslog for OS2-projekter og -produkter
 
-Denne log dokumenterer ændringer i status og væsentlige beslutninger for OS2-projekter og -produkter. Formålet er at sikre transparens og sporbarhed i porteføljestyringen.
+Denne log dokumenterer væsentlige beslutninger, som ændrer status eller retning for OS2-projekter og -produkter. Formålet er at sikre transparens og sporbarhed i porteføljestyringen.
+
+Loggen omfatter eksempelvis:
+- ændringer i produktniveau.  
+- optagelse i eller udtræden af porteføljen.  
+- pausering eller nedlukning af projekter og produkter.  
+- væsentlige styringsbeslutninger med betydning for retning eller organisering i projekter og produkter.  
+
+Loggen er ikke en komplet historik over al aktivitet i projekter og produkter, men et overblik over centrale beslutninger i OS2’s porteføljestyring.
 
 ---
 
 {: .note-title }
 > EKSEMPEL
-> Slette når der kommer indhold i loggen.
+>
+> Slettes når der kommer indhold i loggen.
 
 
 # 2026
