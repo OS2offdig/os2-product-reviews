@@ -3,7 +3,7 @@ title: Selvevalueringer
 layout: default
 parent: Rapporter
 nav_order: 6
-has_children: true
+has_children: false
 has_toc: true
 ---
 

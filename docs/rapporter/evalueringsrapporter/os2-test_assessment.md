@@ -2,6 +2,7 @@
 title: OS2-test-assessment
 layout: default
 parent: Evalueringsrapporter
+nav_exclude: true
 ---
 
 # Evaluering af OS2-produkt: OS2-test-selvevaluering

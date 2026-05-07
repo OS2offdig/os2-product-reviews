@@ -2,6 +2,7 @@
 title: OS2-test-assessment
 layout: default
 parent: Selvevalueringer
+nav_exclude: true
 ---
 
 # Governancerapport for OS2-test-selvevaluering
