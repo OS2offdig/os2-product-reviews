@@ -3,7 +3,7 @@ title: Evalueringsrapporter
 layout: default
 parent: Rapporter
 nav_order: 5
-has_children: false
+has_children: true
 has_toc: true
 ---
 
